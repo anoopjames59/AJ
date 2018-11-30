@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" type="text/html; charset=UTF-8">
+<title>[Test] ier.widget.dialog.RecordContainerPropertiesDialog</title>
+<style type="text/css">
+@IMPORT url("../../../../../../navigator/WebContent/dijit/themes/dijit.css");
+@IMPORT url("../../../../../../navigator/WebContent/idx/themes/oneui/oneui.css");
+@IMPORT url("../../../../../../navigator/WebContent/ecm/themes/oneui/oneui.css");
+</style>
+<script type="text/javascript">
+var dojoConfig = {
+	idDebug: true,
+	parseOnLoad: true,
+	async: true,
+	packages: [
+		{name: "ecm", location: "../ecm"},
+		{name: "idx", location: "../idx"},
+		{name: "ier", location: "../../../IERApplicationPlugin/WebContent/ier"}
+	]
+};
+</script>
+<script type="text/javascript" src="../../../../../../navigator/WebContent/dojo/dojo.js"></script>
+<script type="text/javascript">
+require([
+	"dojo/ready",
+	"dijit/registry",
+	"ecm/model/ResultSet",
+	"idx/layout/TitlePane",
+	"ier/widget/dialog/RecordContainerPropertiesDialog"
+], function(dojoReady, registry, RS, TitlePane, RecordContainerPropDlg) {
+	dojoReady(function(){
+		var repository = {
+			isLoaded: function() {return true;}
+		};
+		var item = {
+			getParent: function() {return {getAllowedRMTypes: function(){return null;}};}
+		};
+		new RecordContainerPropDlg().show(repository, item);
+	});
+});
+</script>
+</head>
+<body class="oneui">
+</body>
+</html>

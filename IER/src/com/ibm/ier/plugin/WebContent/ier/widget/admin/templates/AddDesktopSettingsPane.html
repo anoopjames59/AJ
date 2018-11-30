@@ -1,0 +1,40 @@
+<div class="ierAdminContent">
+	${_messages.admin_addDesktopPane_tooltip}
+	</br>
+	<table class="propertyTable" role="presentation" style="margin-top:10px;"><tbody>
+			<tr>
+				<td class="propertyRowLabel">
+					<span class="required">*</span>
+					<label for="${id}_desktopName">${_messages.admin_addDesktopPane_desktopName}:</label>
+					<div data-dojo-type="ecm.widget.HoverHelp" message="${_messages.admin_addDesktopPane_desktopNameHover}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_desktopName" data-dojo-type="ecm/widget/ValidationTextBox" data-dojo-attach-point="_desktopName"
+						data-dojo-props="trim: true, intermediateChanges: true, propercase: false"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<span class="required">*</span>
+					<label for="${id}_desktopId">${_messages.admin_addDesktopPane_desktopId}:</label>
+					<div data-dojo-type="ecm.widget.HoverHelp" message="${_messages.admin_addDesktopPane_desktopIDHover}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_desktopId" data-dojo-type="ecm/widget/ValidationTextBox" data-dojo-attach-point="_desktopId"
+						data-dojo-props="trim: true, intermediateChanges: true, propercase: false"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<label for="${id}_desktopDescription">${_messages.admin_addDesktopPane_desktopDescription}:</label>
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_desktopDescription" data-dojo-type="ecm/widget/ValidationTextBox" data-dojo-attach-point="_desktopDescription"
+						data-dojo-props="trim: true, intermediateChanges: true"></div>
+				</td>
+			</tr>
+	</tbody></table>
+	<div  class="ecmAdminTabButtonBar">
+		<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_addButton" data-dojo-props="disabled: true">${_messages.admin_addDesktopPane_addDesktop}</button>
+	</div>
+</div>

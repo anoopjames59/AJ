@@ -1,0 +1,77 @@
+<div class="entityItemGeneralPane">
+	<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+		<tbody>
+			<tr data-dojo-attach-point="_entityItemSaveInRow">
+				<td class="ierLabelContainer">
+					<span class="required">*</span>
+					<label for="${id}_actionSelector" id="${id}_actionSelectorLabel" data-dojo-attach-point="_actionSelectorLabel">
+						${messages.dispositionPane_actionToPerform}:
+					</label>
+					<div data-dojo-type="ecm.widget.HoverHelp" 
+						data-dojo-attach-point="_modeSelectorHoverHelp" 
+						message="${messages.dispositionPane_actionToPerform_tooltip}"></div>
+				</td>
+				<td class="ierSectionContainer">
+					<div data-dojo-type="dijit.form.Select" data-dojo-attach-point="_actionSelector" id="${id}_actionSelector">
+						<option value="${constants.ActionType_AutoDestroy}" selected="selected">${messages.dispositionPane_autodestroy}</option>
+    					<option value="${constants.ActionType_Destroy}" >${messages.dispositionPane_destroy}</option>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="ierLabelContainer">
+					<span class="required">*</span>
+					<label for="${id}_aggregationSelector" id="${id}_aggregationLabel" data-dojo-attach-point="_aggregationLabel">
+						${messages.dispositionPane_performTheActionOn}:
+					</label>
+					<div data-dojo-type="ecm.widget.HoverHelp" 
+						data-dojo-attach-point="_aggregationSelectorHoverHelp" 
+						message="${messages.dispositionPane_performTheActionOn_tooltip}"></div>
+				</td>
+				<td class="ierSectionContainer">
+					<div data-dojo-type="dijit.form.Select" data-dojo-attach-point="_aggregationSelector" id="${id}_aggregationSelector">
+						<option value="${constants.EntityType_RecordCategory}" selected="selected">${messages.recordCategory}</option>
+    					<option value="${constants.EntityType_RecordFolder}" >${messages.recordFolder}</option>
+    					<option value="${constants.EntityType_Volume}" >${messages.recordVolume}</option>
+    					<option value="${constants.EntityType_ElectronicRecord}" >${messages.record}</option>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="ierLabelContainer">
+					<span class="required">*</span>
+						${messages.dispositionPane_in}:
+					<div data-dojo-type="ecm.widget.HoverHelp" data-dojo-attach-point="_inHoverHelp" message="${messages.dispositionPane_in_tooltip}"></div>
+				</td>
+				
+				<td class="ierSectionContainer">
+					<input id="${id}_years_label" size="4" style="width:35px;" type="text" data-dojo-type="dijit.form.NumberTextBox" value="0"
+						data-dojo-props="required:true, constraints:{min:0,max:100,places:0}" data-dojo-attach-point="offset_years" />
+					<span style="padding-left: 1px;"></span><label for="${id}_years_label">${messages.dispositionPane_years}</label>
+					<input id="${id}_month_label" size="4" style="width:35px; margin-left:12px" type="text" data-dojo-type="dijit.form.NumberTextBox" value="0" 
+						data-dojo-props="required:true, constraints:{min:0,max:11,places:0}" data-dojo-attach-point="offset_months" />
+					<span style="padding-left: 1px;"><label for="${id}_month_label">${messages.dispositionPane_months}</label></span>
+					<input id="${id}_days_label" size="4" style="width:35px; margin-left:12px" type="text" data-dojo-type="dijit.form.NumberTextBox" value="0" 
+						data-dojo-props="required:true, constraints:{min:0,places:0}" data-dojo-attach-point="offset_days" />
+					<span style="padding-left: 1px; padding-right: 60px"><label for="${id}_days_label">${messages.dispositionPane_days}</label></span>
+				</td>
+			</tr>
+			<tr>
+				<td class="ierLabelContainer">
+					<span class="required" data-dojo-attach-point="_trigger">*</span>
+					<label for="${id}_triggerSelector" id="${id}_triggerSelectorLabel" data-dojo-attach-point="_triggerSelectorLabel">
+						${messages.dispositionPane_afterItHasBeen} 
+					</label>
+					<div data-dojo-type="ecm.widget.HoverHelp" data-dojo-attach-point="_triggerSelectorHoverHelp" 
+						message="${messages.dispositionPane_afterItHasBeen_tooltip}"></div>
+				</td>
+				<td class="ierSectionContainer">
+					<div data-dojo-type="dijit.form.Select" data-dojo-attach-point="_cutoffBaseSelector" id="${id}_cutoffBaseSelector" name="${id}_cutoffBaseSelector">
+						<option value="${constants.Property_DateOpened}" selected="selected">${messages.dispositionPane_created}</option>
+    					<option value="${constants.Property_DateClosed}" >${messages.dispositionPane_closed}</option>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

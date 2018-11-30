@@ -1,0 +1,80 @@
+<div class="ecmAdminTab" style="height:100%;">
+	<div data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="gutters:false" style="height:100%;">
+		<div data-dojo-type="dijit/layout/ContentPane" region="top">
+			You can manage privileges by adding a new role, editing an exiting role, assigning priviledes to a role, associating an user or a group to a role or associating a role to an user or an group.
+		</div>
+		<div data-dojo-type="idx/layout/MoveableTabContainer" region="center" style="height:100%">
+			<div data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="gutters:false" title="Roles">
+				<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top'" class="ierAdminToolbar">
+					<div class="ierAdminToolbarFilter">
+						<input data-dojo-type="dijit/form/TextBox" data-dojo-attach-point="_roleFilterBox" data-dojo-props="placeHolder:'Filter', intermediateChanges:true"/>
+					</div>
+					<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_roleRefreshButton">Refresh</button>
+					<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_roleCreateButton">Add Role</button>
+					<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_rolePropertyButton">Edit Role</button>
+					<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_roleUserButton">Edit Membership</button>
+					<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_roleDeleteButton">Delete</button>
+					<button data-dojo-type="dijit/form/DropDownButton">
+						<span>Actions</span>
+						<span data-dojo-type="dijit/Menu">
+						</span>
+					</button>
+				</div>
+				<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'">
+					<table data-dojo-type="dojox/grid/DataGrid" data-dojo-attach-point="_roleGrid" data-dojo-props="autoWidth: true"><thead><tr>
+						<th field="name" width="8em">Role Name</th>
+						<th field="description" width="8em">Description</th>
+						<th field="function" width="12em">Function</th>
+						<th field="expiration" width="12em">Expiration Date</th>
+						<th field="user" width="12em">User and Group</th>
+						<th field="creator" width="8em">Creator</th>
+						<th field="dateCreated" width="12em">Date Created</th>
+					</tr></thead></table>
+				</div>
+			</div>
+			<div data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="gutters:false" title="Users and Groups">
+				<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top'" class="ierAdminToolbar">
+					<div class="ierAdminToolbarFilter">
+						<input data-dojo-type="dijit/form/TextBox" data-dojo-attach-point="_userFilterBox" data-dojo-props="placeHolder:'Filter', intermediateChanges:true"/>
+					</div>
+					<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_userRefreshButton">Refresh</button>
+					<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_userRoleButton">Assign Role</button>
+					<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_userPropertyButton">Properties</button>
+					<button data-dojo-type="dijit/form/DropDownButton">
+						<span>Actions</span>
+						<span data-dojo-type="dijit/Menu">
+						</span>
+					</button>
+				</div>
+				<div data-dojo-type="idx/layout/BorderContainer" data-dojo-props="region:'center', gutters:false" data-dojo-attach-point="_userGridContainer">
+					<div data-dojo-type="idx/layout/BorderContainer"  data-dojo-props="region:'center', gutters:false" splitter="true">
+						<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top'" class="ierAdminToolbar">
+							<select data-dojo-type="dijit/form/Select" data-dojo-attach-point="_userTypeSelect">
+								<option value="User">Users</option>
+								<option value="Group">Groups</option>
+								<option value="*">All</option>
+							</select>
+						</div>
+						<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'" >
+							<table data-dojo-type="dojox/grid/DataGrid" data-dojo-attach-point="_userGrid"  data-dojo-props="region:'center', autoWidth: true"><thead><tr>
+								<th field="name" width="12em">Name</th>
+								<th field="role" width="48em">Role</th>
+							</tr></thead></table>
+						</div>
+					</div>
+					<div data-dojo-type="idx/layout/BorderContainer"  data-dojo-props="region: 'trailing', gutters:false" splitter="true" open="false" class="trailingPane">
+						<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top'" class="ierAdminToolbar">
+							<label class="favoriteLabel">Sort by:</label>
+							<select data-dojo-type="dijit/form/Select" data-dojo-attach-point="_roleSortSelect">
+								<option value="Role">Role</option>
+								<option value="Task">Task</option>
+							</select>
+						</div>
+						<div data-dojo-type="dijit/layout/ContentPane" data-dojo-attach-point="userPropArea" region="center">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

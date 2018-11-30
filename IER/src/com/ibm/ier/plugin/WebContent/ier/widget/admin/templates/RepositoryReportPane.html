@@ -1,0 +1,22 @@
+<div class="ecmAdminTab ierAdminTab">
+   	<div  class="ecmAdminTabButtonBar">
+		<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_saveButton">${_messages.admin_save}</button>
+		<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_resetButton">${_messages.admin_reset}</button>
+	</div>
+	<div class="ierAdminContent">
+		<div data-dojo-type="idx.layout.TitlePane" open="true" title="${_messages.admin_reportTasksConfigurations}" style="margin-top:10px; margin-left: -0px">
+			<table class="propertyTable" role="presentation"><tbody>
+				<tr>
+					<td class="propertyRowLabel">
+						<span>${_messages.admin_repositoryReportOutputDirectory}:</span>
+						<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_repositoryReportOutputDirectory_tooltip}"></div>
+					</td>
+					<td class="propertyRowValue">
+						<div class="dijitInline" data-dojo-attach-point="_reportOutputSelectorContainer"></div>
+						<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_clearButton" data-dojo-props="disabled: true">${_messages.clear}</button>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,46 @@
+{
+    "identifier" : "id",
+    "items": [
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "FilePlan (CE50_BASE_FPOS)",
+        "title": "<a onclick=\"openFilePlanPane('cm-rm-win11', '{7F29139B-04E0-442F-9B85-C71EA4988375}')\" href=\"#\">FilePlan (CE50_BASE_FPOS)</a>",
+        "type": "Base",
+        "content": "Object Store: CE50_BASE_FPOS | Server: cm-rm-win11 | Datamodel Type: Base | <a href=\"#\">Delete</a>",
+        "id": "200",
+        "iconClass" : "fileplanIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "PSIFilePlan (CE50_BASE_FPOS)",
+        "title": "<a onclick=\"openFilePlanPane('cm-rm-win11', '{B4B7DECF-48E6-42D7-BA39-D7DCA9C0A9C3}')\" href=\"#\">PSIFilePlan (CE50_BASE_FPOS)</a>",
+        "type": "Base",
+        "content": "Object Store: CE50_BASE_FPOS | Server: cm-rm-win11 | Datamodel Type: Base | <a href=\"#\">Delete</a>",
+        "id": "201",
+        "iconClass" : "fileplanIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "atlasdemo (CE50_BASE_FPOS)",
+        "title": "<a onclick=\"openFilePlanPane('cm-rm-win11', '{5483DB8C-3C60-43D6-AF18-6D5D6F077E9B}')\" href=\"#\">atlasdemo (CE50_BASE_FPOS)</a>",
+        "type": "Base",
+        "content": "Object Store: CE50_BASE_FPOS | Server: cm-rm-win11 | Datamodel Type: Base | <a href=\"#\">Delete</a>",
+        "id": "202",
+        "iconClass" : "fileplanIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "The Magellan Travel Company (CE50_BASE_FPOS)",
+        "title": "<a onclick=\"openFilePlanPane('cm-rm-win11', '{4CB243F4-33BD-486D-ABE4-02D1F33E16BE}')\" href=\"#\">The Magellan Travel Company (CE50_BASE_FPOS)</a>",
+        "type": "Base",
+        "content": "Object Store: CE50_BASE_FPOS | Server: cm-rm-win11 | Datamodel Type: Base | <a href=\"#\">Delete</a>",
+        "id": "203",
+        "iconClass" : "fileplanIcon"
+    }
+    ]
+}
+

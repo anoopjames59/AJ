@@ -1,0 +1,158 @@
+.ierBaseDialog {
+	height: 800px;
+	width: 800px;
+	min-height: 250px;
+}
+
+.ierBigDialog {
+	height: 700px;
+	width: 800px;
+	min-height: 250px;
+}
+
+.ierMediumDialog {
+	height: 600px;
+	width: 600px;
+	min-height: 250px;
+}
+
+.ierSmallDialog {
+	height: 400px;
+	width: 600px;
+	min-height: 250px;
+}
+
+.ierHoldDialog {
+	width: 850px;
+}
+
+.ierAddTriggersDialog {
+	width: 825px;
+}
+
+.ierVerySmallDialog {
+	height: 300px;
+	width: 400px;
+	min-height: 250px;
+	
+}
+
+.ierBaseDialog .ierGeneralTitlePane.idxTitlePane .dijitTitlePaneContentInner,
+.ierBaseDialog .ierPropertiesTitlePane.idxTitlePane .dijitTitlePaneContentInner,
+.ierBaseDialog .ierSecurityTitlePane.idxTitlePane .dijitTitlePaneContentInner,
+.ierBaseDialog .relocateContainerGeneralPane.idxTitlePane .dijitTitlePaneContentInner,
+.ierBaseDialog .ierConditionTitlePane.idxTitlePane .dijitTitlePaneContentInner {
+	padding: 10px;
+}
+
+.ierBaseDialog .generalTable {
+	width: 100%;
+}
+
+.ierBaseDialog .generalTable .labelReadOnly {
+	color: gray;
+}
+
+.ierBaseDialog .generalTable td {
+    padding: 2px 5px;   /* Make sure there's some vertical room between the control rows */
+}
+
+.ierBaseDialog .generalTable .propertyRowLabel {
+	padding-right: 5px;
+	maxWidth: 45%;
+}
+
+.ierBaseDialog .commonPropertiesMargins {
+	padding-left: 15px;
+	margin-top: 10px;
+}
+
+.ierBaseDialog .folderSelectorControl .ierDropDownInput .dijitButtonText {
+	width: 358px; 
+}
+
+.ierBaseDialog .multiRepoFolderSelectorControl .ierDropDownInput .dijitButtonText {
+	width: 466px; 
+}
+
+.ierBaseDialog .ierDropDownInput .dijitPlaceHolder{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+.ierBaseDialog .ierDropDownInput,
+.ierBaseDialog .ierTextBox {
+	width: 300px; 
+}
+
+.ierBaseDialog .dijitTimeTextBox {
+	width: 150px;
+}
+
+.ierBaseDialog .ierDropDownInput .entryTemplateSelector {
+	width: 385px; 
+}
+
+.ierBaseDialog .ierShortTextBox {
+	width: 150px; 
+}
+
+.ierBaseDialog .ierDialogContent {
+	padding: 0px;
+}
+
+.ierBaseDialog .ierDialogTabContent {
+	padding: 10px;
+}
+
+.ierBaseDialog .ierSectionContainer {
+	padding: 5px 0px 5px;
+}
+
+.ierBaseDialog .ierLabelContainer {
+	padding-right: 10px;
+}
+.ierBaseDialog .ierCommonConditionForm .ierLabelContainer .dijitTextBox{
+	width: 200px;
+}
+
+.ierBaseDialog .viewEntitiesOnHoldEntityName {
+	margin-right: 40px;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+.dijitRtl .ierBaseDialog .viewEntitiesOnHoldEntityName {
+	margin-left: 40px;
+	margin-right: 5px;
+}
+.ierBaseDialog .viewEntitiesOnHoldExplainText {
+	margin-top: 15px;
+}
+.ierBaseDialog .viewEntitiesOnHoldSearchTextBox {
+	margin-right: 5px;
+	width: 300px;
+}
+.dijitRtl .ierBaseDialog .viewEntitiesOnHoldSearchTextBox {
+	margin-left: 5px;
+	margin-right: 0;
+}
+.ierBaseDialog .viewEntitiesOnHoldRemove .dijitButton {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.ierBaseDialog .viewEntitiesOnHoldRemove {
+	padding-top: 7px;
+}
+.ierBaseDialog .contentClassSelector {
+	padding-left: 15px;
+}
+
+.ierObjectSelector.dijitDisabled {
+	color: #777777;
+}
+
+.oneui .ierEntityitemDetailsPane span.idxPropertyRowLabel {
+	white-space: nowrap !important;
+}

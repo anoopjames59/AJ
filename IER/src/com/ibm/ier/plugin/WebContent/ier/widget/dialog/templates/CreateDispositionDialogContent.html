@@ -1,0 +1,31 @@
+<div class="ierDispositionDialog">	
+	<div data-dojo-attach-point="introTextNode" class="message">
+		${messages.createHoldSelectText}
+   	</div>
+	<div class="errorMessage" data-dojo-attach-point="_errorMessage"></div>
+	<br>
+   	<div class="field">
+   		<label for="${id}_holdName">
+   			${messages.holdName}
+   		</label>
+   		<input data-dojo-type="dijit.form.ValidationTextBox"
+   			name="${id}_holdName"
+   			id="${id}_holdName"
+   			style="width: 98%"
+   			data-dojo-props="required:true"
+   			data-dojo-attach-point="_holdName"
+			data-dojo-attach-event="onKeyUp: _onNameChange">
+	</div>
+   	<div class="field">
+   		<label for="${id}_holdDescrption">
+   			${messages.holdDescription}
+   		</label>
+   		<input data-dojo-type="dijit.form.ValidationTextBox"
+   			name="${id}_holdDescription"
+   			id="${id}_holdDescription"
+   			style="width: 98%"
+   			data-dojo-props="required:false"
+   			data-dojo-attach-point="_holdDescription"
+			data-dojo-attach-event="onKeyUp: _onDescriptionChange">
+	</div>
+</div>

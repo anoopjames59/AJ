@@ -1,0 +1,17 @@
+<div data-dojo-type="dijit/layout/BorderContainer" class="ierDialogContent"
+	data-dojo-attach-point="mainContainer" 
+	data-dojo-props="gutters:false">
+	<div data-dojo-type="dijit/layout/ContentPane" 
+		data-dojo-props="region:'top'" class="filterContainer">
+		<div class="filterArea" data-dojo-attach-point="filterArea">
+			<div data-dojo-type="ier/widget/FilePlanSearchBar" 
+				data-dojo-attach-point="_filePlanSearchBar" class="filter" aria-label="${ier_messages.search_for}"></div>
+		</div>
+	</div>
+	<div data-dojo-type="dijit/layout/ContentPane" 
+		data-dojo-props="region:'center'">
+		<div data-dojo-type="ier/widget/listView/ContentList" 
+			data-dojo-attach-point="_objectContentList">
+		</div>
+	</div>
+</div>

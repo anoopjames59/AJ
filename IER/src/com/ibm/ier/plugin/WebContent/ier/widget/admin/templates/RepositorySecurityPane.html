@@ -1,0 +1,11 @@
+<div class="ecmAdminTab ierAdminTab">
+	<div style="margin: 10px;">${_messages.objectStoreSecurityDialog_warning}</div>
+	<div  class="ecmAdminTabButtonBar">
+		<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_restoreDefaultsButton">${_messages.admin_restoreDefaults}</button>
+		<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_runButton">${_messages.admin_runSecurityScript}</button>
+	</div>
+	<div class="ierAdminContent">
+		<div data-dojo-attach-point="_entityItemObjectStoreSecurityPane"
+			data-dojo-type="ier/widget/panes/EntityItemObjectStoreSecurityPane"></div>
+	</div>
+</div>

@@ -1,0 +1,54 @@
+.ierNamingPatternLevelPane .ierNamingPatternLevelRow {
+	background-color: #EEEEEE;
+}
+
+.ierNamingPatternLevelPane th.ierNamingPatternLevelCell {
+	padding: 0px 5px;
+}
+
+.ierNamingPatternLevelPane td.ierNamingPatternLevelCell {
+	padding: 5px;
+	border-bottom: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+}
+
+.ierNamingPatternLevelPane .ierLevelBox,
+.ierNamingPatternLevelPane .ierLevelHeader {
+		width: 100px;
+}
+
+.ierNamingPatternLevelPane .ierEntityTypeBox,
+.ierNamingPatternLevelPane .ierEntityTypeHeader {
+		width: 150px;
+}
+
+.ierNamingPatternLevelPane .ierPatternBox,
+.ierNamingPatternLevelPane .ierPatternHeader {
+		width: 300px;
+}
+
+.ierNamingPatternLevelPane .ierIncrementBox,
+.ierNamingPatternLevelPane .ierIncrementHeader {
+		width: 100px;
+}
+
+.ierNamingPatternLevelPane .ierRemoveButton.dijitButton .dijitButtonNode {
+	padding: 0px;
+	background-color: #EEEEEE;
+	background-image: none;
+	border: 1px solid #EEEEEE;
+	box-shadow: none;
+}
+
+.ierNamingPatternLevelPane .ierRemoveIcon {
+	background-image: url(images/DeleteDark12.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 16px;
+	height: 16px;
+    opacity: .4;
+}
+
+.ierNamingPatternValidationMessage {
+	width: 200px;
+}

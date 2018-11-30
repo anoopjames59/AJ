@@ -1,0 +1,366 @@
+.launcherReportsIcon,
+.launcherJobsIcon,
+.launcherSearchIcon,
+.launcherConfigureIcon,
+.launcherAdminIcon,
+.dispositionSweepIcon,
+.holdSweepIcon,
+.location32Icon,
+.launcherDashboardIcon {
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+}
+
+.launcherDashboardIcon {
+	background-image:url('images/launcherDashboard_32.png');
+}
+
+.launcherReportsIcon {
+	background-image:url('images/launcherReports_32.png');
+}
+
+.launcherJobsIcon {
+	background-image: url('images/launcherJobs_32.png');
+}
+
+.launcherConfigureIcon {
+	background-image: url('images/launcherConfigure_32.png');
+}
+
+.dijitToggleButtonChecked .launcherDashboardIcon {
+	background-image:url('images/launcherDashboard_selected_32.png');
+}
+
+.dijitToggleButtonChecked .launcherReportsIcon {
+	background-image:url('images/launcherReports_selected_32.png');
+}
+
+.dijitToggleButtonChecked .launcherJobsIcon {
+	background-image: url('images/launcherJobs_selected_32.png');
+}
+
+.dijitToggleButtonChecked .launcherConfigureIcon {
+	background-image: url('images/launcherConfigure_selected_32.png');
+}
+		
+.dispositionSweepIcon {
+	background-image: url('images/dispositionSchedule_32.png');
+}
+
+.holdSweepIcon {
+	background-image: url('images/hold_32.png');
+}
+
+.location32Icon {
+	background-image: url('images/location_32.png');
+}
+
+.ecmRepositoryIcon,
+.openFolderIcon,
+.folderIcon,
+.recordCategoryIcon,
+.recordElectronicFolderIcon,
+.recordHybridFolderIcon,
+.recordPhysicalFolderIcon,
+.recordsManagementIcon,
+.recordBoxIcon,
+.volumeIcon,
+.recordCategoryOpenIcon,
+.recordElectronicFolderOpenIcon,
+.recordHybridFolderOpenIcon,
+.recordPhysicalFolderOpenIcon,
+.recordBoxOpenIcon,
+.volumeOpenIcon,
+.electronicRecordIcon,
+.filePlanIcon,
+.filePlanOpenIcon,
+.emailRecordIcon,
+.physicalRecordIcon,
+.dispositionScheduleIcon,   
+.locationIcon,
+.recordTypeIcon,
+.onHoldIcon,
+.dynamicHoldIcon,
+.transferMappingIcon,
+.namingPatternIcon,
+.dispositionTriggerIcon,
+.dispositionTriggerPredefinedDateIcon,
+.dispositionTriggerExternalEventIcon,
+.dispositionTriggerEventRecurringIcon,
+.dispositionTriggerEventInternalIcon,
+.dispositionActionIcon,
+.dispositionActionDestroyIcon,
+.dispositionActionCutoffIcon,
+.dispositionActionAutoDestroyIcon,
+.dispositionActionExportIcon,
+.dispositionActionInterimTransferIcon,
+.dispositionActionReviewIcon,
+.dispositionActionTransferIcon,
+.dispositionActionVitalReviewIcon,
+.workflowDefinitionIcon,
+.reportIcon,
+.taskStatusInProgressIcon,
+.taskStatusFailedIcon,
+.taskStatusScheduledIcon,
+.taskStatusCompletedIcon,
+.taskReportIcon,
+.taskBasicScheduleIcon,
+.taskHoldIcon,
+.taskRecurringIcon,
+.taskIcon,
+.tasksIcon,
+.taskStatusPausedIcon {
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+}
+
+.reportIcon {
+	background-image:url('images/report_16.png');
+	vertical-align: middle;
+}
+
+.ecmRepositoryIcon {
+	background-image:url('images/reposCat.png');
+}
+
+.recordCategoryIcon {
+	background-image:url('images/recordCategory_16.png');
+}
+
+.recordElectronicFolderIcon {
+	background-image:url('images/recordElectronicFolder_16.png');
+}
+
+.recordHybridFolderIcon {
+	background-image:url('images/hybridFolder_16.png');
+}
+
+.recordPhysicalFolderIcon {
+	background-image:url('images/physicalFolder_16.png');
+}
+
+.recordsManagementIcon {
+	background-image:url('images/recordsManagement_16.png');
+}
+
+.recordBoxIcon {
+	background-image:url('images/box_16.png');
+}
+
+.volumeIcon {
+	background-image:url('images/recordVolume_16.png');
+}
+
+.electronicRecordIcon {
+	background-image:url('images/electronicRecord_16.png');
+}
+
+.filePlanIcon {
+	background-image:url('images/fileplan_16.png');
+	vertical-align: middle;
+}
+
+.emailRecordIcon {
+	background-image:url('images/emailRecord_16.png');
+}
+
+.physicalRecordIcon {
+	background-image:url('images/physicalRecord_16.png');
+}
+
+.dispositionScheduleIcon {
+	width: 18px;
+	height: 18px;
+	background-image:url('images/dispositionSchedule_18.png');	
+	vertical-align: middle;
+}
+
+.locationIcon {
+	background-image:url('images/location_16.png');	
+	vertical-align: middle;
+}
+
+.recordTypeIcon {
+	background-image:url('images/recordType_16.png');	
+}
+
+.onHoldIcon {
+	background-image:url('images/hold_16.png');
+	vertical-align: middle;
+}
+
+.dynamicHoldIcon {
+	background-image:url('images/holdDynamic_16.png');
+	vertical-align: middle;
+}
+
+.transferMappingIcon {
+	background-image:url('images/transferMapping_16.png');
+}
+
+.dispositionActionIcon {
+	background-image:url('images/actions_16.png');
+	vertical-align: middle;
+}
+
+.dispositionActionCutoffIcon {
+	background-image:url('images/actionCutoff_16.png');
+}
+
+.dispositionActionDestroyIcon {
+	background-image:url('images/actionDestroy_16.png');
+}
+
+.dispositionActionAutoDestroyIcon {
+	background-image:url('images/actionDestroy_16.png');
+}
+
+.dispositionActionExportIcon {
+	background-image:url('images/actionExport_16.png');
+}
+
+.dispositionActionInterimTransferIcon {
+	background-image:url('images/actionInterimTransfer_16.png');
+}
+
+.dispositionActionReviewIcon {
+	background-image:url('images/actionReview_16.png');
+}
+
+.dispositionActionTransferIcon {
+	background-image:url('images/actionTransfer_16.png');
+}
+
+.dispositionActionVitalReviewIcon {
+	background-image:url('images/actionVitalReview_16.png');
+}
+
+.dispositionTriggerIcon {
+	background-image:url('images/triggers_16.png');
+	vertical-align: middle;
+}
+
+.dispositionTriggerPredefinedDateIcon {
+	background-image:url('images/calendarEvent_16.png');
+}
+
+.dispositionTriggerExternalEventIcon {
+	background-image:url('images/eventExternal_16.png');
+}
+
+.dispositionTriggerEventRecurringIcon {
+	background-image:url('images/eventRecurring_16.png');
+}
+
+.dispositionTriggerEventInternalIcon {
+	background-image:url('images/eventInternal_16.png');
+}
+
+.namingPatternIcon {
+	background-image:url('images/namingPattern_16.png');
+	vertical-align: middle;
+}
+
+.workflowDefinitionIcon {
+	background-image:url('images/workflow16.png');
+}
+
+.recordCategoryOpenIcon  {
+	background-image:url('images/recordCategoryOpen_16.png');
+}
+
+.filePlanOpenIcon {
+	background-image:url('images/fileplanOpen_16.png');
+}
+
+.recordElectronicFolderOpenIcon  {
+	background-image:url('images/recordElectronicFolderOpen_16.png');
+}
+
+.recordHybridFolderOpenIcon  {
+	background-image:url('images/hybridFolderOpen_16.png');
+}
+
+.recordPhysicalFolderOpenIcon  {
+	background-image:url('images/physicalFolderOpen_16.png');
+}
+
+.recordBoxOpenIcon  {
+	background-image:url('images/boxOpen_16.png');
+}
+
+.volumeOpenIcon  {
+	background-image:url('images/recordVolumeOpen_16.png');
+}
+
+.openFolderIcon  {
+	background-image:url('images/folderOpen_16.png');
+}
+
+.folderIcon  {
+	background-image:url('images/folder_16.png');
+}
+
+.taskStatusInProgressIcon {
+	background-image:url('images/processing_16.png');
+}
+
+.taskStatusPausedIcon {
+	background-image:url('images/paused_16.png');
+}
+
+.taskStatusFailedIcon {
+	background-image:url('images/failed_16.png');
+}
+
+.taskStatusScheduledIcon {
+	background-image:url('images/schedule_16.png');
+}
+
+.taskStatusCompletedIcon {
+	background-image:url('images/success_16.png');
+}
+
+.taskReportIcon {
+	background-image:url('images/reportTask_16.png');
+}
+
+.taskBasicScheduleIcon {
+	background-image:url('images/dispositionScheduleBasic_16.png');
+}
+
+.taskHoldIcon {
+	background-image:url('images/hold_16.png');
+}
+
+.taskRecurringIcon {
+	background-image:url('images/recuringTask_16.png');
+}
+
+.taskIcon {
+	background-image:url('images/task_16.png');
+}
+
+.tasksIcon {
+	background-image:url('images/tasks_16.png');
+}
+
+.taskScheduleIcons {
+	width: 0px;
+	height: 0px;
+	background-repeat: no-repeat;
+	background-image:url('images/predefinedDate_16.png');
+	vertical-align:middle;
+	padding: 12px 20px 12px 12px;
+}
+	
+.noFocus {
+	border: none;
+	outline: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+	

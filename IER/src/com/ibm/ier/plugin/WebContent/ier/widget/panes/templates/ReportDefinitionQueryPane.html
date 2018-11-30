@@ -1,0 +1,44 @@
+<div class="ierEntityItemPropertiesPane">
+	<div data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'center'">
+		<table data-dojo-type="dojox.grid.DataGrid" data-dojo-attach-point="_paraGrid" data-dojo-props="autoWidth:true" style="display:none;"><thead><tr>
+		<th field="propertyName" width="16em">${ier_messages.reportDefinitionDialog_SelectedProperty}</th>
+		<th field="symName" width="16em">${ier_messages.reportDefinitionDialog_SQLPropertyName}</th>
+		<th field="isReq" width="6em" editable="true" cellType="dojox.grid.cells.Bool">${ier_messages.reportDefinitionDialog_Required}</th>
+		</tr></thead></table> 
+	</div>
+	<div data-dojo-type="dijit.layout.ContentPane" data-dojo-attach-point="commonSQLPane" style="display:none; margin-top:20px">
+		<label data-dojo-attach-point="_sqlAreaTitle" for="${id}_sqlArea">${ier_messages.reportDefinitionDialog_SQLQueryStatement}:</label><br>
+		<textarea id="${id}_sqlArea" data-dojo-type="dijit.form.SimpleTextarea" data-dojo-attach-point="_sqlArea" rows="6" cols="80" style="width:auto"></textarea>
+		<br><textarea data-dojo-type="dijit.form.SimpleTextarea" data-dojo-attach-point="_sqlArea2" rows="6" cols="80" style="width:auto" style="display:none"></textarea>
+	</div>
+		
+	<div data-dojo-type="dijit.layout.ContentPane" class="ierDialogContent" data-dojo-attach-point="rmentitySQLPane" style="display:none; margin-top:20px">		
+		<div data-dojo-type="idx.layout.TitlePane" title="${ier_messages.reportDefinitionDialog_Record}" data-dojo-attach-point="_recordTitlePane" class="ierPropertiesTitlePane"  data-dojo-props="open:true">
+			<div data-dojo-type="dijit.layout.ContentPane">
+				<label for="_sqlRecordArea">${ier_messages.reportDefinitionDialog_SQLQueryStatement}:</label><br>
+				<textarea data-dojo-type="dijit.form.SimpleTextarea" data-dojo-attach-point="_sqlRecordArea" rows="6" cols="80" style="width:auto"></textarea>
+			</div>
+		</div>
+		<br>
+		<div data-dojo-type="idx.layout.TitlePane" title="${ier_messages.reportDefinitionDialog_RecordCategory}" data-dojo-attach-point="_recordCategoryTitlePane" class="ierPropertiesTitlePane" data-dojo-props="open:true">
+			<div data-dojo-type="dijit.layout.ContentPane">
+				<label for="_sqlRecordCateogryArea">${ier_messages.reportDefinitionDialog_SQLQueryStatement}:</label><br>
+				<textarea data-dojo-type="dijit.form.SimpleTextarea" data-dojo-attach-point="_sqlRecordCateogryArea" rows="6" cols="80" style="width:auto"></textarea>
+			</div>
+		</div>
+		<br>
+		<div data-dojo-type="idx.layout.TitlePane" title="${ier_messages.reportDefinitionDialog_RecordFolder}" data-dojo-attach-point="_recordFolderTitlePane" class="ierPropertiesTitlePane" data-dojo-props="open:true">
+			<div data-dojo-type="dijit.layout.ContentPane">
+				<label for="_sqlRecordFolderArea">${ier_messages.reportDefinitionDialog_SQLQueryStatement}:</label><br>
+				<textarea data-dojo-type="dijit.form.SimpleTextarea" data-dojo-attach-point="_sqlRecordFolderArea" rows="6" cols="80" style="width:auto"></textarea>
+			</div>
+		</div>
+		<br>
+		<div data-dojo-type="idx.layout.TitlePane" title="${ier_messages.reportDefinitionDialog_Volume}" data-dojo-attach-point="_volumeTitlePane" class="ierPropertiesTitlePane" data-dojo-props="open:true">
+			<div data-dojo-type="dijit.layout.ContentPane">
+				<label for="_sqlVolArea">${ier_messages.reportDefinitionDialog_SQLQueryStatement}:</label><br>
+				<textarea data-dojo-type="dijit.form.SimpleTextarea" data-dojo-attach-point="_sqlVolArea" rows="6" cols="80" style="width:auto"></textarea>
+			</div>
+		</div>	
+	</div>
+</div>

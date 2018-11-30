@@ -1,0 +1,75 @@
+<div class="ierAdminContent ierCommonPropertiesPane ecmCommonPropertiesPane">
+	<div  class="ecmAdminTabButtonBar">
+		<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_restoreDefaultsButton">${_messages.admin_restoreDefaults}:</button>
+	</div>
+	<div data-dojo-type="idx.layout.TitlePane" open="true" title="${_messages.admin_ddContainerSettings_performanceTuning}" style="margin-top:10px; margin-left: -0px">
+		<table class="propertyTable" role="presentation"><tbody>
+			<tr>
+				<td class="propertyRowLabel">
+					<span class="required">*</span>
+					<label for="${id}_threadCountTextBox">${_messages.admin_ddContainerSettings_threadCount}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_ddContainerSettings_threadCountHoverHelp}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_threadCountTextBox" data-dojo-type="dijit/form/NumberTextBox" data-dojo-attach-point="_threadCountTextBox" 
+						data-dojo-props="constraints:{min:1,places:0}, trim: true, intermediateChanges: true, required: true"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<span class="required">*</span>
+					<label for="${id}_queryPageSizeTextBox">${_messages.admin_ddContainerSettings_queryPageSize}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_ddContainerSettings_queryPageSizeHoverHelp}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_queryPageSizeTextBox" data-dojo-type="dijit/form/NumberTextBox" data-dojo-attach-point="_queryPageSizeTextBox" 
+						data-dojo-props="constraints:{min:1,places:0}, trim: true, intermediateChanges: true, required: true"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<span class="required">*</span>
+					<label for="${id}_updateBatchSizeTextBox">${_messages.admin_ddContainerSettings_updateBatchSize}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_ddContainerSettings_updateBatchSizeHoverHelp}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_updateBatchSizeTextBox" data-dojo-type="dijit/form/NumberTextBox" data-dojo-attach-point="_updateBatchSizeTextBox" 
+						data-dojo-props="constraints:{min:1,places:0}, trim: true, intermediateChanges: true, required: true"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<span class="required">*</span>
+					<label for="${id}_contentSizeLimitTextBox">${_messages.admin_ddContainerSettings_contentSizeLimit}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_ddContainerSettings_contentSizeLimitHoverHelp}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_contentSizeLimitTextBox" data-dojo-type="dijit/form/NumberTextBox" data-dojo-attach-point="_contentSizeLimitTextBox" 
+						data-dojo-props="constraints:{min:1,places:0}, trim: true, intermediateChanges: true, required: true"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<span class="required">*</span>
+					<label for="${id}_linkCacheSizeLimitTextBox">${_messages.admin_ddContainerSettings_linkCacheSizeLimit}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_ddContainerSettings_linkCacheSizeLimitHoverHelp}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_linkCacheSizeLimitTextBox" data-dojo-type="dijit/form/NumberTextBox" data-dojo-attach-point="_linkCacheSizeLimitTextBox" 
+						data-dojo-props="constraints:{min:1,places:0}, trim: true, intermediateChanges: true, required: true"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<span class="required">*</span>
+					<label for="${id}_onHoldContainerCacheSizeLimitTextBox">${_messages.admin_ddContainerSettings_OnHoldContainerCacheSizeLimit}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_ddContainerSettings_OnHoldContainerCacheSizeLimitHoverHelp}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_onHoldContainerCacheSizeLimitTextBox" data-dojo-type="dijit/form/NumberTextBox" data-dojo-attach-point="_onHoldContainerCacheSizeLimitTextBox" 
+						data-dojo-props="constraints:{min:1,places:0}, trim: true, intermediateChanges: true, required: true"></div>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+</div>

@@ -1,0 +1,40 @@
+<div class="ierHoldConditionPane">
+	<div data-dojo-type="dijit/layout/TabContainer" class="ierDialogContent" data-dojo-attach-point="_conditionTabContainer">
+		<div data-dojo-type="dijit/layout/ContentPane" title="${_messages.record}" data-dojo-attach-point="_recordTab" class="ierDialogTabContent" data-dojo-props="recordInfo: true">
+			<div data-dojo-type="ier/widget/CommonConditionsForm" class="ecmBasicSearchBuilder" data-dojo-attach-point="commonConditionsForm1" data-dojo-props="showContentContains: true"></div>
+			<div class="ierSectionContainer">
+				<button data-dojo-type="dijit.form.Button" data-dojo-attach-point="_previewButton1">${_messages.holdConditionPane_preview}</button>
+			</div>
+			<div data-dojo-type="idx.layout.TitlePane" data-dojo-attach-point="_resultPane1" title="${_messages.holdConditionPane_results}" data-dojo-props="open:false">
+				<div data-dojo-type="ier.widget.listView.ContentList" data-dojo-attach-point="_contentList1"></div>
+			</div>
+		</div>
+		<div data-dojo-type="dijit/layout/ContentPane" title="${_messages.recordCategory}" data-dojo-attach-point="_recordCategoryTab" class="ierDialogTabContent" data-dojo-props="recordCategory: true">
+			<div data-dojo-type="ier/widget/CommonConditionsForm" class="ecmBasicSearchBuilder" data-dojo-attach-point="commonConditionsForm2"></div>
+			<div class="ierSectionContainer">
+				<button data-dojo-type="dijit.form.Button" data-dojo-attach-point="_previewButton2">${_messages.holdConditionPane_preview}</button>
+			</div>
+			<div data-dojo-type="idx.layout.TitlePane" data-dojo-attach-point="_resultPane2" title="${_messages.holdConditionPane_results}" data-dojo-props="open:false">
+				<div data-dojo-type="ier.widget.listView.ContentList" data-dojo-attach-point="_contentList2"></div>
+			</div>
+		</div>
+		<div data-dojo-type="dijit/layout/ContentPane" title="${_messages.recordFolder}" data-dojo-attach-point="_recordFolderTab" class="ierDialogTabContent" data-dojo-props="recordFolder: true">
+			<div data-dojo-type="ier/widget/CommonConditionsForm" class="ecmBasicSearchBuilder" data-dojo-attach-point="commonConditionsForm3"></div>
+			<div class="ierSectionContainer">
+				<button data-dojo-type="dijit.form.Button" data-dojo-attach-point="_previewButton3">${_messages.holdConditionPane_preview}</button>
+			</div>
+			<div data-dojo-type="idx.layout.TitlePane" data-dojo-attach-point="_resultPane3" title="${_messages.holdConditionPane_results}" data-dojo-props="open:false">
+				<div data-dojo-type="ier.widget.listView.ContentList" data-dojo-attach-point="_contentList3"></div>
+			</div>
+		</div>
+		<div data-dojo-type="dijit/layout/ContentPane" title="${_messages.recordVolume}" data-dojo-attach-point="_recordVolumeTab" class="ierDialogTabContent" data-dojo-props="recordVolume: true">
+			<div data-dojo-type="ier/widget/CommonConditionsForm" class="ecmBasicSearchBuilder" data-dojo-attach-point="commonConditionsForm4"></div>
+			<div class="ierSectionContainer">
+				<button data-dojo-type="dijit.form.Button" data-dojo-attach-point="_previewButton4">${_messages.holdConditionPane_preview}</button>
+			</div>
+			<div data-dojo-type="idx.layout.TitlePane" data-dojo-attach-point="_resultPane4" title="${_messages.holdConditionPane_results}" data-dojo-props="open:false">
+				<div data-dojo-type="ier.widget.listView.ContentList" data-dojo-attach-point="_contentList4"></div>
+			</div>
+		</div>
+	</div>
+</div>

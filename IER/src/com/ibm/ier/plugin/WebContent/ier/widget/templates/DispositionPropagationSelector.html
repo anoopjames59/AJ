@@ -1,0 +1,11 @@
+<div data-dojo-type="dijit.layout.ContentPane">
+	<select data-dojo-attach-point="_dispositionPropagationSelect" name="${id}_propagationSelect" data-dojo-attach-event="onChange:onChange" 
+	data-dojo-type="dijit/form/Select">
+    <option value="${constants.SchedulePropagation_None}">${messages.entityItemDispositionPane_propagation_none}</option>
+    <option value="${constants.SchedulePropagation_ToAllInheritingEntities}" selected="selected">${messages.entityItemDispositionPane_propagation_toAllInheritingEntities}</option>
+    <option value="${constants.SchedulePropagation_ToImmediateSubContainersAndInheritingEntities}">${messages.entityItemDispositionPane_propagation_toImmediateChildrenAndInheritingEntities}</option>
+	<option value="${constants.SchedulePropagation_ToAllNonAssignedSubContainers}">${messages.entityItemDispositionPane_propagation_toAllNonAssignedSubContainers}</option>
+	</select>
+	<div data-dojo-attach-point="propagationHoverHelp" data-dojo-type="ecm.widget.HoverHelp" message="${messages.entityItemDispositionPane_noPropagationHoverHelp}"></div>
+</div>
+

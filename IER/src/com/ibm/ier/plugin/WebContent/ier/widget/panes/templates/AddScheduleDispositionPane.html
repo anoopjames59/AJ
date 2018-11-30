@@ -1,0 +1,21 @@
+<div class="entityItemGeneralPane">
+	<table class="generalTable">
+		<tbody>
+			<tr>
+				<td class="propertyRowLabel" style="width: 18%">
+					<label for="${id}_modes" id="${id}_modesLabel" data-dojo-attach-point="_modesLabel">
+						${messages.dispositionPane_dispositionModes}:
+					</label>
+				</td>
+				<td>
+					<div data-dojo-type="dijit.form.Select" data-dojo-attach-point="_modeSelector">
+						<option value="${constants.DispositionMode_SimpleRetention}" selected="selected">${messages.dispositionPane_dispositionModesSimple}</option>
+    					<option value="${constants.DispositionMode_AdvancedRetention}" >${messages.dispositionPane_dispositionModesAdvanced}</option>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<div data-dojo-type="dijit.layout.ContentPane" data-dojo-attach-point="dispositionModePane" style="padding-left: 20px; padding-top:0px"></div>
+</div>

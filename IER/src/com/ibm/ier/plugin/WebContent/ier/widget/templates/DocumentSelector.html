@@ -1,0 +1,13 @@
+<div class="ierObjectSelector noFocus dijitInline" data-dojo-attach-point="containerNode"  
+	data-dojo-attach-event="onFocus: _onFocusContainer">
+	<div class="dijitInline" data-dojo-attach-point="_selectedObjectsContainer" tabindex="0" aria-label="${label}">
+		<input id="${labelId}" type="text" style="display:none">
+		<input tabIndex="-1" type="hidden" class="dijitOffScreen" data-dojo-attach-point="valueNode"/>
+		
+		<button class="selectButton" type="button"
+			data-dojo-attach-point="_selectButton,focusNode" 
+			aria-labelledby="${labelId}" aria-label="${label}"
+			data-dojo-type="ecm.widget.Button"
+			data-dojo-attach-event="onClick: _onSelectObject">${selectButtonLabel}</button>
+	</div>
+</div>

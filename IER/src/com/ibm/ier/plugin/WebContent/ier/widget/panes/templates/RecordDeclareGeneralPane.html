@@ -1,0 +1,23 @@
+
+<div class="recordDeclareGeneralPane">
+	<table class="generalTable" role="presentation">
+		<tbody>
+			<tr data-dojo-attach-point="_entryTemplateRow">
+				<td class="propertyRowLabel">
+					<label for="${id}_entryTemplateSelector">${_messages.declareRecordDialog_recordEntryTemplate}:</label>
+					<div data-dojo-type="ecm.widget.HoverHelp" data-dojo-attach-point="_entryTemplateSelectorHoverHelp"></div>
+				</td>
+				<td class="propertyRowValue" data-dojo-attach-point="_entryTemplateSelectorCell">
+					<div id="${id}_entryTemplateSelector"
+						name="${id}_entryTemplateSelector"
+						class="ierDropDownInput ierEntryTemplateSelector"
+						data-dojo-type="dijit.form.FilteringSelect"
+						data-dojo-attach-point="_entryTemplateSelector"
+						data-dojo-attach-event="onChange:_onRecordEntryTemplateSelectorChange,onClick:_onRecordEntryTemplateSelectorInvoked,onKeyPress:_onRecordEntryTemplateSelectorInvoked"
+						data-dojo-props="placeholder:'${_messages.declareRecordDialog_entryTemplateToolTip}', labelType:'text', label:'label', searchAttr:'label', required:false, identifier:'value'">
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 2.4 (IBM Corporation)
+Plugin-Class: com.ibm.ier.plugin.IERApplicationPlugin
+Specification-Title: IBM Enterprise Records - IERApplicationPlugin
+Specification-Version: 5.1.2
+Specification-Vendor: IBM Corporation
+Implementation-Title: IBM Enterprise Records - IERApplicationPlugin
+Implementation-Version: rec560.177
+Implementation-Vendor: IBM Corporation
+Build-Date: November 4 2013
+Copyright: Copyright IBM Corp. 2003, 2013  All rights reserved
+Build: rec560.177
+

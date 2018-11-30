@@ -1,0 +1,131 @@
+<div class="ierCommonPropertiesPane ecmCommonPropertiesPane" style="margin-top:5px;" data-dojo-attach-point="containerNode">
+	<table class="propertyTable" role="presentation">
+		<tbody>
+			<tr>
+				<td class="propertyRowLabel">
+					<span class="ecmLabeledInputFieldRequired">*</span>
+					${messages.filePlanRepository}:
+					<div data-dojo-type="ecm.widget.HoverHelp" message="${messages.scheduleDDReportSweepFilePlanRepositoryHoverHelp}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_repositorySelector"
+						data-dojo-type="ier/widget/FilePlanRepositorySelector"
+						data-dojo-attach-event="onChange:onInputChange"
+						data-dojo-attach-point="_repositorySelector">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					${messages.scheduleDDReportSweep_containers}:
+					<div data-dojo-type="ecm.widget.HoverHelp" message="${messages.scheduleDDReportSweepContainersHoverHelp}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div data-dojo-type="ier/widget/MultipleFoldersSelector"
+						data-dojo-attach-event="onChange:onInputChange"
+						data-dojo-attach-point="_multipleFoldersSelector"
+						data-dojo-props="disabled:true">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<span class="ecmLabeledInputFieldRequired">*</span>
+					<label for="${id}_advancedDaysTextBox">${messages.advancedDays}:</label>
+					<div data-dojo-type="ecm.widget.HoverHelp" message="${messages.scheduleDDReportSweepAdvancedDaysHoverHelp}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_advancedDaysTextBox"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-attach-event="onChange:onInputChange"
+						data-dojo-attach-point="_advancedDaysTextBox"
+						data-dojo-props="constraints:{min:0,places:0},trim: true, intermediateChanges: true, required: true, value:0"
+						style="width:300px;">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<span class="ecmLabeledInputFieldRequired">*</span>
+					<label for="${id}_reportOnly">${messages.reportOnly}:</label>
+					<div data-dojo-type="ecm.widget.HoverHelp" message="${messages.scheduleDDReportReportOnlyHoverHelp}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<select data-dojo-attach-point="_reportOnlySelector" 
+						id="${id}_reportOnly"
+						data-dojo-attach-event="onChange:onInputChange"
+						data-dojo-type="dijit/form/Select">
+					    <option value="true">${_messages.yes}</option>
+					    <option value="false" selected="true">${_messages.no}</option>
+					</select>
+				</td>
+			</tr>
+			<table class="propertyTable identedPropertyTable" role="presentation">
+			<tbody>
+				<tr>
+					<td class="propertyRowLabel">
+						<span class="ecmLabeledInputFieldRequired">*</span>
+						<label for="${id}_connectionPointSelector">${messages.connectionPointName}:</label>&nbsp;
+						<div data-dojo-type="ecm.widget.HoverHelp" message="${messages.scheduleDDReportSweepconnectionPointHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue">
+					   <div id="${id}_connectionPointSelector" data-dojo-attach-point="_connectionPointSelector" data-dojo-attach-event="onChange: onInputChange" 
+					   		data-dojo-type="ecm.widget.FilteringSelect" labelType="text" label="label" searchAttr="label" identifier="value" required=true maxHeight=200 style="width:300px;"></div>
+					</td>
+				</tr>	
+				<tr>
+					<td class="propertyRowLabel">
+						<span class="ecmLabeledInputFieldRequired">*</span>
+						<label for="${id}_workflowSelector">${messages.scheduleDDReportSweep_ddWorkflow}:</label>
+						<div data-dojo-type="ecm.widget.HoverHelp" message="${messages.scheduleDDReportDDWorkflowHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue" data-dojo-attach-point="_workflowSelectorContainer">
+						<button type="button"
+							data-dojo-attach-point="_workflowDisabledButton" 
+							data-dojo-props="disabled:true"
+							data-dojo-type="ecm.widget.Button">${messages.select_with_elipsis}</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="propertyRowLabel">
+						<span class="ecmLabeledInputFieldRequired">*</span>
+						<label for="${id}_needApprovalSelector">${messages.needApproval}:</label>
+						<div data-dojo-type="ecm.widget.HoverHelp" message="${messages.scheduleDDReportNeedApprovalHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue">
+						<select data-dojo-attach-point="_needApprovalSelector" 
+							id="${id}_needApprovalSelector"
+							data-dojo-attach-event="onChange:onInputChange"
+							data-dojo-type="dijit/form/Select">
+						    <option value="true">${_messages.yes}</option>
+						    <option value="false" selected="true">${_messages.no}</option>
+						</select>
+					</td>
+				</tr>
+				<tr data-dojo-attach-point="_containerDeclareRecordToSelectorRow">
+					<td class="propertyRowLabel">
+						<span class="ecmLabeledInputFieldRequired">*</span>
+						<label for="${id}_containerRecordSelector">${messages.containerToDeclareRecordTo}:</label>
+						<div data-dojo-type="ecm.widget.HoverHelp" message="${messages.scheduleDDReportRecordContainerHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue">
+						<div data-dojo-type="ecm/widget/ValidationTextBox"
+							data-dojo-attach-event="onChange:onInputChange"
+							data-dojo-attach-point="_containerRecordSelectorTextBox"
+							data-dojo-props="disabled:true"
+							style="width:300px;">
+						</div>
+						<div id="${id}_containerRecordSelector"
+							data-dojo-type="ier/widget/_FolderSelectorDropDown"
+							data-dojo-attach-event="onChange:onInputChange"
+							data-dojo-attach-point="_containerRecordSelector"
+							data-dojo-props="disabled:true"
+							style="width:300px;">
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		</tbody>
+	</table>	
+</div>

@@ -1,0 +1,34 @@
+<div class="relocateContainerGeneralPane">
+	<table class="generalTable" role="presentation">
+	<tbody>   
+	<tr data-dojo-attach-point="_reasonForRow">
+		<td class="propertyRowLabel">
+			<span class="ecmLabeledInputFieldRequired">*</span>
+			<label for="${id}_reasonForRelocate">${_messages.relocateRecordContainerDialog_reasonForRelocatePrompt}:</label>
+		</td>
+		<td class="propertyRowValue" data-dojo-attach-point="_reasonForCell">
+			<div id="${id}_reasonForRelocate"
+				data-dojo-type="ecm.widget.ValidationTextBox" 
+				data-dojo-attach-point="_reasonForRelocate"
+				data-dojo-attach-event="onKeyUp: _onNameChange" style="width:300px;">
+			</div>
+			
+		</td>
+		</tr>
+		
+		<tr data-dojo-attach-point="_folderSelectorRow">
+		<td class="propertyRowLabel">
+			<span class="ecmLabeledInputFieldRequired">*</span>
+			${_messages.relocateRecordContainerDialog_fileplanLocation}:
+			<div data-dojo-type="ecm.widget.HoverHelp" 
+				data-dojo-attach-point="_folderSelectorHoverHelp" 
+				message="${_messages.relocateRecordContainerDialog_fileplanLocationHoverHelp}"></div>
+		</td>
+		<td class="propertyRowValue">
+			<div data-dojo-attach-point="_folderSelectorCell">
+			</div>
+		</td>
+		</tr>
+	</tbody>
+	</table>
+</div>

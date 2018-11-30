@@ -1,0 +1,35 @@
+.ierObjectSelector .objectIcon {
+	background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 2px;
+    padding-bottom: 2px;
+}
+
+.ierObjectSelector .removeIcon {
+	background-image: url(images/DeleteDark12.png);
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;	
+    opacity: .4;
+    margin-top: 2px;
+}
+
+.objectListDialog {
+	padding: 0px;
+}
+
+.objectListDialog .ecmContentListTopContainer {
+	display: none;
+}
+
+.objectListDialog .filterContainer {
+	padding-top: 0px;
+	padding-bottom: 4px;
+}
+
+.filterContainer .filterArea {
+	text-align: right;
+}
+.dijitRtl .filterContainer .filterArea {
+	text-align: left;
+}

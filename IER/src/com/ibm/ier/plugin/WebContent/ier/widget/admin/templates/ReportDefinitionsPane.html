@@ -1,0 +1,20 @@
+<div class="ecmCenterPane ierCenterPane ierConfigurePane"> <!-- ecmAdminTabButtonBar"> -->
+	<div data-dojo-type="dijit.layout.BorderContainer" class="contentPane" data-dojo-props="gutters:false">		
+		<div data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'top'" class="topPane">
+			<div class="filePlanBreadcrumbContainer" data-dojo-attach-point="breadcrumbContainer">
+				<div data-dojo-type="ecm.widget.Breadcrumb" data-dojo-attach-point="breadcrumb" class="breadcrumb"></div>
+		    </div>	
+		   <div class="filePlanSearchBarContainer">
+		   		<div data-dojo-type="ier.widget.FilePlanSearchBar" data-dojo-attach-point="_filePlanSearchBar" class="filePlanSearchBar"></div>
+		   </div>
+		</div>		
+		<div data-dojo-attach-point="bottomPane" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'center'" class="filepaneCenter">
+			<div data-dojo-type="idx.layout.BorderContainer" data-dojo-attach-point="borderContainer" class="contentPane" data-dojo-props="gutters:false, design:'sidebar'">
+				<div data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'center'">
+					<div data-dojo-attach-point="folderContents" data-dojo-type="ier.widget.listView.ContentList"></div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>

@@ -1,0 +1,34 @@
+.ierBaseAccordionWizardDialog .dijitDisabled .dijitAccordionArrow {
+    width:0px;
+    height:0px;
+}
+
+.ierBaseAccordionWizardDialog .dijitAccordionTitleSelected .dijitAccordionTitleFocus {
+    outline:none;
+}
+
+.ierBaseAccordionWizardDialog .dijitAccordionArrow {
+    background-image:url("images/smallbuttonArrowsWhite.png");
+   	background-position: -29px -2px;
+   	opacity: 1;
+   	width:7px;
+    height:8px;
+    margin-top:-1px;
+}
+
+.ierBaseAccordionWizardDialog .dijitAccordionTitleSelected .dijitAccordionArrow {
+    background:url("images/spriteArrows.png") no-repeat;
+    margin-top:-1px;
+    width:7px;
+    height:8px;
+    margin-top:-1px;
+}
+
+.ierBaseAccordionWizardDialog .propertyRowValue .idxDateTimeTextBox .idxLabel {
+    display:none;
+}
+
+.ierBaseAccordionWizardDialog .propertyRowValue .idxDateTimeTextBox .idxComposite {
+   padding-left:0;
+   margin-left:0;
+}

@@ -1,0 +1,39 @@
+<div class="ierCommonConditionForm">
+	<div>
+		 <div data-dojo-attach-point="_propertyContainer">
+		 </div>
+		<div class="ierSectionContainer">
+			<button data-dojo-type="dijit.form.Button" data-dojo-attach-point="_addPropertyButton">${_messages.commonConditionForm_addProperty}</button>
+		</div>
+	</div>
+	<div data-dojo-attach-point="_contentContainer" class="ierSectionContainer">
+		<div class="dijitInline ierLabelContainer">
+			<label for="${id}_contentBox">${_messages.commonConditionForm_contentContain}</label>
+		</div>
+		<div class="dijitInline ierLabelContainer">
+			<input data-dojo-type="dijit.form.TextBox" data-dojo-attach-point="_contentBox" id="${id}_contentBox" style="width:200px"/>
+		</div>
+<!--
+		<div class="dijitInline ierLabelContainer">
+			<label for="${id}_contentSelect">${_messages.commonConditionForm_contentIn}</label>
+		</div>
+		<select data-dojo-type="dijit.form.Select" data-dojo-attach-point="_contentSelect" id="${id}_contentSelect">
+			<option value="${_contentTypes.0}">${_messages.commonConditionForm_content}</option>
+			<option value="${_contentTypes.1}">${_messages.commonConditionForm_metadata}</option>
+		</select>
+-->
+	</div>
+	<div class="ierSectionContainer">
+		<fieldset style="padding: 0px; margin: 0px">
+			<legend style="display: none">${_messages.commonConditionForm_match_all_any_label}</legend>
+			<div class="dijitInline ierLabelContainer">
+				<input data-dojo-type="dijit.form.RadioButton" id="${id}_matchAll" name="${id}_match" data-dojo-attach-point="matchAllButton" data-dojo-props="checked:'true'"/>
+				<label for="${id}_matchAll">${_messages.commonConditionForm_matchAll}</label>
+			</div>
+			<div class="dijitInline">
+				<input data-dojo-type="dijit.form.RadioButton" id="${id}_matchAny" name="${id}_match" data-dojo-attach-point="matchAnyButton"/>
+				<label for="${id}_matchAny">${_messages.commonConditionForm_matchAny}</label>
+			</div>
+		</fieldset>
+	</div>
+</div>

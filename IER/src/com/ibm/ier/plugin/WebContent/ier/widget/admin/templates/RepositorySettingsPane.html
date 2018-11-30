@@ -1,0 +1,21 @@
+<div class="ecmAdminTab">
+   	<div  class="ecmAdminTabButtonBar">
+		<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_saveButton">${_messages.admin_save}</button>
+		<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_resetButton">${_messages.admin_reset}</button>
+	</div>
+	<div class="ierAdminContent">
+		<table class="propertyTable" role="presentation"><tbody>
+			<tr>
+				<td class="propertyRowLabel">
+					<span class="required">*</span>
+					<label for="${id}_selector">${_messages.admin_defaultFilePlan}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_defaultFilePlan_tooltip}"></div>
+				</td>
+				<td data-dojo-attach-point="_selectorContainer" class="propertyRowValue"></td>
+			</tr>
+		</tbody></table>
+	</div>
+	<div data-dojo-type="idx/layout/TitlePane" data-dojo-props="open: true" title="${_messages.admin_systemConfig}">
+		<div data-dojo-type="ier/widget/admin/SystemConfigPane" data-dojo-attach-point="_systemConfigPane"></div>
+	</div>
+</div>

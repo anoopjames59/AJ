@@ -1,0 +1,20 @@
+<div data-dojo-type="dijit/layout/ContentPane" class="ierDialogContent">
+	<div data-dojo-type="idx/layout/TitlePane"
+		title="${_ierMessages.baseDialog_general}"
+		class="ierPropertiesTitlePane">
+		<div data-dojo-attach-point="_filePlanRepositoryPane"
+			data-dojo-type="ier/widget/panes/FilePlanRepositoryPane"></div>
+	</div>
+	<div data-dojo-type="idx/layout/TitlePane"
+		title="${_ierMessages.baseDialog_properties}"
+		class="ierPropertiesTitlePane">
+		<div data-dojo-attach-point="_entityItemPropertiesPane"
+			data-dojo-type="ier/widget/panes/EntityItemPropertiesPane"></div>
+	</div>
+	<div data-dojo-type="idx/layout/TitlePane"
+		title="${_ierMessages.baseDialog_security}"
+		class="ierPropertiesTitlePane">
+		<div data-dojo-attach-point="_entityItemSecurityPane"
+		data-dojo-type="ier/widget/panes/EntityItemSecurityPane"></div>
+	</div>
+</div>

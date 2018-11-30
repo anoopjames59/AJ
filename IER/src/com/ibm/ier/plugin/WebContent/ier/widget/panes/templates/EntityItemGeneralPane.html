@@ -1,0 +1,20 @@
+<div class="entityItemGeneralPane">
+	<table class="generalTable" role="presentation">
+		<tbody>
+			<tr data-dojo-attach-point="_entityItemSaveInRow">
+				<td class="propertyRowLabel">
+					<span class="ecmLabeledInputFieldRequired" data-dojo-attach-point="_targetLocationRequired">*</span>
+					${_messages.baseDialog_saveIn}:
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_targetLocation"
+						class="folderSelectorControl"
+						data-dojo-attach-point="_folderSelectorDropDown"
+						data-dojo-type="ecm.widget._FolderSelectorDropDown"
+						data-dojo-props="isRequired:true">
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

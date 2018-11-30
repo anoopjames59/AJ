@@ -1,0 +1,40 @@
+<div class="ierDashboardPane">
+	<div data-dojo-type="idx.layout.MoveableTabContainer">
+		<div data-dojo-type="dijit.layout.BorderContainer" data-dojo-props="gutters:false, title:'Dashboard'">
+			<div data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'top'">
+			</div>
+			
+			<div data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'center'">
+				<div data-dojo-type="dijit.layout.ContentPane" class="ierDashboardRow">
+					<div class="ierDashboardWidget" data-dojo-props="refreshable:true,resizable:true" data-dojo-type="idx.layout.HeaderPane" 
+					     title="Latest Record Disposed" data-dojo-attach-point="_dashboardWidget1">
+						  <div data-dojo-type="ier/widget/TilesList" data-dojo-attach-point="widget1_tileList"></div>
+					</div>
+					<div class="ierDashboardWidget" data-dojo-props="refreshable:true,resizable:true"
+					 data-dojo-type="idx.layout.HeaderPane" title="Lastest Record Declared" data-dojo-attach-point="_dashboardWidget2">
+						<div data-dojo-type="ier/widget/TilesList" data-dojo-attach-point="widget2_tileList"></div>
+					</div>
+					<div class="ierDashboardWidgetNoRightMargin" data-dojo-props="refreshable:true,resizable:true"
+					 data-dojo-type="idx.layout.HeaderPane" title="Lastest Jobs" data-dojo-attach-point="_dashboardWidget3">
+						 <div data-dojo-type="ier/widget/TilesList" data-dojo-attach-point="widget3_tileList"></div>
+					</div>
+				</div>
+				<div data-dojo-type="dijit.layout.ContentPane" class="ierDashboardRow">
+					<div class="ierDashboardWidget" data-dojo-props="refreshable:true,resizable:true" data-dojo-type="idx.layout.HeaderPane" 
+					     title="Lastest Entity Items Ready for Disposition" data-dojo-attach-point="_dashboardWidget4">
+						 <div data-dojo-type="ier/widget/TilesList" data-dojo-attach-point="widget4_tileList"></div>
+					</div>
+					<div class="ierDashboardWidget" data-dojo-props="refreshable:true,resizable:true"
+					 data-dojo-type="idx.layout.HeaderPane" title="Last Entity Item on Hold" data-dojo-attach-point="_dashboardWidget5">
+						<div data-dojo-type="ier/widget/TilesList" data-dojo-attach-point="widget5_tileList"></div>
+					</div>
+					<div class="ierDashboardWidgetNoRightMargin" data-dojo-props="refreshable:true,resizable:true"
+					 data-dojo-type="idx.layout.HeaderPane" title="Lastest Record Container Created" data-dojo-attach-point="_dashboardWidget6">
+						 <div data-dojo-type="ier/widget/TilesList" data-dojo-attach-point="widget6_tileList"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	

@@ -1,0 +1,48 @@
+.ecmContentList .ierHoldIcon,
+.ecmContentList .ierInActivateIcon,
+.ecmContentList .ierDispositionReadyIcon,
+.ecmContentList .ierDispositionInProgressIcon,
+.ecmContentList .ierCloseIcon,
+.ecmContentList .ierReopenIcon,
+.ecmContentList .ierBasicScheduleDispositionInProgressIcon {
+	width: 16px;
+	height: 16px;
+	margin-right: 4px;
+}
+
+.ecmContentList .ierHoldIcon {
+	background: url(images/hold_16.png) no-repeat;
+}
+
+.ecmContentList .ierInActivateIcon {
+	background: url(images/inactive_16.png) no-repeat;
+}
+
+.ecmContentList .ierBasicScheduleDispositionInProgressIcon {
+	background-image:url('images/dispositionScheduleBasic_16.png');
+}
+
+.ecmContentList .ierDispositionReadyIcon {
+	background: url(images/dispositionSchedule_18.png) no-repeat;
+}
+
+.ecmContentList .ierDispositionInProgressIcon {
+	background: url(images/dispositionInitiated_18.png) no-repeat;
+}
+
+.ecmContentList .ierCloseIcon {
+	background: url(images/closed_16.png) no-repeat;
+}
+
+.ecmContentList .ierReopenIcon {
+	background: url(images/reopen_16.png) no-repeat;
+}
+
+.ierContentList .ecmCompositeButton {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.ecmContentList .gridxRow.ierRowDisabled .gridxCell {
+	color: #aaa;
+}

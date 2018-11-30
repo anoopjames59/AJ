@@ -1,0 +1,44 @@
+<div class="ierEntityItemDispositionPane ierCommonPropertiesPane ecmCommonPropertiesPane" style="margin-top:5px;" data-dojo-attach-point="containerNode">	
+	<div data-dojo-attach-point="ddScheduleSection">
+		<table class="propertyTable smallerIdentedPropertyTable" style="margin-top:8px;" data-dojo-attach-point="ddScheduleSectionTable" role="presentation">
+			<tbody>
+				<tr>
+					<td class="propertyRowLabel">
+						<span class="ecmLabeledInputFieldRequired">*</span>
+						<label data-dojo-attach-point="rententionTriggerPropertyNameLabel" for="${id}_retentionTriggerPropertyName">${messages.retentionTriggerPropertyName}</label>
+						<div data-dojo-attach-point="triggerPropertyNameHoverHelp" data-dojo-type="ecm.widget.HoverHelp" message="${messages.entityItemDispositionPane_retentionPropertyNameHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue">
+						<div name="${id}_retentionTriggerPropertyName"
+							id="${id}_retentionTriggerPropertyName"
+							class="ierDropDownInput ierEntryTemplateSelector"
+							data-dojo-type="dijit/form/FilteringSelect"
+							data-dojo-attach-event="onChange:onInputChange"
+							data-dojo-attach-point="retentionTriggerPropertyNameSelect"
+							placeholder="${messages.dispositionPane_selectRecordProperty}"
+							data-dojo-props="required:true, labelType:'text', label:'label', searchAttr:'label', identifier:'value'">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="propertyRowLabel">
+						<span class="ecmLabeledInputFieldRequired">*</span>
+						<span data-dojo-attach-point="retentionPeriodLabel">${messages.entityItemDispositionPane_retentionPeriod}</span>
+						<div data-dojo-attach-point="retentionPeriodHoverHelp" data-dojo-type="ecm.widget.HoverHelp" message="${messages.entityItemDispositionPane_retentionPeriodHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue">					
+						<input data-dojo-props="required: true, intermediateChanges: true, value:0, constraints:{min:0,max:999,places:0}" data-dojo-attach-point="retentionPeriod_years" 
+							id="${id}_years_label" size="5" style="width:80px;" data-dojo-type="dijit/form/NumberSpinner" data-dojo-attach-event="onChange:onInputChange" aria-label="${messages.dispositionPane_years}" />
+						<span style="padding-right: 5px;" data-dojo-attach-point="retentionPeriodLabel_years">${messages.dispositionPane_years}</span>
+						<input data-dojo-props="required: true, intermediateChanges: true, value:0,constraints:{min:0,max:999,places:0}" data-dojo-attach-point="retentionPeriod_months" 
+							id="${id}_month_label" size="5" style="width:80px;" data-dojo-type="dijit/form/NumberSpinner" data-dojo-attach-event="onChange:onInputChange" aria-label="${messages.dispositionPane_months}" />
+						<span style="padding-right: 5px;" data-dojo-attach-point="retentionPeriodLabel_months">${messages.dispositionPane_months}</span>
+						<input data-dojo-props="required: true, intermediateChanges: true, value:0,constraints:{min:0,max:999,places:0}" data-dojo-attach-point="retentionPeriod_days" 
+							id="${id}_days_label" size="5" style="width:80px;" data-dojo-type="dijit/form/NumberSpinner" data-dojo-attach-event="onChange:onInputChange" aria-label="${messages.dispositionPane_days}" />
+						<span style="padding-right: 5px; padding-right: 15px" data-dojo-attach-point="retentionPeriodLabel_days">${messages.dispositionPane_days}</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

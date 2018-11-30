@@ -1,0 +1,9 @@
+.gridxCell .ecmCompositeButton {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 96%;
+}
+
+.gridxCell .ecmCompositeButton .label {
+	float: none;
+}

@@ -1,0 +1,65 @@
+{
+    "identifier" : "id",
+    "items": [
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "FilePlan (CE50_BASE_FPOS)",
+        "title": "<a onclick=\"openFilePlanPane('cm-rm-win11', '{7F29139B-04E0-442F-9B85-C71EA4988375}')\" href=\"#\">Actions Performed by a User</a>",
+        "type": "Base",
+        "content": "This report lists the actions performed by a user on a specific record category, folder or record.",
+        "id": "600",
+        "iconClass" : "reportIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "PSIFilePlan (CE50_BASE_FPOS)",
+        "title": "<a onclick=\"openFilePlanPane('cm-rm-win11', '{B4B7DECF-48E6-42D7-BA39-D7DCA9C0A9C3}')\" href=\"#\">Categories and Folders by Disposition Actions </a>",
+        "type": "Base",
+        "content": "This report lists the electronic categories and folders with respect to the associated disposition actions.",
+        "id": "601",
+        "iconClass" : "reportIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "atlasdemo (CE50_BASE_FPOS)",
+        "title": "<a onclick=\"openFilePlanPane('cm-rm-win11', '{5483DB8C-3C60-43D6-AF18-6D5D6F077E9B}')\" href=\"#\">Disposition Schedule Defined in a File Plan </a>",
+        "type": "Base",
+        "content": "This report lists the disposition schedules created in a particular file plan.",
+        "id": "602",
+        "iconClass" : "reportIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "The Magellan Travel Company (CE50_BASE_FPOS)",
+        "title": "<a onclick=\"openFilePlanPane('cm-rm-win11', '{4CB243F4-33BD-486D-ABE4-02D1F33E16BE}')\" href=\"#\">Electronic Categories and Folders Associated with a Disposition Schedule </a>",
+        "type": "Base",
+        "content": "This report lists the electronic record categories and folders associated with a disposition schedule.",
+        "id": "603",
+        "iconClass" : "reportIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "atlasdemo (CE50_BASE_FPOS)",
+        "title": "<a onclick=\"openFilePlanPane('cm-rm-win11', '{5483DB8C-3C60-43D6-AF18-6D5D6F077E9B}')\" href=\"#\">Electronic Folders Created within a Specific Period </a>",
+        "type": "Base",
+        "content": "This report lists the electronic record folders created in a file plan within a specific period.",
+        "id": "604",
+        "iconClass" : "reportIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "atlasdemo (CE50_BASE_FPOS)",
+        "title": "<a onclick=\"openFilePlanPane('cm-rm-win11', '{5483DB8C-3C60-43D6-AF18-6D5D6F077E9B}')\" href=\"#\">Electronic Records Viewed by a User within a specific period </a>",
+        "type": "Base",
+        "content": "This report lists the electronic records viewed by a user within a specific period.",
+        "id": "605",
+        "iconClass" : "reportIcon"
+    }
+    ]
+}

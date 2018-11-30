@@ -1,0 +1,236 @@
+.ierCenterPane .filePaneTopContainer {
+	padding-bottom: 0px !important;
+	padding-top: 0px !important;
+}
+
+.ierCenterPane .filePlanBreadcrumbContainer {
+	float: left;
+	width: 45%;
+	padding-top: 5px;
+}
+.dijitRtl .ierCenterPane .filePlanBreadcrumbContainer {
+	float: right;
+}
+
+.ierCenterPane .filePlanSearchBarContainer {
+	float: right;
+	width: 25%;
+}
+.dijitRtl .ierCenterPane .filePlanSearchBarContainer {
+	float: left;
+}
+
+.ierCenterPane .filePlanSearchBar {
+	float: right;
+	width: 50%;
+}
+.dijitRtl .ierCenterPane .filePlanSearchBar {
+	float: left;
+}
+
+.ierCenterPane .filePlanTrailingPane,
+.ierCenterPane .filePlanLeadingPaneOverflow {
+	overflow: auto;
+}
+
+.ierCenterPane .filePlanTrailingPane {
+	width: 18%;
+	border-left: 1px dotted #CCC;
+}
+
+.ierCenterPane .filePlanLeadingPaneOverflow {
+	width: 15%;
+	border-right: 1px dotted #CCC;
+}
+
+.ierCenterPane .ierFilePlanSelectorContainer {
+	float: left;
+}
+.dijitRtl .ierCenterPane .ierFilePlanSelectorContainer {
+	float: right;
+}
+
+.ierReportFilePlanSelector {
+	float: left;
+}
+.dijitRtl .ierReportFilePlanSelector {
+	float: right;
+}
+.ierRefreshButton {
+	float: right;
+}
+.dijitRtl .ierRefreshButton {
+	float: left;
+}
+
+.ierCenterPane .ierFilePlanSelector .dijitButtonContents {
+	width: auto;
+	height: auto;
+}
+
+.ierCenterPane .ierFilePlanSelector .dijitButtonNode {
+	-moz-border-radius: 3px 3px 3px 3px !important;
+	-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1) !important;
+	background-color: #F4F4F4 !important;
+	background-image: -moz-linear-gradient(center top , #F4F4F4, #DBDBDB) !important;
+	border: 1px solid #C3C3C3 !important;
+}
+
+.ierFlyoutPane .dojoxResizeHandle {
+	right: 7px;
+	bottom: 7px;
+}
+
+.ierFlyoutTooltipDialog .dojoxResizeHandle {
+	right: 5px;
+	bottom: 5px;
+}
+
+.oneui .dijitPopup .ierFlyoutTooltipDialog {
+	margin: 0px;
+	padding: 0px;
+}
+
+.oneui .ierFlyoutTooltipDialog .dijitTooltipContainer {
+	padding: 0px
+}
+
+.ierFlyoutTooltipDialog .ierFlyoutPane {
+	height: 500px;
+}
+
+.ierFlyoutPane {
+	width: 400px;
+	height: 550px;
+}
+
+.ierFlyoutPane .toolbar {
+	border: none;
+	border-bottom: 1px solid #ddd !important;
+	padding: 5px !important;
+	margin: 0px 0px;
+	height: 32px;
+}
+
+.ierFlyoutPane .toolbar .filterArea {
+	float: right;
+	padding-top: 3px;
+}
+
+.dijitRtl .ierFlyoutPane .toolbar .filterArea {
+	float: left;
+}
+
+.oneui .ierFlyoutPane .ecmFilterTextBox {
+	width: 152px;
+}
+
+.ierFlyoutPane .ierTilesList .ecmFilterTextBox .dijitTextBox {
+	width: 182px !important;
+}
+
+.ierDropDownInput,
+.ierTextBox {
+	width: 300px; 
+}
+
+.ecmLabeledInputFieldRequired {
+	height: 17px;
+	width: 12px;
+	font-size: 14pt !important;
+	font-weight: bolder;
+	color: #ff0000;
+}
+
+.reportEntryPane .mainPane {
+	width:100% !important; 
+	height:100% !important; 
+	padding-top:5% !important;
+	padding-left:15% !important;
+	padding-right:15% !important;
+}
+
+
+.dijitRtl .dijitDialogPaneActionBar {
+	float: left;
+}
+
+.oneui .ierCenterPane .compact .gridxHeaderRow .gridxCell {
+	padding: 5px 7px;
+}
+.oneui .ierContentList .compact .gridxHeaderRow .gridxCell {
+	padding: 5px 7px;
+}
+.oneui .ierCenterPane .compact .gridxBody .gridxCell,
+.oneui .ierBaseDialog .compact .gridxBody .gridxCell
+{
+	padding: 2px 7px 2px 7px;
+}
+
+.ierEntityItemPropertiesPane .ecmCommonPropertiesPane .propertyTable .propertyRowLabel,
+.ierCommonPropertiesPane .propertyTable .propertyRowLabel,
+.entityItemGeneralPane .generalTable .propertyRowLabel {
+    width: 27% !important;
+}
+
+.dijitDialogPaneContent .selectDocDialog{
+	padding: 10px 2px;
+}
+.dijitDialogPaneContent .selectDocDialog .selectDocRadio{
+	padding: 3px 2px;
+}
+.dijitDialogPaneContent .selectDocDialog .selectDocDialogButtonArea{
+	padding-top: 10px;
+}
+
+.ierConfirmationDialog {
+	width: 50%;
+}
+
+.dijitRtl .ierEntityItemPropertiesPane .ecmCommonPropertiesPane .propertyTable .propertyRowLabel,
+.dijitRtl .ierCommonPropertiesPane .propertyTable .propertyRowLabel {
+	text-align:right;
+}
+
+body[dir="rtl"] .smallerIdentedPropertyTable {
+	margin-right:20px; width:95% !important;
+}
+
+.smallerIdentedPropertyTable {
+	margin-left:20px; width:95% !important;
+}
+
+body[dir="rtl"] .identedPropertyTable {
+	margin-right:38px; width:95% !important;
+}
+
+.identedPropertyTable {
+	margin-left:38px; width:95% !important;
+}
+
+body[dir="rtl"] .ierIdententation {
+	margin-right:20px;
+}
+
+.ierIdententation {
+	margin-left:20px;
+}
+
+body[dir="rtl"] .ierFloatLeft {
+	float:right;
+}
+
+.ierFloatLeft {
+	float:left;
+}
+
+/* hide view toggle buttons */
+.ierCenterPane .BarViewModules {
+	display: none;
+}
+
+/* Hide the border and background color of composite buttons in the content list grid */
+.ierContentList .gridxCellWidget .ecmCompositeButton {
+	background-color: transparent;
+	border: 0 !important;
+}

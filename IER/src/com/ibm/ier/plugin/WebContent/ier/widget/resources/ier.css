@@ -1,0 +1,1258 @@
+.ecmContentList .ierHoldIcon,
+.ecmContentList .ierInActivateIcon,
+.ecmContentList .ierDispositionReadyIcon,
+.ecmContentList .ierDispositionInProgressIcon,
+.ecmContentList .ierCloseIcon,
+.ecmContentList .ierReopenIcon,
+.ecmContentList .ierBasicScheduleDispositionInProgressIcon {
+	width: 16px;
+	height: 16px;
+	margin-right: 4px;
+}
+.ecmContentList .ierHoldIcon {
+	background: url(images/hold_16.png) no-repeat;
+}
+.ecmContentList .ierInActivateIcon {
+	background: url(images/inactive_16.png) no-repeat;
+}
+.ecmContentList .ierBasicScheduleDispositionInProgressIcon {
+	background-image:url(images/dispositionScheduleBasic_16.png);
+}
+.ecmContentList .ierDispositionReadyIcon {
+	background: url(images/dispositionSchedule_18.png) no-repeat;
+}
+.ecmContentList .ierDispositionInProgressIcon {
+	background: url(images/dispositionInitiated_18.png) no-repeat;
+}
+.ecmContentList .ierCloseIcon {
+	background: url(images/closed_16.png) no-repeat;
+}
+.ecmContentList .ierReopenIcon {
+	background: url(images/reopen_16.png) no-repeat;
+}
+.ierContentList .ecmCompositeButton {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.ecmContentList .gridxRow.ierRowDisabled .gridxCell {
+	color: #aaa;
+}
+.ierNavigationMenuContainer {
+	border-width: 0 1px 0 0;
+	border-style: solid;
+	border-color: #CCC;
+	float: left;
+	font-size: 13px;
+	display:block;
+	background-color: #F4F5F6;
+	height: 100%;
+}
+.ierNavigationMenuContainer ul {
+	clear: left;
+	padding: 0;
+	margin: 20px 0 0 0;
+	list-style: none;
+	height: 100%;
+	width: 100px;
+}
+.ierNavigationMenuContainer li.normal, .ierNavigationMenuContainer li.selected {
+	cursor: pointer;
+	cursor: hand;
+	color: #21759B;
+	padding-left: 15px;
+	padding-right: 0;
+	line-height: 250%;
+}
+.ierNavigationMenuContainer li:hover {
+	background-color: #E1E1E1;
+	color: #333;
+}
+.ierNavigationMenuContainer li.selected {
+	color: white;
+	border-top-color: gray;
+	border-bottom-color: #6D6D6D;
+	background-color: #777;
+	font-weight: bold;
+}
+.launcherReportsIcon,
+.launcherJobsIcon,
+.launcherSearchIcon,
+.launcherConfigureIcon,
+.launcherAdminIcon,
+.dispositionSweepIcon,
+.holdSweepIcon,
+.location32Icon,
+.launcherDashboardIcon {
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+}
+.launcherDashboardIcon {
+	background-image:url(images/launcherDashboard_32.png);
+}
+.launcherReportsIcon {
+	background-image:url(images/launcherReports_32.png);
+}
+.launcherJobsIcon {
+	background-image: url(images/launcherJobs_32.png);
+}
+.launcherConfigureIcon {
+	background-image: url(images/launcherConfigure_32.png);
+}
+.dijitToggleButtonChecked .launcherDashboardIcon {
+	background-image:url(images/launcherDashboard_selected_32.png);
+}
+.dijitToggleButtonChecked .launcherReportsIcon {
+	background-image:url(images/launcherReports_selected_32.png);
+}
+.dijitToggleButtonChecked .launcherJobsIcon {
+	background-image: url(images/launcherJobs_selected_32.png);
+}
+.dijitToggleButtonChecked .launcherConfigureIcon {
+	background-image: url(images/launcherConfigure_selected_32.png);
+}
+		
+.dispositionSweepIcon {
+	background-image: url(images/dispositionSchedule_32.png);
+}
+.holdSweepIcon {
+	background-image: url(images/hold_32.png);
+}
+.location32Icon {
+	background-image: url(images/location_32.png);
+}
+.ecmRepositoryIcon,
+.openFolderIcon,
+.folderIcon,
+.recordCategoryIcon,
+.recordElectronicFolderIcon,
+.recordHybridFolderIcon,
+.recordPhysicalFolderIcon,
+.recordsManagementIcon,
+.recordBoxIcon,
+.volumeIcon,
+.recordCategoryOpenIcon,
+.recordElectronicFolderOpenIcon,
+.recordHybridFolderOpenIcon,
+.recordPhysicalFolderOpenIcon,
+.recordBoxOpenIcon,
+.volumeOpenIcon,
+.electronicRecordIcon,
+.filePlanIcon,
+.filePlanOpenIcon,
+.emailRecordIcon,
+.physicalRecordIcon,
+.dispositionScheduleIcon,   
+.locationIcon,
+.recordTypeIcon,
+.onHoldIcon,
+.dynamicHoldIcon,
+.transferMappingIcon,
+.namingPatternIcon,
+.dispositionTriggerIcon,
+.dispositionTriggerPredefinedDateIcon,
+.dispositionTriggerExternalEventIcon,
+.dispositionTriggerEventRecurringIcon,
+.dispositionTriggerEventInternalIcon,
+.dispositionActionIcon,
+.dispositionActionDestroyIcon,
+.dispositionActionCutoffIcon,
+.dispositionActionAutoDestroyIcon,
+.dispositionActionExportIcon,
+.dispositionActionInterimTransferIcon,
+.dispositionActionReviewIcon,
+.dispositionActionTransferIcon,
+.dispositionActionVitalReviewIcon,
+.workflowDefinitionIcon,
+.reportIcon,
+.taskStatusInProgressIcon,
+.taskStatusFailedIcon,
+.taskStatusScheduledIcon,
+.taskStatusCompletedIcon,
+.taskReportIcon,
+.taskBasicScheduleIcon,
+.taskHoldIcon,
+.taskRecurringIcon,
+.taskIcon,
+.tasksIcon,
+.taskStatusPausedIcon {
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+}
+.reportIcon {
+	background-image:url(images/report_16.png);
+	vertical-align: middle;
+}
+.ecmRepositoryIcon {
+	background-image:url(images/reposCat.png);
+}
+.recordCategoryIcon {
+	background-image:url(images/recordCategory_16.png);
+}
+.recordElectronicFolderIcon {
+	background-image:url(images/recordElectronicFolder_16.png);
+}
+.recordHybridFolderIcon {
+	background-image:url(images/hybridFolder_16.png);
+}
+.recordPhysicalFolderIcon {
+	background-image:url(images/physicalFolder_16.png);
+}
+.recordsManagementIcon {
+	background-image:url(images/recordsManagement_16.png);
+}
+.recordBoxIcon {
+	background-image:url(images/box_16.png);
+}
+.volumeIcon {
+	background-image:url(images/recordVolume_16.png);
+}
+.electronicRecordIcon {
+	background-image:url(images/electronicRecord_16.png);
+}
+.filePlanIcon {
+	background-image:url(images/fileplan_16.png);
+	vertical-align: middle;
+}
+.emailRecordIcon {
+	background-image:url(images/emailRecord_16.png);
+}
+.physicalRecordIcon {
+	background-image:url(images/physicalRecord_16.png);
+}
+.dispositionScheduleIcon {
+	width: 18px;
+	height: 18px;
+	background-image:url(images/dispositionSchedule_18.png);	
+	vertical-align: middle;
+}
+.locationIcon {
+	background-image:url(images/location_16.png);	
+	vertical-align: middle;
+}
+.recordTypeIcon {
+	background-image:url(images/recordType_16.png);	
+}
+.onHoldIcon {
+	background-image:url(images/hold_16.png);
+	vertical-align: middle;
+}
+.dynamicHoldIcon {
+	background-image:url(images/holdDynamic_16.png);
+	vertical-align: middle;
+}
+.transferMappingIcon {
+	background-image:url(images/transferMapping_16.png);
+}
+.dispositionActionIcon {
+	background-image:url(images/actions_16.png);
+	vertical-align: middle;
+}
+.dispositionActionCutoffIcon {
+	background-image:url(images/actionCutoff_16.png);
+}
+.dispositionActionDestroyIcon {
+	background-image:url(images/actionDestroy_16.png);
+}
+.dispositionActionAutoDestroyIcon {
+	background-image:url(images/actionDestroy_16.png);
+}
+.dispositionActionExportIcon {
+	background-image:url(images/actionExport_16.png);
+}
+.dispositionActionInterimTransferIcon {
+	background-image:url(images/actionInterimTransfer_16.png);
+}
+.dispositionActionReviewIcon {
+	background-image:url(images/actionReview_16.png);
+}
+.dispositionActionTransferIcon {
+	background-image:url(images/actionTransfer_16.png);
+}
+.dispositionActionVitalReviewIcon {
+	background-image:url(images/actionVitalReview_16.png);
+}
+.dispositionTriggerIcon {
+	background-image:url(images/triggers_16.png);
+	vertical-align: middle;
+}
+.dispositionTriggerPredefinedDateIcon {
+	background-image:url(images/calendarEvent_16.png);
+}
+.dispositionTriggerExternalEventIcon {
+	background-image:url(images/eventExternal_16.png);
+}
+.dispositionTriggerEventRecurringIcon {
+	background-image:url(images/eventRecurring_16.png);
+}
+.dispositionTriggerEventInternalIcon {
+	background-image:url(images/eventInternal_16.png);
+}
+.namingPatternIcon {
+	background-image:url(images/namingPattern_16.png);
+	vertical-align: middle;
+}
+.workflowDefinitionIcon {
+	background-image:url(images/workflow16.png);
+}
+.recordCategoryOpenIcon  {
+	background-image:url(images/recordCategoryOpen_16.png);
+}
+.filePlanOpenIcon {
+	background-image:url(images/fileplanOpen_16.png);
+}
+.recordElectronicFolderOpenIcon  {
+	background-image:url(images/recordElectronicFolderOpen_16.png);
+}
+.recordHybridFolderOpenIcon  {
+	background-image:url(images/hybridFolderOpen_16.png);
+}
+.recordPhysicalFolderOpenIcon  {
+	background-image:url(images/physicalFolderOpen_16.png);
+}
+.recordBoxOpenIcon  {
+	background-image:url(images/boxOpen_16.png);
+}
+.volumeOpenIcon  {
+	background-image:url(images/recordVolumeOpen_16.png);
+}
+.openFolderIcon  {
+	background-image:url(images/folderOpen_16.png);
+}
+.folderIcon  {
+	background-image:url(images/folder_16.png);
+}
+.taskStatusInProgressIcon {
+	background-image:url(images/processing_16.png);
+}
+.taskStatusPausedIcon {
+	background-image:url(images/paused_16.png);
+}
+.taskStatusFailedIcon {
+	background-image:url(images/failed_16.png);
+}
+.taskStatusScheduledIcon {
+	background-image:url(images/schedule_16.png);
+}
+.taskStatusCompletedIcon {
+	background-image:url(images/success_16.png);
+}
+.taskReportIcon {
+	background-image:url(images/reportTask_16.png);
+}
+.taskBasicScheduleIcon {
+	background-image:url(images/dispositionScheduleBasic_16.png);
+}
+.taskHoldIcon {
+	background-image:url(images/hold_16.png);
+}
+.taskRecurringIcon {
+	background-image:url(images/recuringTask_16.png);
+}
+.taskIcon {
+	background-image:url(images/task_16.png);
+}
+.tasksIcon {
+	background-image:url(images/tasks_16.png);
+}
+.taskScheduleIcons {
+	width: 0px;
+	height: 0px;
+	background-repeat: no-repeat;
+	background-image:url(images/predefinedDate_16.png);
+	vertical-align:middle;
+	padding: 12px 20px 12px 12px;
+}
+	
+.noFocus {
+	border: none;
+	outline: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+	
+.ecmCommonPropertiesPane.ierEntityItemDispositionPane .propertyTable .propertyValueLabel .labelReadOnly {
+	color: gray;
+}
+.ecmCommonPropertiesPane.ierEntityItemDispositionPane .propertyTable .propertyRowLabel {
+	width: 33% !important;
+}
+@import "ShowDispositionListDialogContent.css";
+.fileplanSearchBar {
+	position: relative;
+	border-radius: 10px;
+	padding: 0 5px;
+}
+.fileplanSearchBar .dijitInputContainer {
+	margin-right: 15px;
+}
+.fileplanSearchBar .dijitTextBoxFocused .dijitInputContainer {
+	background: transparent;
+}
+.fileplanSearchBar .searchNode {
+	cursor: pointer;
+	position: absolute; 
+	right: 5px;
+	top: 4px;
+	color: transparent;
+	width: 16px;
+	height: 16px;
+	background: url(images/search_16.png);
+	opacity: .5;
+}
+.ierCenterPane .filePaneTopContainer {
+	padding-bottom: 0px !important;
+	padding-top: 0px !important;
+}
+.ierCenterPane .filePlanBreadcrumbContainer {
+	float: left;
+	width: 45%;
+	padding-top: 5px;
+}
+.dijitRtl .ierCenterPane .filePlanBreadcrumbContainer {
+	float: right;
+}
+.ierCenterPane .filePlanSearchBarContainer {
+	float: right;
+	width: 25%;
+}
+.dijitRtl .ierCenterPane .filePlanSearchBarContainer {
+	float: left;
+}
+.ierCenterPane .filePlanSearchBar {
+	float: right;
+	width: 50%;
+}
+.dijitRtl .ierCenterPane .filePlanSearchBar {
+	float: left;
+}
+.ierCenterPane .filePlanTrailingPane,
+.ierCenterPane .filePlanLeadingPaneOverflow {
+	overflow: auto;
+}
+.ierCenterPane .filePlanTrailingPane {
+	width: 18%;
+	border-left: 1px dotted #CCC;
+}
+.ierCenterPane .filePlanLeadingPaneOverflow {
+	width: 15%;
+	border-right: 1px dotted #CCC;
+}
+.ierCenterPane .ierFilePlanSelectorContainer {
+	float: left;
+}
+.dijitRtl .ierCenterPane .ierFilePlanSelectorContainer {
+	float: right;
+}
+.ierReportFilePlanSelector {
+	float: left;
+}
+.dijitRtl .ierReportFilePlanSelector {
+	float: right;
+}
+.ierRefreshButton {
+	float: right;
+}
+.dijitRtl .ierRefreshButton {
+	float: left;
+}
+.ierCenterPane .ierFilePlanSelector .dijitButtonContents {
+	width: auto;
+	height: auto;
+}
+.ierCenterPane .ierFilePlanSelector .dijitButtonNode {
+	-moz-border-radius: 3px 3px 3px 3px !important;
+	-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1) !important;
+	background-color: #F4F4F4 !important;
+	background-image: -moz-linear-gradient(center top , #F4F4F4, #DBDBDB) !important;
+	border: 1px solid #C3C3C3 !important;
+}
+.ierFlyoutPane .dojoxResizeHandle {
+	right: 7px;
+	bottom: 7px;
+}
+.ierFlyoutTooltipDialog .dojoxResizeHandle {
+	right: 5px;
+	bottom: 5px;
+}
+.oneui .dijitPopup .ierFlyoutTooltipDialog {
+	margin: 0px;
+	padding: 0px;
+}
+.oneui .ierFlyoutTooltipDialog .dijitTooltipContainer {
+	padding: 0px
+}
+.ierFlyoutTooltipDialog .ierFlyoutPane {
+	height: 500px;
+}
+.ierFlyoutPane {
+	width: 400px;
+	height: 550px;
+}
+.ierFlyoutPane .toolbar {
+	border: none;
+	border-bottom: 1px solid #ddd !important;
+	padding: 5px !important;
+	margin: 0px 0px;
+	height: 32px;
+}
+.ierFlyoutPane .toolbar .filterArea {
+	float: right;
+	padding-top: 3px;
+}
+.dijitRtl .ierFlyoutPane .toolbar .filterArea {
+	float: left;
+}
+.oneui .ierFlyoutPane .ecmFilterTextBox {
+	width: 152px;
+}
+.ierFlyoutPane .ierTilesList .ecmFilterTextBox .dijitTextBox {
+	width: 182px !important;
+}
+.ierDropDownInput,
+.ierTextBox {
+	width: 300px; 
+}
+.ecmLabeledInputFieldRequired {
+	height: 17px;
+	width: 12px;
+	font-size: 14pt !important;
+	font-weight: bolder;
+	color: #ff0000;
+}
+.reportEntryPane .mainPane {
+	width:100% !important; 
+	height:100% !important; 
+	padding-top:5% !important;
+	padding-left:15% !important;
+	padding-right:15% !important;
+}
+.dijitRtl .dijitDialogPaneActionBar {
+	float: left;
+}
+.oneui .ierCenterPane .compact .gridxHeaderRow .gridxCell {
+	padding: 5px 7px;
+}
+.oneui .ierContentList .compact .gridxHeaderRow .gridxCell {
+	padding: 5px 7px;
+}
+.oneui .ierCenterPane .compact .gridxBody .gridxCell,
+.oneui .ierBaseDialog .compact .gridxBody .gridxCell
+{
+	padding: 2px 7px 2px 7px;
+}
+.ierEntityItemPropertiesPane .ecmCommonPropertiesPane .propertyTable .propertyRowLabel,
+.ierCommonPropertiesPane .propertyTable .propertyRowLabel,
+.entityItemGeneralPane .generalTable .propertyRowLabel {
+    width: 27% !important;
+}
+.dijitDialogPaneContent .selectDocDialog{
+	padding: 10px 2px;
+}
+.dijitDialogPaneContent .selectDocDialog .selectDocRadio{
+	padding: 3px 2px;
+}
+.dijitDialogPaneContent .selectDocDialog .selectDocDialogButtonArea{
+	padding-top: 10px;
+}
+.ierConfirmationDialog {
+	width: 50%;
+}
+.dijitRtl .ierEntityItemPropertiesPane .ecmCommonPropertiesPane .propertyTable .propertyRowLabel,
+.dijitRtl .ierCommonPropertiesPane .propertyTable .propertyRowLabel {
+	text-align:right;
+}
+body[dir="rtl"] .smallerIdentedPropertyTable {
+	margin-right:20px; width:95% !important;
+}
+.smallerIdentedPropertyTable {
+	margin-left:20px; width:95% !important;
+}
+body[dir="rtl"] .identedPropertyTable {
+	margin-right:38px; width:95% !important;
+}
+.identedPropertyTable {
+	margin-left:38px; width:95% !important;
+}
+body[dir="rtl"] .ierIdententation {
+	margin-right:20px;
+}
+.ierIdententation {
+	margin-left:20px;
+}
+body[dir="rtl"] .ierFloatLeft {
+	float:right;
+}
+.ierFloatLeft {
+	float:left;
+}
+.ierCenterPane .BarViewModules {
+	display: none;
+}
+.ierContentList .gridxCellWidget .ecmCompositeButton {
+	background-color: transparent;
+	border: 0 !important;
+}
+.recordDeclarePropertiesPane {
+	width: 100%;
+	margin: 0px;
+}
+.recordDeclarePropertiesPane td {
+    padding-top: 7px;   
+}
+.recordDeclarePropertiesPane .folderSelectorControl .ecmDropDownInput .dijitButtonText {
+	width: 375px; 
+}
+.ierBaseDialog {
+	height: 800px;
+	width: 800px;
+	min-height: 250px;
+}
+.ierBigDialog {
+	height: 700px;
+	width: 800px;
+	min-height: 250px;
+}
+.ierMediumDialog {
+	height: 600px;
+	width: 600px;
+	min-height: 250px;
+}
+.ierSmallDialog {
+	height: 400px;
+	width: 600px;
+	min-height: 250px;
+}
+.ierHoldDialog {
+	width: 850px;
+}
+.ierAddTriggersDialog {
+	width: 825px;
+}
+.ierVerySmallDialog {
+	height: 300px;
+	width: 400px;
+	min-height: 250px;
+	
+}
+.ierBaseDialog .ierGeneralTitlePane.idxTitlePane .dijitTitlePaneContentInner,
+.ierBaseDialog .ierPropertiesTitlePane.idxTitlePane .dijitTitlePaneContentInner,
+.ierBaseDialog .ierSecurityTitlePane.idxTitlePane .dijitTitlePaneContentInner,
+.ierBaseDialog .relocateContainerGeneralPane.idxTitlePane .dijitTitlePaneContentInner,
+.ierBaseDialog .ierConditionTitlePane.idxTitlePane .dijitTitlePaneContentInner {
+	padding: 10px;
+}
+.ierBaseDialog .generalTable {
+	width: 100%;
+}
+.ierBaseDialog .generalTable .labelReadOnly {
+	color: gray;
+}
+.ierBaseDialog .generalTable td {
+    padding: 2px 5px;   
+}
+.ierBaseDialog .generalTable .propertyRowLabel {
+	padding-right: 5px;
+	maxWidth: 45%;
+}
+.ierBaseDialog .commonPropertiesMargins {
+	padding-left: 15px;
+	margin-top: 10px;
+}
+.ierBaseDialog .folderSelectorControl .ierDropDownInput .dijitButtonText {
+	width: 358px; 
+}
+.ierBaseDialog .multiRepoFolderSelectorControl .ierDropDownInput .dijitButtonText {
+	width: 466px; 
+}
+.ierBaseDialog .ierDropDownInput .dijitPlaceHolder{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+.ierBaseDialog .ierDropDownInput,
+.ierBaseDialog .ierTextBox {
+	width: 300px; 
+}
+.ierBaseDialog .dijitTimeTextBox {
+	width: 150px;
+}
+.ierBaseDialog .ierDropDownInput .entryTemplateSelector {
+	width: 385px; 
+}
+.ierBaseDialog .ierShortTextBox {
+	width: 150px; 
+}
+.ierBaseDialog .ierDialogContent {
+	padding: 0px;
+}
+.ierBaseDialog .ierDialogTabContent {
+	padding: 10px;
+}
+.ierBaseDialog .ierSectionContainer {
+	padding: 5px 0px 5px;
+}
+.ierBaseDialog .ierLabelContainer {
+	padding-right: 10px;
+}
+.ierBaseDialog .ierCommonConditionForm .ierLabelContainer .dijitTextBox{
+	width: 200px;
+}
+.ierBaseDialog .viewEntitiesOnHoldEntityName {
+	margin-right: 40px;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+.dijitRtl .ierBaseDialog .viewEntitiesOnHoldEntityName {
+	margin-left: 40px;
+	margin-right: 5px;
+}
+.ierBaseDialog .viewEntitiesOnHoldExplainText {
+	margin-top: 15px;
+}
+.ierBaseDialog .viewEntitiesOnHoldSearchTextBox {
+	margin-right: 5px;
+	width: 300px;
+}
+.dijitRtl .ierBaseDialog .viewEntitiesOnHoldSearchTextBox {
+	margin-left: 5px;
+	margin-right: 0;
+}
+.ierBaseDialog .viewEntitiesOnHoldRemove .dijitButton {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.ierBaseDialog .viewEntitiesOnHoldRemove {
+	padding-top: 7px;
+}
+.ierBaseDialog .contentClassSelector {
+	padding-left: 15px;
+}
+.ierObjectSelector.dijitDisabled {
+	color: #777777;
+}
+.oneui .ierEntityitemDetailsPane span.idxPropertyRowLabel {
+	white-space: nowrap !important;
+}
+.ierConfigurePane .topPane {
+	padding: 0 0 3px 0;
+	margin-top: 0px;
+}
+.ierConfigurePane .filePlanBreadcrumbContainer {
+	float: left;
+	width: 45%;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+.ierCenterPane .filePlanSearchBarContainer {
+	padding-top: 3px;
+}
+.ierConfigurePane .topPane .dijitSelect,
+.ierConfigurePane .navContainer .dijitSelect {
+	border: 1px solid #BFBFBF;
+	font-weight: normal;
+	color: #222;
+}
+.ierConfigurePane .topPane .ecmBreadcrumb .dijitButtonContents{
+	width: auto;
+	height: auto;
+	padding-left: 10px !important;
+	padding-bottom: 3px;
+}
+.dijitRtl .configureIconSelectOptions {
+	padding-right: 0px;
+	margin-left: 4px;
+}
+.configureIconSelectOptions {
+	display:inline-block;
+	padding-right:4px;
+	vertical-align:middle
+}
+.ierConfigurationIntoText {
+	padding: 0 0 15px !important;
+	color: #444;
+}
+.ierPluginConfiguration .moveUpButton {
+	background-image: url(images/arrowUp.png);
+	width: 16px;
+	height: 16px;
+}
+.ierPluginConfiguration .moveDownButton {
+	background-image: url(images/arrowDown.png);
+	width: 16px;
+	height: 16px;
+}
+.ierObjectSelector .objectIcon {
+	background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 2px;
+    padding-bottom: 2px;
+}
+.ierObjectSelector .removeIcon {
+	background-image: url(images/DeleteDark12.png);
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;	
+    opacity: .4;
+    margin-top: 2px;
+}
+.objectListDialog {
+	padding: 0px;
+}
+.objectListDialog .ecmContentListTopContainer {
+	display: none;
+}
+.objectListDialog .filterContainer {
+	padding-top: 0px;
+	padding-bottom: 4px;
+}
+.filterContainer .filterArea {
+	text-align: right;
+}
+.dijitRtl .filterContainer .filterArea {
+	text-align: left;
+}
+.ierNamingPatternLevelPane .ierNamingPatternLevelRow {
+	background-color: #EEEEEE;
+}
+.ierNamingPatternLevelPane th.ierNamingPatternLevelCell {
+	padding: 0px 5px;
+}
+.ierNamingPatternLevelPane td.ierNamingPatternLevelCell {
+	padding: 5px;
+	border-bottom: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+}
+.ierNamingPatternLevelPane .ierLevelBox,
+.ierNamingPatternLevelPane .ierLevelHeader {
+		width: 100px;
+}
+.ierNamingPatternLevelPane .ierEntityTypeBox,
+.ierNamingPatternLevelPane .ierEntityTypeHeader {
+		width: 150px;
+}
+.ierNamingPatternLevelPane .ierPatternBox,
+.ierNamingPatternLevelPane .ierPatternHeader {
+		width: 300px;
+}
+.ierNamingPatternLevelPane .ierIncrementBox,
+.ierNamingPatternLevelPane .ierIncrementHeader {
+		width: 100px;
+}
+.ierNamingPatternLevelPane .ierRemoveButton.dijitButton .dijitButtonNode {
+	padding: 0px;
+	background-color: #EEEEEE;
+	background-image: none;
+	border: 1px solid #EEEEEE;
+	box-shadow: none;
+}
+.ierNamingPatternLevelPane .ierRemoveIcon {
+	background-image: url(images/DeleteDark12.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 16px;
+	height: 16px;
+    opacity: .4;
+}
+.ierNamingPatternValidationMessage {
+	width: 200px;
+}
+.ierServicePane .dijitTabPaneWrapper {
+	border-left: 0 none;
+	border-right: 0 none;
+	border-bottom: 0 none;
+}
+.ierServicePane .ierServiceToolbar {
+	padding-bottom: 0px;
+}
+.ierServicePane .ierServiceToolbarFilter {
+	float: right;
+}
+.ierServicePane .ierServiceToolbarFilter .dijitTextBox {
+	width: 10em;
+}
+.oneui .ierServicePane .dojoxGridScrollbox {
+	background-color: #FFFFFF;
+}
+.ierServiceDialog .dijitTitlePaneContentInner {
+	padding: 5px 10px 10px;
+}
+.ierServiceDialog .ierLabelContainer {
+	padding-right: 10px;
+}
+.ierServiceDialog .ierControlContainer {
+	padding: 5px 0px 5px;
+}
+.ierServiceDialog .ierLongBox {
+	width: 24em;
+}
+.ierServiceDialog .ierShortBox {
+	width: 8em;
+}
+.ierDashboardPane .dashboardRow {
+	margin-bottom:5px
+}
+.ierDashboardPane .ierDashboardWidget,
+.ierDashboardPane .ierDashboardWidgetNoRightMargin {
+	width:32%;
+	height:400px;
+	float:left
+}
+.ierDashboardPane .ierDashboardWidget {
+		margin-right:10px;
+}
+.ierReportLayout {
+	height:100%;
+	width:100%
+}
+.ierReportLayout .actionBar {
+	padding: 9px 10px 0px;
+	background-color: white;
+	text-align: right;
+	border-top: 1px solid #AAA;
+}
+.ierReportLayout .viewer {
+	width:100%; 
+	height:95%"
+}
+.ierReportLayout .reportEntryForm {
+	width: 70% !important;
+	margin: auto;
+}
+.ierTilesListItemHover {
+	background-color: #cce8f2;
+}
+.ierTilesListItemSelected {
+	background-color: #cce8f2;
+}
+.ierTilesList {
+	height: 98%;
+	padding-top: 3px;
+}
+.ierTilesList .ecmTileListContainer{
+	width:100%;
+	height:100%;	
+}
+.ierTilesList .toolbarArea {
+	margin: 0px 10px;
+	border-bottom: 1px solid #ccc;
+	padding-top: 2px;
+	padding-bottom: 5px
+}
+.ierTilesList .filterArea {
+	float: right;
+}
+.ierTilesList .filterArea .dijitTextBoxFocused .dijitInputContainer {
+	background: transparent;
+	}
+.ierTilesList .actionsArea {
+	float: left;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.ierTilesList .selected {
+	background-color: transparent; 
+	cursor:pointer;
+}
+.ierTilesList .action {
+	display: inline;
+	margin: 0px;
+	padding-right: 5px;
+}
+.ierTilesList .bottomContainer {
+	padding: 0 !important;
+}
+.dijitRtl .ierTilesList .filterArea {
+	float: left;
+}
+.dijitRtl .ierTilesList .actionsArea {
+	float: right;
+}
+.dijitRtl .ierTilesList .iconArea {
+	float: right;
+	margin-right: 0;
+	margin-left: 5px;
+}
+.ierTilesListItem {
+	padding: 10px 10px 5px;
+	border-bottom: 1px solid #ccc;
+}
+.ierTilesListItem .dataArea {
+	width: 100%;
+}
+.ierTilesListItem .iconArea {
+	float: left;
+	display: block;
+	margin-right: 5px;
+}
+.dijitRtl .ierTilesListItem .iconArea {
+	float: right;
+	margin-left: 5px;
+	margin-right: 0px;
+}
+.ierTilesListItem .titleArea {
+	position: relative;
+	overflow: hidden;
+}
+.ierTilesListItem .titleArea .description {
+	padding-top: 2px;
+	font-size: .9em;
+}
+.ierTilesListItem .titleArea .title {
+	font-weight: bold;
+	cursor: pointer;
+}
+.ierTilesListItem .titleArea .content {
+	color: #444;
+	font-size: .88em;
+	padding-top: 2px;
+}
+.ierTilesListItemHover {
+	
+}
+.ierTilesListItem .dijitButtonNode,
+.ierTilesListItem .dijitButtonActive .dijitButtonNodeHover,
+.ierTilesListItem .dijitDropDownButton .dijitButtonNodeHover,
+.ierTilesListItem .dijitDropDownButton .dijitDownArrowButtonHover {
+	border: 0 !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    background-image: -moz-linear-gradient(center top, transparent 0%, transparent 100%) !important;
+    border-radius: 0px 0px 0px 0px !important;
+    box-shadow: 0 0 0 transparent !important;
+    -moz-box-shadow: 0 0 0 transparent !important;
+}
+.ierTilesListItem .dijitButtonContents {
+    border: none !important;
+    border-radius: 0px 0px 0px 0px !important;
+    color: #105CB6;
+    font-weight: normal !important;
+}
+.ierTilesListItem .dijitDropDownButton .dijitButtonText {
+	padding: 0px 3px 0 0 !important;
+}
+	
+.ierTilesListItem .dijitArrowButtonInner {
+	background: url(images/linkDropDown.png) center no-repeat !important;
+	width: 6px !important;
+}
+.ierTilesListItem .dijitButtonContents .dijitButtonText:hover {
+	text-decoration: underline;
+}
+.ierReportPane .viewerPane .dijitTitlePane .dijitArrowNode{
+	display: none;
+}
+.ierReportPane .leftPane {
+	width: 20%;
+ 	border-right: 1px dotted #CCC;
+}
+.ierReportPane .noReportSelected {
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+}
+.ierEditPropertiesDialog .propertiesContainer {
+	width: 99% !important;
+}
+.ierEntityItemPropertiesPane.dijitContentPane.dijitTabPane,
+.ierEntityItemSecurityPane.dijitContentPane.dijitTabPane {
+	padding-top: 10px !important;
+}
+.ierEntityItemHistoryPane .criteriaFilterAria1 .criteriaFilterSeletor .dijitButtonContents{
+ 	min-width: 50px;
+}
+.ierEntityItemHistoryPane .criteriaFilterAria1 .criteriaActionTypeSeletor .dijitButtonContents{
+ 	min-width: 90px;
+}
+.ierEntityItemHistoryPane .criteriaFilterAria2{
+	float: right;
+}
+.dijitRtl .ierEntityItemHistoryPane .criteriaFilterAria2{
+	float: left;
+}
+.ierEntityItemHistoryPane .dateRangeValidationMessage{
+	float: right;
+	color: red;
+}
+.dijitRtl .ierEntityItemHistoryPane .dateRangeValidationMessage{
+	float: left;
+}
+.ecmSecurityPane .buttonPane {
+	float: right;
+}
+.dijitRtl .ecmSecurityPane .buttonPane {
+	float: left;
+}
+.ierHoldConditionPane .dijitTabContainerTop-tabs {
+	margin-bottom: 10px;
+} 
+.ierHoldConditionPane .ecmContentList {
+	height: 300px;
+}
+.ierCommonConditionForm.ierConditionLabelDisabled{
+	color: #aaaaaa;
+	text-shadow: 1px 0 0 #ffffff;
+}
+.ierSearchPane .ecmSearchSelector .idxComboLinkSeparator,
+.ierSearchPane .ecmSearchSelector .idxComboLinkArrowButton,
+.ierSearchFlyoutPane .ecmSearchSelector .idxComboLinkSeparator,
+.ierSearchFlyoutPane .ecmSearchSelector .idxComboLinkArrowButton {
+	display: none;
+}
+.ierSearchTypeLabel {
+	margin: 0px 5px;
+}
+.ierSearchTypeSelect {
+	margin: 0px 5px;
+}
+.ecmBasicSearchBuilder .searchSection .searchScopeFields .dijitSelect td {
+	padding: 0px 5px;
+}
+.ierSearchPane .ecmSearchMoreOptions,
+.ierSearchPane .ecmTextSearchOptions {
+	display: none;
+}
+.ierSearchPane .ecmBasicSearchBuilder .attributeDefintionWidget .attributeNameS {
+	width: 20em;
+}
+.ierSearchPane .ecmBasicSearchBuilder .attributeDefintionWidget .attributeContainer {
+    left: 20.75em;
+}
+.ierSearchPane .BarViewModules {
+	display: none;
+}
+.ierAdminPane .ecmAdminTab .ecmAdminTabButtonBar {
+	padding: 10px 5px !important;
+	margin-bottom: 0px;
+}
+.ierAdminPane .ecmAdminTab .ierAdminBarLast {
+	border-bottom: 0px none;
+}
+.ierAdminPane .ecmAdminTab .ecmAdminTabHeading {
+	padding: 10px !important;
+}
+.ierAdminPane .ecmAdminTab .ecmAdminTab.dijitContentPane {
+	padding: 0px;
+}
+.ierAdminContent {
+	padding: 10px;
+}
+.ierAdminValue {
+	padding: 5px;
+}
+.ierAdminSloshBucketFilterBar .ecmFilterTextBox.dijitTextBox {
+	width: 236px;
+}
+.ierAdminSloshBucketToolbar {
+	float: right;
+	padding: 0px 40px;
+}
+.dijitRtl .ierAdminSloshBucketToolbar {
+	float: left;
+}
+.ierAdminPropertySelector.ecmSloshBucket.dijitContentPane {
+	padding: 10px 0px;
+}
+.ierAdminLabelDisabled {
+	color: #aaaaaa;
+	text-shadow: 1px 0 0 #ffffff;
+}
+.ierAdminContent.dijitTabPane .dijitTitlePaneTitleFocus,
+.ierAdminTab.dijitTabPane .dijitTitlePaneTitleFocus
+{
+	height:15px !important;
+}
+.ierAdminSystemConfigSelect {
+	width: 15em;
+}
+.taskManagerPaneBorder {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C3C3C3;
+}
+.tasksMenuPane {
+	width: 13%;
+	padding-top: 10px;
+	border-right: 1px dotted #CCCCCC;
+}
+.taskPane .taskMenu {
+	margin: 0;
+	padding: 0;
+}
+.taskPane  .dijitBorderContainerNoGutter > .idxSplitterH {
+	border-width: 0 !important;
+}
+.taskPane  .dijitSplitterH {
+	margin: 0 !important;
+}
+.taskPane .ierTaskToolbar {
+	padding: 10px;
+}
+.taskPane .filterData {
+	float: right;
+}
+body[dir="rtl"] .taskPane .filterData {
+	float: left;
+}
+.taskPane .ierTaskToolbarFilter {
+	float: right;
+}
+body[dir="rtl"] .taskPane .ierTaskToolbarFilter {
+	float: left;
+}
+.taskPane .ierTaskToolbarFilter .dijitTextBox {
+	width: 200px;
+}
+.taskListingPane {
+	padding: 10px !important;
+}
+.taskError {
+	font-family: Arial,​Tahoma,​Verdana,​sans-serif;
+}
+.taskInformationDialog .dijitContentPane {
+	padding: 10px !important;
+}
+.dj_gecko div.launchBarContainer > div.launchBarContentArea > div.taskPane.dijitHidden {
+    display: none !important;
+}
+.ierBaseAccordionWizardDialog .dijitDisabled .dijitAccordionArrow {
+    width:0px;
+    height:0px;
+}
+.ierBaseAccordionWizardDialog .dijitAccordionTitleSelected .dijitAccordionTitleFocus {
+    outline:none;
+}
+.ierBaseAccordionWizardDialog .dijitAccordionArrow {
+    background-image:url(images/smallbuttonArrowsWhite.png);
+   	background-position: -29px -2px;
+   	opacity: 1;
+   	width:7px;
+    height:8px;
+    margin-top:-1px;
+}
+.ierBaseAccordionWizardDialog .dijitAccordionTitleSelected .dijitAccordionArrow {
+    background:url(images/spriteArrows.png) no-repeat;
+    margin-top:-1px;
+    width:7px;
+    height:8px;
+    margin-top:-1px;
+}
+.ierBaseAccordionWizardDialog .propertyRowValue .idxDateTimeTextBox .idxLabel {
+    display:none;
+}
+.ierBaseAccordionWizardDialog .propertyRowValue .idxDateTimeTextBox .idxComposite {
+   padding-left:0;
+   margin-left:0;
+}
+.gridxCell .ecmCompositeButton {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 96%;
+}
+.gridxCell .ecmCompositeButton .label {
+	float: none;
+}

@@ -1,0 +1,15 @@
+.ierReportPane .viewerPane .dijitTitlePane .dijitArrowNode{
+	display: none;
+}
+
+.ierReportPane .leftPane {
+	width: 20%;
+ 	border-right: 1px dotted #CCC;
+}
+
+.ierReportPane .noReportSelected {
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+}

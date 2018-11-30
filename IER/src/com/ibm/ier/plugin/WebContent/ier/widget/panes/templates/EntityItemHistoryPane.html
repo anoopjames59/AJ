@@ -1,0 +1,57 @@
+<div class="ierEntityItemHistoryPane" data-dojo-attach-point="_historyPane" style="width: 100%; height: 100%; padding-top: 5px; overflow:hidden;">
+	<div data-dojo-type="idx/layout/TitlePane" title="${_ierMessages.historyPane_searchCriteris}"
+		data-dojo-attach-point="_searchCriteria">
+		<span class="criteriaFilterAria1">
+			<label for="${id}_typeFilter">${_ierMessages.historyPane_typeFilter}</label>
+			<select data-dojo-type="dijit/form/Select" data-dojo-attach-point="_filterTypeSelect" class="criteriaFilterSeletor">
+				<option value="ActionType" selected>${_ierMessages.historyPane_action}</option>
+				<option value="InitiatingUser">${_ierMessages.historyPane_initiator}</option>
+				<option value="EventStatus">${_ierMessages.historyPane_status}</option>
+			</select>
+			<label for="${id}_typeFilterBy" style="padding-left: 5px; padding-right: 5px;">${_ierMessages.historyPane_filterBy}</label>
+			<input data-dojo-type="dijit/form/TextBox" data-dojo-attach-point="_filterBox" class="criteriaTextBox"
+				style="display:none;" placeHolder="${_ierMessages.pluginConfiguration_nameContainsLabel}"/>
+			<select data-dojo-type="dijit/form/Select" data-dojo-attach-point="_actionTypeSelect" class="criteriaActionTypeSeletor">
+				<option value="All" selected>${_ierMessages.historyPane_All}</option>
+				<option value="CreationEvent">${_ierMessages.historyPane_CreationEvent}</option>
+				<option value="DeletionEvent">${_ierMessages.historyPane_DeletionEvent}</option>
+				<option value="FileEvent">${_ierMessages.historyPane_FileEvent}</option>
+				<option value="RMAudit">${_ierMessages.historyPane_RMAudit}</option>
+				<option value="UpdateEvent">${_ierMessages.historyPane_UpdateEvent}</option>
+				<option value="UpdateSecurityEvent">${_ierMessages.historyPane_UpdateSecurityEvent}</option>
+			</select>
+			<select data-dojo-type="dijit/form/Select" data-dojo-attach-point="_statusSelect" class="criteriaActionTypeSeletor" style="display:none;">
+				<option value="All" selected>${_ierMessages.historyPane_All}</option>
+				<option value="Success">${_ierMessages.historyPane_success}</option>
+				<option value="Failure">${_ierMessages.historyPane_failure}</option>
+			</select>
+		</span>
+		<span class="criteriaFilterAria2">
+			<label for="${id}_dateFrom">${_ierMessages.historyPane_dateFrom}:</label>
+			<div data-dojo-type="ecm.widget.DatePicker" data-dojo-attach-point="_startDatePicker"
+				data-dojo-props="id: '${id}_startDate', selector: 'date', showFormatPattern: true, 
+				constraints: {datePattern: '${_dateFormat}'}, invalidMessage: '${_invalidDateMessage}'"
+				data-dojo-attach-event="onChange: _validateDateRange" 
+				aria-label="${_ierMessages.historyPane_properties_type_date_tooltip}"> 
+			</div>
+			<label for="${id}_dateTo">${_ierMessages.historyPane_dateTo}</label>
+			<div data-dojo-type="ecm.widget.DatePicker" data-dojo-attach-point="_endDatePicker"
+				data-dojo-props="id: '${id}_endDate', selector: 'date', showFormatPattern: true, 
+				constraints: {datePattern: '${_dateFormat}'}, invalidMessage: '${_invalidDateMessage}'"
+				data-dojo-attach-event="onChange: _validateDateRange" 
+				aria-label="${_ierMessages.historyPane_properties_type_date_tooltip}"> 
+			</div>
+		</span>
+		<div style="padding-top: 10px; padding-bottom: 2px;">
+			<div id="${id}_searchButton" data-dojo-attach-point="_searchButton" data-dojo-type="dijit/form/Button" 
+				label="${_ierMessages.historyPane_searchButton}" class="idxSpecialButton"></div>
+			<div id="${id}_resetButton" data-dojo-attach-point="_resetButton" data-dojo-type="dijit/form/Button" 
+				label="${_ierMessages.historyPane_resetButton}"></div>
+			<span data-dojo-attach-point="_dateRangeError" class="dateRangeValidationMessage"></span>
+		</div>
+	</div>
+	<div data-dojo-type="ier/widget/listView/ContentList"
+		title="${_ierMessages.historyPane_title}"
+		data-dojo-attach-point="_contentList">
+	</div>
+</div>

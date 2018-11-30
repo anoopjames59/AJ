@@ -1,0 +1,60 @@
+<div class="ierAdminContent">
+	<div data-dojo-type="idx.layout.TitlePane" open="true" title="${_messages.admin_cognosConfigurations}" style="margin-top:10px; margin-left: -0px">
+		<table class="propertyTable" role="presentation"><tbody>
+			<tr>
+				<td class="propertyRowLabel">
+					<label for="${id}_cognosGatewayServerNameBox">${_messages.admin_reportCognosGatewayServer}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_reportCognosGatewayServer_tooltip}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_cognosGatewayServerNameBox" data-dojo-type="ecm/widget/ValidationTextBox" data-dojo-attach-point="_cognosGatewayServerNameBox"
+						data-dojo-props="trim: true, intermediateChanges: true"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<label for="${id}_cognosServletServerNameBox">${_messages.admin_reportCognosServletDispatchServer}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_reportCognosServletDispathServer_tooltip}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_cognosServletServerNameBox" data-dojo-type="ecm/widget/ValidationTextBox" data-dojo-attach-point="_cognosServletServerNameBox"
+						data-dojo-props="trim: true, intermediateChanges: true"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<label for="${id}_cognosReportPathBox">${_messages.admin_reportCognosReportPath}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" data-dojo-attach-point="_reportPathHoverHelp"></div>
+				</td>
+				<td class="propertyRowValue">
+					  <div id="${id}_cognosReportPathBox" data-dojo-type="ecm/widget/ValidationTextBox" data-dojo-attach-point="_cognosReportPathBox"
+						data-dojo-props="trim: true, intermediateChanges: true"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<label for="${id}_cognosReportNamespaceBox">${_messages.admin_reportCognosNamespace}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_reportCognosNamespace_tooltip}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_cognosReportNamespaceBox" data-dojo-type="ecm/widget/ValidationTextBox" data-dojo-attach-point="_cognosReportNamespace"
+						data-dojo-props="trim: true, intermediateChanges: true"></div>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	<div data-dojo-type="idx.layout.TitlePane" open="true" title="${_messages.admin_reportEngineConfigurations}" style="margin-top:10px; margin-left: -0px">
+		<table class="propertyTable" role="presentation"><tbody>
+			<tr>
+				<td class="propertyRowLabel">
+					<label for="${id}_reportEngineDataSourceBox">${_messages.admin_reportReportEngineDataSource}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_reportReportEngineDataSource_tooltip}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_reportEngineDataSourceBox" data-dojo-type="ecm/widget/ValidationTextBox" data-dojo-attach-point="_reportEngineDataSourceBox" 
+						data-dojo-props="trim: true, intermediateChanges: true"></div>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+</div>

@@ -1,0 +1,21 @@
+<div class="ierEntityItemPropertiesPane">
+	<div class="propertiesContainer" style="width: 100%; height:95%">
+		<div class="contentClassSelector">
+			<div data-dojo-attach-point="_classLabel" class="dijitInline">${_messages.baseDialog_class}: </div>
+			<div id="${id}_contentClassSelector"
+				data-dojo-type="ecm.widget.ContentClassSelector" 
+				data-dojo-attach-point="_contentClassSelector" 
+				data-dojo-props="selectorStyle:'dropdown', hasAll:false, onlySelectable:true"
+				style="display:none">
+			</div>
+			<div id="${id}_contentClassSelectorDisabled" data-dojo-type="dijit.form.TextBox" 
+				disabled="disabled"
+				class="ierDropDownInput"
+				data-dojo-attach-point="_contentClassSelectorDisabled">
+			</div>
+		</div>
+		<div data-dojo-attach-point="commonPropertiesContainer" class="commonPropertiesMargins">
+			<div data-dojo-type="ier.widget.panes.CommonPropertiesPane" data-dojo-attach-point="_commonProperties"></div>
+		</div>
+	</div>
+</div>

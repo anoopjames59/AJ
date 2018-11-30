@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html>
+<head>
+</head>
+<meta http-equiv="Content-Type" type="text/html; charset=UTF-8">
+<title>[Test] ier.widget.panes.ReportDefinitionPropertiesPane</title>
+<style type="text/css">
+@IMPORT url("../../../../../../navigator/WebContent/dijit/themes/dijit.css");
+@IMPORT url("../../../../../../navigator/WebContent/idx/themes/oneui/oneui.css");
+@IMPORT url("../../../../../../navigator/WebContent/ecm/themes/oneui/oneui.css");
+</style>
+<script type="text/javascript">
+var dojoConfig = {
+	idDebug: true,
+	parseOnLoad: true,
+	async: true,
+	packages: [
+		{name: "ecm", location: "../ecm"},
+		{name: "idx", location: "../idx"},
+		{name: "ier", location: "../../../IERApplicationPlugin/WebContent/ier"}
+	]
+};
+</script>
+<script type="text/javascript" src="../../../../../../navigator/WebContent/dojo/dojo.js"></script>
+<script type="text/javascript">
+require([
+	"dojo/ready",
+	"dijit/registry",
+	"idx/layout/TitlePane",
+	"ier/widget/panes/ReportDefinitionPropertiesPane"
+], function(dojoReady, registry, titlePane, ReportDefinitionPropertiesPane) {
+	dojoReady(function() {
+		new ReportDefinitionPropertiesPane().placeAt("pane");
+	});
+});
+</script>
+<body class="oneui">
+	<div id="pane"></div>
+</body>
+</html>

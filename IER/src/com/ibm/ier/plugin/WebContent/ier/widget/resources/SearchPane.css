@@ -1,0 +1,40 @@
+/* hide drop-down for unified template */
+.ierSearchPane .ecmSearchSelector .idxComboLinkSeparator,
+.ierSearchPane .ecmSearchSelector .idxComboLinkArrowButton,
+.ierSearchFlyoutPane .ecmSearchSelector .idxComboLinkSeparator,
+.ierSearchFlyoutPane .ecmSearchSelector .idxComboLinkArrowButton {
+	display: none;
+}
+
+.ierSearchTypeLabel {
+	margin: 0px 5px;
+}
+
+.ierSearchTypeSelect {
+	margin: 0px 5px;
+}
+
+/* avoid extra padding for search type Select */
+.ecmBasicSearchBuilder .searchSection .searchScopeFields .dijitSelect td {
+	padding: 0px 5px;
+}
+
+/* hide ICN options */
+.ierSearchPane .ecmSearchMoreOptions,
+.ierSearchPane .ecmTextSearchOptions {
+	display: none;
+}
+
+/* longer property name selection */
+.ierSearchPane .ecmBasicSearchBuilder .attributeDefintionWidget .attributeNameS {
+	width: 20em;
+}
+
+.ierSearchPane .ecmBasicSearchBuilder .attributeDefintionWidget .attributeContainer {
+    left: 20.75em;
+}
+
+/* hide view toggle buttons */
+.ierSearchPane .BarViewModules {
+	display: none;
+}

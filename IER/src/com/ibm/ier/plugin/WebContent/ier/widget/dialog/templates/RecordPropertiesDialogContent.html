@@ -1,0 +1,35 @@
+<div data-dojo-type="idx/layout/ContentPane" class="ierDialogContent ierRecordPropDlgContent ierEditPropertiesDialog">
+	<div data-dojo-type="dijit/layout/TabContainer"
+		data-dojo-attach-point="tabConatiner"
+		class="ierDialogContentTabContainer"
+		style="width: 100%; height: 100%;">
+		<div data-dojo-type="ier/widget/panes/EntityItemPropertiesPane"
+			title="${_ierMessages.baseDialog_properties}"
+			data-dojo-attach-point="_entityItemPropPane">
+		</div>
+		<div data-dojo-type="ier/widget/panes/EntityItemDetailPane"
+			title="${_ierMessages.detail}"
+			data-dojo-attach-point="_entityItemDetailPane">
+		</div>
+		<div data-dojo-type="ier/widget/panes/EntityItemSecurityPane"
+			title="${_ierMessages.baseDialog_security}"
+			data-dojo-attach-point="_entityItemSecurityPane">
+		</div>
+		<div data-dojo-type="ier/widget/panes/EntityItemFoldersFiledInPane"
+			title="${_ierMessages.baseDialog_filedIn}"
+			data-dojo-attach-point="_entityItemFiledInPane">
+		</div>
+		<div title="${_ierMessages.links}"
+			data-dojo-type="ier/widget/panes/EntityItemLinksPane"
+			data-dojo-attach-point="_entityItemLinksPane">
+		</div>
+		<div data-dojo-type="ier/widget/panes/EntityItemHoldPane"
+			title="${_ierMessages.holds}"
+			data-dojo-attach-point="_entityItemHoldPane">
+		</div>
+		<div data-dojo-type="ier/widget/panes/EntityItemHistoryPane"
+			title="${_ierMessages.historyPane_title}"
+			data-dojo-attach-point="_entityItemHistoryPane">
+		</div>
+	</div>
+</div>

@@ -1,0 +1,14 @@
+<div data-dojo-type="dijit.layout.ContentPane" class="ierDialogContent">
+	<div data-dojo-type="idx.layout.TitlePane" title="${ier_messages.reportDefinitionDialog_ReportDescription}" class="ierPropertiesTitlePane"  data-dojo-props="open:true">
+		<div data-dojo-type="ier.widget.panes.EntityItemPropertiesPane" data-dojo-attach-point="_descriptionPane"></div>
+	</div>
+	<div data-dojo-type="idx.layout.TitlePane" title="${ier_messages.reportDefinitionDialog_ReportProperties}" class="ierPropertiesTitlePane" data-dojo-props="open:true">
+		<div data-dojo-type="ier.widget.panes.ReportDefinitionPropertiesPane" data-dojo-attach-point="_propertiesPane"></div>
+	</div>
+	<div data-dojo-type="idx.layout.TitlePane" title="${ier_messages.reportDefinitionDialog_ReportSQL}" class="ierPropertiesTitlePane" data-dojo-props="open:true">
+		<div data-dojo-type="ier.widget.panes.ReportDefinitionQueryPane" data-dojo-attach-point="_sqlPane"></div>
+	</div>
+	<div data-dojo-type="idx.layout.TitlePane" title="${ier_messages.reportDefinitionDialog_Security}" class="ierPropertiesTitlePane" data-dojo-props="open:true">
+		<div data-dojo-type="ier.widget.panes.EntityItemSecurityPane" data-dojo-attach-point="_securityPane"></div>
+	</div>
+</div>

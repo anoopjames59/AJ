@@ -1,0 +1,17 @@
+<div class="ecmAdminTab">
+	<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'top'">
+		<div data-dojo-attach-point="_barNode" class="ecmAdminTabButtonBar">
+			<div data-dojo-attach-point="_deskNode" class="categoryInstructions"></div>	
+			<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_saveAndCloseButton">${_messages.admin_saveAndClose}</button>
+			<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_saveButton">${_messages.admin_save}</button>
+			<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_resetButton">${_messages.admin_reset}</button>
+			<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_closeButton">${_messages.admin_close}</button>
+		</div>
+		<div data-dojo-attach-point="_titleNode" class="ecmAdminTabHeading"></div>
+	</div>
+	<div data-dojo-type="dijit/layout/TabContainer" data-dojo-props="region: 'center'">
+		<div data-dojo-type="ier/widget/admin/GeneralSettingsPane" data-dojo-attach-point="_generalPane" title="${_messages.admin_generalSettings}"></div>
+		<div data-dojo-type="ier/widget/admin/ReportSettingsPane" data-dojo-attach-point="_reportPane" title="${_messages.admin_reportSettings}"></div>
+		<div data-dojo-type="ier/widget/admin/DDContainerSettingsPane" data-dojo-attach-point="_ddContainerSettingsPane" title="${_messages.admin_ddContainerSettings}"></div>
+	</div>
+</div>

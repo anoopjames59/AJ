@@ -1,0 +1,44 @@
+<div class="ecmMoveFileDialog" data-dojo-type="dijit.layout.BorderContainer" gutters="false">
+	<div data-dojo-type="idx.layout.TitlePane"
+		title="${_messages.baseDialog_general}"
+		class="ierPropertiesTitlePane">
+		<table class="generalTable" role="presentation">
+			<tbody>
+				<tr data-dojo-attach-point="_entityItemSaveInRow">
+					<td class="propertyRowLabel">
+						<span class="ecmLabeledInputFieldRequired" data-dojo-attach-point="_targetLocationRequired">*</span>
+						${_messages.baseDialog_saveIn}:
+					</td>
+					<td>
+						<div data-dojo-type="ier.widget.search.SearchInDropDown" 
+							class="dijitInline"
+							dropdownid="${id}_folderLocation"
+							showIncludeSubFolders="false"
+							showRepositoryTeamspace="true"
+							selectRootInitially="false"
+							isRequired="true"
+							displayForSearch="false"
+							displaySelectTeamspacesNode="false",
+							allowOnlySameDomainRepositories="true"
+							data-dojo-attach-point="folderSelector">
+						</div>	
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	 
+	<div data-dojo-type="idx.layout.TitlePane"
+		title="${_messages.baseDialog_properties}"
+		class="ierPropertiesTitlePane">
+		<div data-dojo-attach-point="_entityItemPropertiesPane"
+			data-dojo-type="ier.widget.panes.EntityItemPropertiesPane"></div>
+	</div>
+	<div data-dojo-type="idx.layout.TitlePane"
+		title="${_messages.baseDialog_security}"
+		class="ierPropertiesTitlePane"
+		data-dojo-attach-point="securityTitlePane">
+		<div data-dojo-attach-point="_entityItemSecurityPane"
+		data-dojo-type="ier.widget.panes.EntityItemSecurityPane"></div>
+	</div>
+</div>

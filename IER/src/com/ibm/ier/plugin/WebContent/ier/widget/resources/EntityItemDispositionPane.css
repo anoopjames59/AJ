@@ -1,0 +1,7 @@
+.ecmCommonPropertiesPane.ierEntityItemDispositionPane .propertyTable .propertyValueLabel .labelReadOnly {
+	color: gray;
+}
+
+.ecmCommonPropertiesPane.ierEntityItemDispositionPane .propertyTable .propertyRowLabel {
+	width: 33% !important;
+}

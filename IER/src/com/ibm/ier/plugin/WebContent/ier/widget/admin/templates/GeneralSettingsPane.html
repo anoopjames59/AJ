@@ -1,0 +1,56 @@
+<div class="ierAdminContent">
+	<div data-dojo-type="idx.layout.TitlePane" open="true" title="${_messages.admin_browseConfigurations}" style="margin-top:10px; margin-left: -0px">
+		<table class="propertyTable" role="presentation"><tbody>
+			<tr>
+				<td class="propertyRowLabel">
+					<span>${_messages.admin_browseSettings_label}:</label>
+				</td>
+				<td>
+					<div>
+						<input id="${id}_folderOnlyBox" data-dojo-type="dijit/form/CheckBox" data-dojo-attach-point="_folderOnlyBox"
+							data-dojo-props="intermediateChanges: true"/>
+						<label for="${id}_folderOnlyBox">${_messages.admin_browseFolderOnly}</label>
+					</div>
+					<div class="propertyRowValue">
+						<input id="${id}_disableSortBox" data-dojo-type="dijit/form/CheckBox" data-dojo-attach-point="_disableSortBox"
+							data-dojo-props="intermediateChanges: true"/>
+						<label for="${id}_disableSortBox" data-dojo-attach-point="_disableSortLabel">${_messages.admin_browseDisableSort}</label>
+						<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_browseDisableSort_tooltip}"></div>
+					</div>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	<div data-dojo-type="idx.layout.TitlePane" open="true" title="${_messages.admin_taskManagerConfigurations}" style="margin-top:10px; margin-left: -0px">
+		<table class="propertyTable" role="presentation"><tbody>
+			<tr>
+				<td class="propertyRowLabel">
+					<label for="${id}_taskManagerLogDirectory">${_messages.admin_generalTaskManagerLogDirectory}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_generalTaskManagerLogDirectory_tooltip}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_taskManagerLogDirectory" data-dojo-type="ecm/widget/ValidationTextBox" data-dojo-attach-point="_taskManagerLogDirectory" 
+						data-dojo-props="trim: true, intermediateChanges: true"></div>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	<div data-dojo-type="idx.layout.TitlePane" open="true" title="${_messages.admin_cbrPageSizeConfigurations}" style="margin-top:10px; margin-left: -0px">
+		<table class="propertyTable" role="presentation"><tbody>
+			<tr>
+				<td class="propertyRowLabel">
+					<label for="${id}_cbrPageSize">${_messages.admin_generalCBRPageSize}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_generalCBRPageSize_tooltip}"></div>
+				</td>
+	                    	<!-- data-dojo-attach-event="onKeyUp: _onFieldChange"  -->
+				<td class="propertyRowValue">
+	                    <div id="${id}_cbrPageSize"  
+	                    	data-dojo-attach-point="_cbrPageSize" 
+	                    	value="50"
+	                    	invalidMessage="${ecmMessages.property_integer_invalid}" constraints="{min:30, max:200, places:0}" 
+	                    	data-dojo-type="ecm.widget.NumberTextBox"></div>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+</div>

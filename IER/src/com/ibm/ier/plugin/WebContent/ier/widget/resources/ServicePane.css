@@ -1,0 +1,41 @@
+.ierServicePane .dijitTabPaneWrapper {
+	border-left: 0 none;
+	border-right: 0 none;
+	border-bottom: 0 none;
+}
+
+.ierServicePane .ierServiceToolbar {
+	padding-bottom: 0px;
+}
+
+.ierServicePane .ierServiceToolbarFilter {
+	float: right;
+}
+
+.ierServicePane .ierServiceToolbarFilter .dijitTextBox {
+	width: 10em;
+}
+
+.oneui .ierServicePane .dojoxGridScrollbox {
+	background-color: #FFFFFF;
+}
+
+.ierServiceDialog .dijitTitlePaneContentInner {
+	padding: 5px 10px 10px;
+}
+
+.ierServiceDialog .ierLabelContainer {
+	padding-right: 10px;
+}
+
+.ierServiceDialog .ierControlContainer {
+	padding: 5px 0px 5px;
+}
+
+.ierServiceDialog .ierLongBox {
+	width: 24em;
+}
+
+.ierServiceDialog .ierShortBox {
+	width: 8em;
+}

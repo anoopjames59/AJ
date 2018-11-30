@@ -1,0 +1,17 @@
+ <div class="ecmFolderSelector">
+ 	<div dojoType="ier.widget.FolderTree"
+		dojoAttachPoint="_folderTree"
+		dojoAttachEvent="onItemSelected: onFolderSelect, onItemDblClick: _onTreeDblClick"
+		showFoldersOnly="true"
+		enableCtxMenu="false"
+		class="folderTree">
+	</div>
+	<div class="includeSubfolders" 
+			dojoAttachPoint="_includeSubfoldersNode" 
+			id="${id}_includeSubfoldersNode">
+		<input dojoType="dijit.form.CheckBox" 
+			dojoAttachPoint="_includeSubfoldersCheckBox" 
+				id="${id}_includeSubfolders" value="" type="checkbox"/>
+		<label for="${id}_includeSubfolders" >${_messages.include_subfolders}</label>		
+	</div>
+</div>

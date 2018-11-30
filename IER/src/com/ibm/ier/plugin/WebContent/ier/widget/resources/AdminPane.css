@@ -1,0 +1,55 @@
+.ierAdminPane .ecmAdminTab .ecmAdminTabButtonBar {
+	padding: 10px 5px !important;
+	margin-bottom: 0px;
+}
+
+.ierAdminPane .ecmAdminTab .ierAdminBarLast {
+	border-bottom: 0px none;
+}
+
+.ierAdminPane .ecmAdminTab .ecmAdminTabHeading {
+	padding: 10px !important;
+}
+
+.ierAdminPane .ecmAdminTab .ecmAdminTab.dijitContentPane {
+	padding: 0px;
+}
+
+.ierAdminContent {
+	padding: 10px;
+}
+
+.ierAdminValue {
+	padding: 5px;
+}
+
+.ierAdminSloshBucketFilterBar .ecmFilterTextBox.dijitTextBox {
+	width: 236px;
+}
+
+.ierAdminSloshBucketToolbar {
+	float: right;
+	padding: 0px 40px;
+}
+.dijitRtl .ierAdminSloshBucketToolbar {
+	float: left;
+}
+
+.ierAdminPropertySelector.ecmSloshBucket.dijitContentPane {
+	padding: 10px 0px;
+}
+
+.ierAdminLabelDisabled {
+	color: #aaaaaa;
+	text-shadow: 1px 0 0 #ffffff;
+}
+
+.ierAdminContent.dijitTabPane .dijitTitlePaneTitleFocus,
+.ierAdminTab.dijitTabPane .dijitTitlePaneTitleFocus
+{
+	height:15px !important;
+}
+
+.ierAdminSystemConfigSelect {
+	width: 15em;
+}

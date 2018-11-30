@@ -1,0 +1,64 @@
+.taskManagerPaneBorder {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C3C3C3;
+}
+
+.tasksMenuPane {
+	width: 13%;
+	padding-top: 10px;
+	border-right: 1px dotted #CCCCCC;
+}
+
+.taskPane .taskMenu {
+	margin: 0;
+	padding: 0;
+}
+
+.taskPane  .dijitBorderContainerNoGutter > .idxSplitterH {
+	border-width: 0 !important;
+}
+.taskPane  .dijitSplitterH {
+	margin: 0 !important;
+}
+
+.taskPane .ierTaskToolbar {
+	padding: 10px;
+}
+
+.taskPane .filterData {
+	float: right;
+}
+
+body[dir="rtl"] .taskPane .filterData {
+	float: left;
+}
+
+.taskPane .ierTaskToolbarFilter {
+	float: right;
+}
+
+body[dir="rtl"] .taskPane .ierTaskToolbarFilter {
+	float: left;
+}
+
+.taskPane .ierTaskToolbarFilter .dijitTextBox {
+	width: 200px;
+}
+
+.taskListingPane {
+	padding: 10px !important;
+}
+
+.taskError {
+	font-family: Arial,​Tahoma,​Verdana,​sans-serif;
+}
+
+.taskInformationDialog .dijitContentPane {
+	padding: 10px !important;
+}
+
+/* workaround for ICN bug failing to hide feature pane */
+.dj_gecko div.launchBarContainer > div.launchBarContentArea > div.taskPane.dijitHidden {
+    display: none !important;
+}

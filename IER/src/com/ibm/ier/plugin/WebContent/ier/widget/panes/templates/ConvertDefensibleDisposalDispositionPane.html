@@ -1,0 +1,33 @@
+<div class="ierEntityItemDispositionPane ierCommonPropertiesPane ecmCommonPropertiesPane" style="margin-top:5px;" data-dojo-attach-point="containerNode">
+	<table class="propertyTable" data-dojo-attach-point="searchInDropdownSection" role="presentation">
+		<tbody>
+			<tr>
+				<td class="propertyRowLabel">
+					<span class="ecmLabeledInputFieldRequired">*</span>
+					${messages.recordCategory}
+				</td>
+				<td class="propertyRowValue">
+					<div data-dojo-type="ier.widget.search.SearchInDropDown" 
+						useIERFolderSelector="true"
+						class="dijitInline"
+						dropdownid="${id}_folderLocation"
+						showIncludeSubFolders="false"
+						showRepositoryTeamspace="true"
+						selectRootInitially="false"
+						isRequired="true"
+						displayForSearch="false"
+						displaySelectTeamspacesNode="false",
+						allowOnlySameDomainRepositories="true"
+						data-dojo-attach-point="folderSelector"
+						style="width: 300px;">
+					</div>
+					<div id="${id}_disabledFolderSelector" class="folderTargetLocation" data-dojo-attach-point="disabledFolderSelector"
+						data-dojo-type="dijit.form.TextBox" style="display:none; width: 300px;" data-dojo-props="disabled:true">
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<div id="${id}_defensibleDisposalPane" data-dojo-attach-point="defensibleDisposalPane" data-dojo-type="ier/widget/panes/DefensibleDisposalDispositionPane"></div>
+</div>

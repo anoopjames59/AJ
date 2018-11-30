@@ -1,0 +1,16 @@
+.ierConfigurationIntoText {
+	padding: 0 0 15px !important;
+	color: #444;
+}
+
+.ierPluginConfiguration .moveUpButton {
+	background-image: url(images/arrowUp.png);
+	width: 16px;
+	height: 16px;
+}
+
+.ierPluginConfiguration .moveDownButton {
+	background-image: url(images/arrowDown.png);
+	width: 16px;
+	height: 16px;
+}

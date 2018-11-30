@@ -1,0 +1,87 @@
+<div>
+	<div>
+		<table class="propertyTable" role="presentation"><tbody>
+			<tr>
+				<td class="propertyRowLabel">
+					<label for="${id}_exportConfigSelect">${_messages.admin_systemConfig_exportConfig}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_systemConfig_exportConfig_tooltip}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<select data-dojo-type="ecm/widget/Select" data-dojo-attach-point="_exportConfigSelect" id="${id}_exportConfigSelect" class="dijitSelectFixedWidth ierAdminSystemConfigSelect">
+						<option value="1">${_messages.admin_systemConfig_separateContent}</option>
+						<option value="2">${_messages.admin_systemConfig_embeddedContent}</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<label for="${id}_transferMappingSelector">${_messages.admin_systemConfig_exportTransferMapping}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_systemConfig_exportTransferMapping_tooltip}"></div>
+				</td>
+				<td data-dojo-attach-point="_transferMappingCell" class="propertyRowValue"></td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<span>${_messages.admin_systemConfig_fposSetup}:</span>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_systemConfig_fposSetup_tooltip}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<span data-dojo-attach-point="_fposSetupNode"></span>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<span>${_messages.admin_systemConfig_rmVersionInfo}:</span>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_systemConfig_rmVersionInfo_tooltip}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<span data-dojo-attach-point="_versionInfoNode"></span>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<span class="required">*</span>
+					<label for="${id}_batchSizeBox">${_messages.admin_systemConfig_maximumBatchSize}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_systemConfig_maximumBatchSize_tooltip}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<input data-dojo-type="ecm/widget/NumberTextBox" data-dojo-attach-point="_batchSizeBox" data-dojo-props="constraints: {min: 1, max: 500}, required: true, intermediateChanges: true" id="${id}_batchSizeBox"/>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<label for="${id}_screeningWorkflowSelector">${_messages.admin_systemConfig_screeningWorkflow}:</span>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_systemConfig_screeningWorkflow_tooltip}"></div>
+				</td>
+				<td data-dojo-attach-point="_screeningWorkflowCell" class="propertyRowValue"></td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<span>${_messages.admin_systemConfig_securityScriptRunDate}:</span>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_systemConfig_securityScriptRunDate_tooltip}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<span data-dojo-attach-point="_runDateNode"></span>
+				</td>
+			</tr>
+			<tr>
+				<td class="propertyRowLabel">
+					<label for="${id}_patternSuffixSelect">${_messages.admin_systemConfig_volumePatternSuffix}:</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_systemConfig_volumePatternSuffix_tooltip}"></div>
+				</td>
+				<td class="propertyRowValue">
+					<select data-dojo-type="ecm/widget/Select" data-dojo-attach-point="_patternSuffixSelect" id="${id}_patternSuffixSelect" class="dijitSelectFixedWidth ierAdminSystemConfigSelect">
+						<option value="000">000</option>
+						<option value="0000">0000</option>
+						<option value="00000">00000</option>
+						<option value="000000">000000</option>
+						<option value="0000000">0000000</option>
+						<option value="00000000">00000000</option>
+						<option value="000000000">000000000</option>
+						<option value="0000000000">0000000000</option>
+					</select>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+</div>

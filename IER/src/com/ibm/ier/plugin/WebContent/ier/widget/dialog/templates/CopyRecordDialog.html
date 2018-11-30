@@ -1,0 +1,32 @@
+<div data-dojo-type="dijit.layout.ContentPane" class="ierDialogContent">
+	<table class="generalTable">
+	<tbody>   
+		<tr data-dojo-attach-point="_documentTitleRow">
+			<td class="propertyRowLabel">
+				<label for="${id}_documentTitle">${_messages.copyRecordDialog_documentTitlePrompt}:</label>
+			</td>
+			<td class="propertyRowValue" data-dojo-attach-point="_documentTitleCell">
+				<div id="${id}_documentTitle" data-dojo-type="ecm.widget.TextBox" style="width: 300px" data-dojo-attach-point="_documentTitle"></div>			
+			</td>
+		</tr>
+		<tr data-dojo-attach-point="_descriptionRow">
+			<td class="propertyRowLabel">
+				<label for="${id}_description">${_messages.copyRecordDialog_descriptionPrompt}:</label>
+			</td>
+			<td class="propertyRowValue" data-dojo-attach-point="_descriptionCell">
+				<div id="${id}_description" data-dojo-type="ecm.widget.ValidationSimpleTextarea" data-dojo-props="required:false,trim:true,value:''" style="width:300px" data-dojo-attach-point="_description"/>		
+			</td>
+		</tr>
+		<tr data-dojo-attach-point="_folderSelectorRow">
+			<td class="propertyRowLabel">
+				<span class="ecmLabeledInputFieldRequired">*</span>
+				<span>${_messages.copyRecordDialog_fileplanLocation}:</span>
+			</td>
+			<td class="propertyRowValue">
+				<div data-dojo-attach-point="_folderSelectorCell">
+				</div>
+			</td>
+		</tr>
+	</tbody>
+	</table>
+</div>

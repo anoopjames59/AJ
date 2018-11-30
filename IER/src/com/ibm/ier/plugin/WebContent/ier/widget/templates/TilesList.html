@@ -1,0 +1,14 @@
+<div class="ierTilesList">
+<div data-dojo-attach-point="bc" data-dojo-type="dijit.layout.BorderContainer" design="headline" class="ecmTileListContainer" data-dojo-props="gutters:false">
+	<div data-dojo-type="dijit.layout.ContentPane" region="top" class="toolbarArea" data-dojo-attach-point="toolbarArea" style="outline:none;">
+		<div class="actionsArea" data-dojo-attach-point="actionsArea">
+		</div>
+		<div class="filterArea" data-dojo-attach-point="filterArea">
+			<label style="display: none;" for="${id}_filterText">${messages.multicolumn_list_filter_text}</label>
+			<div data-dojo-type="ecm.widget.FilterTextBox" data-dojo-attach-point="filter" class="filter" id="${id}_filterText" placeholder="${_filterText}"></div>
+		</div>
+	</div>
+	<div region="center" data-dojo-type="dijit.layout.ContentPane" data-dojo-attach-point="bottomContainer" class="bottomContainer">
+	</div>
+</div>
+</div>

@@ -1,0 +1,10 @@
+{
+    "name": "ier",
+    "description": "IBM Enterprise Records Plug-in",
+    "dependencies": {
+        "dojo": "~1.7.3",
+        "dijit": "~1.7.3",
+        "dojox": "~1.7.3"
+    },
+    "dojoBuild": "ier.profile.js"
+}

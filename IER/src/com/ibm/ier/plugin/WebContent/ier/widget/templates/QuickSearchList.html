@@ -1,0 +1,10 @@
+<div data-dojo-attach-point="containerNode" style="height:100%">
+	<div style="padding-bottom:5px">
+		<div data-dojo-type="dijit.form.TextBox" data-dojo-attach-point="searchBar"></div>
+		<button data-dojo-type="dijit.form.Button" data-dojo-attach-event="onClick:_quickSearchButtonClicked">Search</button>
+	</div>
+	<div data-dojo-type="ecm.widget.TitlePane" collapsed="false" collapsible="true" data-dojo-attach-point="_quickSearchTitlePane">
+		<div data-dojo-type="ier.widget.TilesList" data-dojo-attach-point="_quickSearches" style="overflow:auto; height:600px">
+		</div>
+	</div>
+</div>

@@ -1,0 +1,21 @@
+<div class="entityItemGeneralPane">
+	<table class="generalTable">
+		<tbody>
+			<tr data-dojo-attach-point="_entityItemSaveInRow">
+				<td class="propertyRowLabel" style="width:150px;">
+					<span class="ecmLabeledInputFieldRequired" data-dojo-attach-point="_targetLocationRequired">*</span>
+					<label for="${id}_targetLocation" id="${id}_targetLocationLabel" data-dojo-attach-point="_targetLocationLabel">
+						${_messages.eventTriggerDialog_type}:
+					</label>
+					<div data-dojo-type="ecm/widget/HoverHelp" data-dojo-attach-point="eventTriggerHoverHelp"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div data-dojo-type="dijit/form/Select" data-dojo-attach-point="typeSelector">
+						<option value="${constants.EventType_InternalEventTrigger}" selected="selected">${_messages.internalEventTrigger}</option>
+    					<option value="${constants.EventType_ExternalEventTrigger}" >${_messages.externalEventTrigger}</option>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

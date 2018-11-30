@@ -1,0 +1,35 @@
+.ierEditPropertiesDialog .propertiesContainer {
+	width: 99% !important;
+}
+
+.ierEntityItemPropertiesPane.dijitContentPane.dijitTabPane,
+.ierEntityItemSecurityPane.dijitContentPane.dijitTabPane {
+	padding-top: 10px !important;
+}
+
+.ierEntityItemHistoryPane .criteriaFilterAria1 .criteriaFilterSeletor .dijitButtonContents{
+ 	min-width: 50px;
+}
+.ierEntityItemHistoryPane .criteriaFilterAria1 .criteriaActionTypeSeletor .dijitButtonContents{
+ 	min-width: 90px;
+}
+.ierEntityItemHistoryPane .criteriaFilterAria2{
+	float: right;
+}
+.dijitRtl .ierEntityItemHistoryPane .criteriaFilterAria2{
+	float: left;
+}
+.ierEntityItemHistoryPane .dateRangeValidationMessage{
+	float: right;
+	color: red;
+}
+.dijitRtl .ierEntityItemHistoryPane .dateRangeValidationMessage{
+	float: left;
+}
+.ecmSecurityPane .buttonPane {
+	float: right;
+}
+.dijitRtl .ecmSecurityPane .buttonPane {
+	float: left;
+}
+

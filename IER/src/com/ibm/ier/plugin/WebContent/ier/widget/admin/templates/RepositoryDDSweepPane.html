@@ -1,0 +1,61 @@
+<div class="ecmAdminTab ierAdminTab">
+   	<div  class="ecmAdminTabButtonBar">
+		<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_saveButton">${_messages.admin_save}</button>
+		<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_resetButton">${_messages.admin_reset}</button>
+	</div>
+	<div class="ierAdminContent">
+		<div data-dojo-type="idx.layout.TitlePane" open="true" title="${_messages.admin_ddContainerSettings_workflowConfigurations}" style="margin-top:10px; margin-left: -0px">
+			<table class="propertyTable" role="presentation"><tbody>
+				<tr>
+					<td class="propertyRowLabel">
+						<label data-dojo-attach-point="_defaultDDWorkflowSelectorLabel" for="${id}_defaultDDWorkflow">${_messages.repositoryDDSweepPane_defaultWorkflow}:</label>
+						<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.repositoryDDSweepPane_defaultWorkflowHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue">
+						<div class="dijitInline" data-dojo-attach-point="_defaultDDWorkflowSelectorContainer"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="propertyRowLabel">
+						<span class="required">*</span>
+						<label for="${id}_alwaysDeclaredRecordSelect">${_messages.admin_ddContainerSettings_AlwaysDeclareRecord}:</label>
+						<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_ddContainerSettings_AlwaysDeclareRecordHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue">
+						<select data-dojo-attach-point="_alwaysDeclaredRecordSelect" 
+							id="${id}_alwaysDeclaredRecordSelect"
+							data-dojo-type="dijit/form/Select">
+						    <option value="true">${_messages.yes}</option>
+						    <option value="false">${_messages.no}</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="propertyRowLabel">
+						<span class="required">*</span>
+						<label for="${id}_alwaysShowDeclareResultSelect">${_messages.admin_ddContainerSettings_AlwaysShowDeclareResult}:</label>
+						<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.admin_ddContainerSettings_AlwaysShowDeclareResultHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue">
+						<select data-dojo-attach-point="_alwaysShowDeclareResultSelect"
+							id="${id}_alwaysShowDeclareResultSelect"
+							data-dojo-type="dijit/form/Select">
+						    <option value="true">${_messages.yes}</option>
+						    <option value="false">${_messages.no}</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="propertyRowLabel">
+						<span>${_messages.repositoryDDSweepPane_defaultRecordContainer}:</span>
+						<div data-dojo-type="ecm/widget/HoverHelp" message="${_messages.repositoryDDSweepPane_defaultRecordContainerHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue">
+						<div class="dijitInline" data-dojo-attach-point="_recordContainerDirectorySelectorContainer"></div>
+						<button data-dojo-type="dijit/form/Button" data-dojo-attach-point="_clearButton" data-dojo-props="disabled: true">${_messages.clear}</button>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>
+</div>

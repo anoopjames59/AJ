@@ -1,0 +1,8 @@
+{
+	identifier: 'IERApplicationPlugin',
+	selectedFilePlanRepositories: [
+		{ id: 'RepositoryId', name:'RepositoryName' },
+		{ id: 'RepositoryId', name:'RepositoryName' },
+		{ id: 'RepositoryId', name:'RepositoryName' }
+	]
+}

@@ -1,0 +1,35 @@
+{
+    "identifier" : "id",
+    "items": [
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "A DispositonSweep run started on Monday, October 23 2011 at 8:36 AM",
+        "title": "A dispositon sweep run started on Monday, August 1 2011 at 8:36 AM",
+        "type": "DispositionSweep",
+        "content": "FilePlan: FilePlan( FPOS_BASE ) | Cancel | Pause",
+        "id": "501",
+        "iconClass" : "dispositionSweepIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "A Hold Sweep Run started on Monday, October 23 2011 at 8:36 AM",
+        "title": "A hold sweep run started on Monday, August 1 2011 at 8:36 AM",
+        "type": "HoldSweep",
+        "content": "FilePlan: FilePlan ( FPOS_BASE ) | Cancel | Pause",
+        "id": "502",
+        "iconClass" : "holdSweepIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "A DispositonSweep Run finished on Monday, August 12 2011 at 8:36 AM",
+        "title": "A dispositon sweep run finished on Monday, August 12 2011 at 8:36 AM",
+        "type": "DispositionSweep",
+        "content": "FilePlan: FilePlan( FPOS_BASE2 ) | Restart | Delete",
+        "id": "505",
+        "iconClass" : "dispositionSweepIcon"
+    }
+    ]
+}

@@ -1,0 +1,20 @@
+<div class="taskPane ierCenterPane">
+	<div data-dojo-type="idx.layout.BorderContainer" data-dojo-attach-point="mainPane" data-dojo-props="gutters:false, design:'sidebar'">
+		
+		<div data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'leading', gutters:false, splitter:true"
+			data-dojo-attach-point="taskMenuPane" class="tasksMenuPane">
+			<div data-dojo-type="dijit.layout.ContentPane" data-dojo-attach-point="taskMenuContainer">
+			</div>
+		</div>
+		<div data-dojo-type="dijit.layout.ContentPane" class="taskResultPane" data-dojo-props="region:'center'" data-dojo-attach-point="taskListingContainerPane" style="width:95%">
+			<div data-dojo-type="idx.layout.BorderContainer" data-dojo-attach-point="taskListingBorderPane" data-dojo-props="gutters:false, design:'headline'">
+				<div data-dojo-type="dijit/layout/StackContainer" data-dojo-props="region:'center'" class="taskListingPane taskManagerPaneBorder" 
+					data-dojo-attach-point="taskListingStackContainer">
+				</div>
+				<div data-dojo-props="region:'bottom', splitter:true, gutters:false" data-dojo-type="dijit.layout.ContentPane"
+					data-dojo-attach-point="taskInformationPaneContainer" open="false" class="taskManagerPaneBorder">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

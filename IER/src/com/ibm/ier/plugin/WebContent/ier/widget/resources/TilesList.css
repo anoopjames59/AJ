@@ -1,0 +1,152 @@
+.ierTilesListItemHover {
+	background-color: #cce8f2;
+}
+
+.ierTilesListItemSelected {
+	background-color: #cce8f2;
+}
+
+.ierTilesList {
+	height: 98%;
+	padding-top: 3px;
+}
+.ierTilesList .ecmTileListContainer{
+	width:100%;
+	height:100%;	
+}
+.ierTilesList .toolbarArea {
+	margin: 0px 10px;
+	border-bottom: 1px solid #ccc;
+	padding-top: 2px;
+	padding-bottom: 5px
+}
+
+.ierTilesList .filterArea {
+	float: right;
+}
+
+.ierTilesList .filterArea .dijitTextBoxFocused .dijitInputContainer {
+	background: transparent;
+	}
+
+.ierTilesList .actionsArea {
+	float: left;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.ierTilesList .selected {
+	background-color: transparent; 
+	cursor:pointer;
+}
+
+.ierTilesList .action {
+	display: inline;
+	margin: 0px;
+	padding-right: 5px;
+}
+
+.ierTilesList .bottomContainer {
+	padding: 0 !important;
+}
+
+.dijitRtl .ierTilesList .filterArea {
+	float: left;
+}
+
+.dijitRtl .ierTilesList .actionsArea {
+	float: right;
+}
+
+.dijitRtl .ierTilesList .iconArea {
+	float: right;
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+
+
+/**********
+
+	Tiles List Item
+	
+**********/
+
+.ierTilesListItem {
+	padding: 10px 10px 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+.ierTilesListItem .dataArea {
+	width: 100%;
+}
+
+.ierTilesListItem .iconArea {
+	float: left;
+	display: block;
+	margin-right: 5px;
+}
+
+.dijitRtl .ierTilesListItem .iconArea {
+	float: right;
+	margin-left: 5px;
+	margin-right: 0px;
+}
+
+.ierTilesListItem .titleArea {
+	position: relative;
+	overflow: hidden;
+}
+
+.ierTilesListItem .titleArea .description {
+	padding-top: 2px;
+	font-size: .9em;
+}
+
+.ierTilesListItem .titleArea .title {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.ierTilesListItem .titleArea .content {
+	color: #444;
+	font-size: .88em;
+	padding-top: 2px;
+}
+
+.ierTilesListItemHover {
+	
+}
+
+.ierTilesListItem .dijitButtonNode,
+.ierTilesListItem .dijitButtonActive .dijitButtonNodeHover,
+.ierTilesListItem .dijitDropDownButton .dijitButtonNodeHover,
+.ierTilesListItem .dijitDropDownButton .dijitDownArrowButtonHover {
+	border: 0 !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    background-image: -moz-linear-gradient(center top, transparent 0%, transparent 100%) !important;
+    border-radius: 0px 0px 0px 0px !important;
+    box-shadow: 0 0 0 transparent !important;
+    -moz-box-shadow: 0 0 0 transparent !important;
+}
+
+.ierTilesListItem .dijitButtonContents {
+    border: none !important;
+    border-radius: 0px 0px 0px 0px !important;
+    color: #105CB6;
+    font-weight: normal !important;
+}
+
+.ierTilesListItem .dijitDropDownButton .dijitButtonText {
+	padding: 0px 3px 0 0 !important;
+}
+	
+.ierTilesListItem .dijitArrowButtonInner {
+	background: url("images/linkDropDown.png") center no-repeat !important;
+	width: 6px !important;
+}
+
+.ierTilesListItem .dijitButtonContents .dijitButtonText:hover {
+	text-decoration: underline;
+}

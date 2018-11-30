@@ -1,0 +1,14 @@
+.ierDashboardPane .dashboardRow {
+	margin-bottom:5px
+}
+
+.ierDashboardPane .ierDashboardWidget,
+.ierDashboardPane .ierDashboardWidgetNoRightMargin {
+	width:32%;
+	height:400px;
+	float:left
+}
+
+.ierDashboardPane .ierDashboardWidget {
+		margin-right:10px;
+}

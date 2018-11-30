@@ -1,0 +1,152 @@
+<div class="taskSchedulerPane">
+	<div data-dojo-type="idx.layout.TitlePane"
+		title="${messages.taskSchedulerPane_scheduleInformation}">
+		<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" class="generalTable" role="presentation">
+			<tbody>
+				<tr>
+					<td class="propertyRowLabel">
+						<span class="ecmLabeledInputFieldRequired">*</span>
+						<label for="${id}_nameTextBox">${messages.Name}:</label>
+						<div data-dojo-type="ecm.widget.HoverHelp" message="${messages.taskSchedulerPane_nameHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue">
+						<div data-dojo-attach-point="nameTextBox" data-dojo-type="ecm/widget/ValidationTextBox" style="width: 300px"
+						id="${id}_nameTextBox" name="${id}_nameTextBox" data-dojo-props="trim: true, required: true, intermediateChanges: true" 
+						data-dojo-attach-event="onChange:onInputChange"></div>
+					</td>
+				</tr>
+				<tr data-dojo-attach-point="descriptionRow">
+					<td class="propertyRowLabel">
+						<label for="${id}_descriptionTextBox">${messages.description_label}</label>
+						<div data-dojo-type="ecm.widget.HoverHelp" message="${messages.taskSchedulerPane_descriptionHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue">
+						<div data-dojo-attach-point="descriptionTextBox" data-dojo-type="ecm/widget/ValidationSimpleTextarea" style="width: 300px"
+							id="${id}_descriptionTextBox" name="${id}_descriptionTextBox" data-dojo-props="trim: true, value: '',intermediateChanges: true" 
+						data-dojo-attach-event="onChange:onInputChange"></div>
+					</td>
+				</tr>
+				<tr data-dojo-attach-point="startTimeRow">
+					<td class="propertyRowLabel">
+						<span class="ecmLabeledInputFieldRequired">*</span>
+						${messages.taskSchedulerPane_startTime}:
+						<div data-dojo-type="ecm.widget.HoverHelp" message="${messages.taskSchedulerPane_startTimeHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue">
+						<span data-dojo-attach-point="startTimeDateTimeTextBox" data-dojo-type="idx/form/DateTimeTextBox" 
+							id="${id}_startTimeTextBox"></span>
+						<span data-dojo-attach-point="startImmediatelyCheckbox" data-dojo-type="dijit/form/CheckBox" 
+							name="${id}_startImmediatelyCheckBox" id="${id}_startImmediatelyCheckBox" data-dojo-attach-event="onChange:onInputChange"></span>
+						<label for="${id}_startImmediatelyCheckBox">${messages.taskSchedulerPane_startImmediately}</label>
+					</td>
+				</tr>
+				<tr data-dojo-attach-point="reoccurenceRow">
+					<td class="propertyRowLabel">
+						<span class="ecmLabeledInputFieldRequired">*</span>
+						${messages.taskSchedulerPane_recurrence}:
+						<div data-dojo-type="ecm.widget.HoverHelp" message="${messages.taskSchedulerPane_recurrenceHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue">
+						 <fieldset style="padding: 0px; margin: 0px">
+		                    <legend style="display: none;">${messages.taskSchedulerPane_recurrence}</legend>
+		                    <div value="true" type="radio" name="${id}_recurringRadioGroup" data-dojo-attach-point="enableRecurrenceRadioButton" id="${id}_enableRecurringRadio" 
+		                    	data-dojo-type="ecm.widget.RadioButton" data-dojo-attach-event="onChange:onInputChange"></div>
+		                    <label for="${id}_enableRecurringRadio">${messages.enable}</label>&nbsp;
+		                    <div value="false" type="radio" name="${id}_recurringRadioGroup" data-dojo-attach-point="disableRecurrenceRadioButton" id="${id}_disableRecurringRadio" 
+		                    	data-dojo-type="ecm.widget.RadioButton" data-dojo-attach-event="onChange:onInputChange" checked></div>
+		                    <label for="${id}_disableRecurringRadio">${messages.disable}</label>
+	               		</fieldset>
+	               	</td>
+	           </tr>
+	           <tr data-dojo-attach-point="reoccurenceIntervalRow">
+	           		<td colspan="2">
+	               		<table border="0" cellpadding="0" cellspacing="0" style="padding-left: 30px;" class="generalTable" role="presentation">
+							<tbody>
+								<tr>
+									<td class="propertyRowLabel">
+										<span data-dojo-attach-point="intervalRequired" class="ecmLabeledInputFieldRequired">*</span>
+										<label for="${id}_intervalTextBox">${messages.taskSchedulerPane_interval}:</label>
+										<div data-dojo-type="ecm.widget.HoverHelp" message="${messages.taskSchedulerPane_intervalHoverHelp}"></div>
+									</td>
+									<td class="propertyRowValue">
+										<span class="ierFloatLeft">
+											<div data-dojo-attach-point="intervalNumberSpinner" data-dojo-type="dijit/form/NumberSpinner" id="${id}_intervalTextBox" 
+												data-dojo-props="value:1,constraints:{min:1,max:1000,places:0},disabled:true" data-dojo-attach-event="onKeyUp:onInputChange"></div>
+											
+											<select style="margin-left: 5px;" data-dojo-attach-point="intervalSelect" data-dojo-type="dijit/form/Select" 
+												data-dojo-props="disabled: true, intermediateChanges: true" data-dojo-attach-event="onChange:onInputChange" aria-label="${ier_messages.timeUnit}">
+											 	<option value="hours">${messages.hours}</option>
+										     	<option value="days" selected="selected">${messages.days}</option>
+										     	<option value="weeks">${messages.weeks}</option>
+											</select>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="propertyRowLabel">
+										<span data-dojo-attach-point="endTimeRequired" class="ecmLabeledInputFieldRequired">*</span>
+										${messages.endTime}:
+										<div data-dojo-type="ecm.widget.HoverHelp" message="${messages.taskSchedulerPane_endTimeHoverHelp}"></div>
+									</td>
+									<td class="propertyRowValue">
+										<div data-dojo-attach-point="endTimeDateTimeBox" data-dojo-type="idx/form/DateTimeTextBox" id="${id}_endTimeTextBox" 
+											data-dojo-props="disabled:true"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr> 
+			</tbody>
+		</table>
+	</div>
+	<div data-dojo-type="idx.layout.TitlePane" data-dojo-attach-point="loginInformation"
+		title="${messages.taskSchedulerPane_loginInformation}">
+		<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" class="generalTable" role="presentation">
+			<tbody>
+				<tr>
+					<td class="propertyRowLabel">
+						<span data-dojo-attach-point="usernameRequired" class="ecmLabeledInputFieldRequired">*</span>
+						<label for="${id}_usernameTextBox">${messages.username}</label>
+						<div data-dojo-type="ecm.widget.HoverHelp" data-dojo-attach-point="usernameHoverHelp" message="${messages.taskSchedulerPane_usernameHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue">
+						<div data-dojo-attach-point="usernameTextBox" data-dojo-type="ecm/widget/ValidationTextBox" id="${id}_usernameTextBox" name="${id}_usernameTextBox"
+							data-dojo-props="trim: true, required: true, intermediateChanges: true" 
+						data-dojo-attach-event="onChange:onInputChange" style="width: 300px"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="propertyRowLabel">
+						<span data-dojo-attach-point="passwordRequired" class="ecmLabeledInputFieldRequired">*</span>
+						<label for="${id}_passwordTextBox">${messages.password}</label>
+						<div data-dojo-type="ecm.widget.HoverHelp" data-dojo-attach-point="passwordHoverHelp" message="${messages.taskSchedulerPane_passwordHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue">
+						<div data-dojo-attach-point="passwordTextBox" data-dojo-type="ecm/widget/ValidationTextBox" type="password" id="${id}_passwordTextBox" 
+							name="${id}_passwordTextBox" data-dojo-props="trim: true, required: true, intermediateChanges: true" 
+						data-dojo-attach-event="onChange:onInputChange" style="width: 300px"></div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div data-dojo-type="idx.layout.TitlePane" data-dojo-attach-point="notification"
+		title="${messages.taskSchedulerPane_notification}">
+		<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" class="generalTable" role="presentation">
+			<tbody>
+				<tr>
+					<td class="propertyRowLabel">
+						<label for="${id}_emailAddressTextBox">${messages.taskSchedulerPane_emailAddress}:</label>
+						<div data-dojo-type="ecm.widget.HoverHelp" message="${messages.taskSchedulerPane_emailAddressHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue">
+						<div data-dojo-attach-point="emailAdressTextBox" data-dojo-type="ecm/widget/ValidationTextBox" id="${id}_emailAddressTextBox" name="${id}_emailAddressTextBox"
+							data-dojo-props="trim: true,intermediateChanges: true" 
+							data-dojo-attach-event="onChange:onInputChange" style="width: 300px"></div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

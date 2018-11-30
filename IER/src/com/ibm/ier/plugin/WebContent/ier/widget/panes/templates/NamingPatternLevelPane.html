@@ -1,0 +1,36 @@
+<div class="ierNamingPatternLevelPane">
+	<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;" role="presentation">
+		<thead>
+			<tr>
+				<td class="ierNamingPatternLevelCell">
+					<div class="ierLevelHeader">
+						<label><span class="required">*</span>${_messages.namingPatternLevelPane_level}</label>
+						<div data-dojo-type="ecm.widget.HoverHelp" message="${_messages.namingPatternLevelPane_level_help}" data-dojo-props="isFocusible:true"></div>
+					</div>
+				</td>
+				<td class="ierNamingPatternLevelCell">
+					<div class="ierEntityTypeHeader">
+						<label><span class="required">*</span>${_messages.namingPatternLevelPane_entityType}</label>
+						<div data-dojo-type="ecm.widget.HoverHelp" message="${_messages.namingPatternLevelPane_entityType_help}" data-dojo-props="isFocusible:true"></div>
+					</div>
+				</td>
+				<td class="ierNamingPatternLevelCell">
+					<div class="ierPatternHeader">
+						<label><span class="required">*</span>${_messages.namingPatternLevelPane_pattern}</label>
+						<div data-dojo-type="ecm.widget.HoverHelp" message="${_messages.namingPatternLevelPane_pattern_help}" data-dojo-props="isFocusible:true"></div>
+					</div>
+				</td>
+				<td class="ierNamingPatternLevelCell">
+					<div class="ierIncrementHeader">
+						<label>${_messages.namingPatternLevelPane_increment}</label>
+						<div data-dojo-type="ecm.widget.HoverHelp" message="${_messages.namingPatternLevelPane_increment_help}" data-dojo-props="isFocusible:true"></div>
+					</div>
+				</td>
+			</tr>
+		</thead>
+		<tbody data-dojo-attach-point="_levelContainer"></tbody>
+	</table>
+	<div class="ierSectionContainer">
+		<button data-dojo-type="dijit.form.Button" data-dojo-attach-point="_addButton">${_messages.namingPatternLevelPane_addLevel}</button>
+	</div>
+</div>

@@ -1,0 +1,37 @@
+<div class="ierEntityItemDispositionPane ierCommonPropertiesPane ecmCommonPropertiesPane" style="margin-top:5px;">
+	<span data-dojo-attach-point="dispositionEmbeddedAssistance"></span>
+	
+	<fieldset style="padding: 0px; margin: 0px">
+		<legend style="display: none">${messages.baseDialog_disposition}</legend>
+	
+		<div data-dojo-attach-point="_noneScheduleSection">
+			</br>
+			<div value="true" type="radio" name="${id}_scheduleGroup" data-dojo-attach-point="noneScheduleRadioButton" id="${id}_noneSchedule" 
+				 data-dojo-type="ecm.widget.RadioButton" data-dojo-attach-event="onChange:onInputChange" data-dojo-props="checked:true"></div>
+			<label data-dojo-attach-point="_noneScheduleRadioButtonLabel" for="${id}_noneSchedule">${messages.entityItemDispositionPane_noSchedule}</label>&nbsp;
+
+			<div data-dojo-attach-point="_dispositionPropagationSelect" name="${id}_propagationSelect" class="ierIdententation" style="display:none;margin-top:8px" data-dojo-attach-event="onChange:onInputChange"
+				data-dojo-props="disabled:true" data-dojo-type="ier/widget/DispositionPropagationSelector"></div>
+		</div>
+	
+		<div data-dojo-attach-point="_ddScheduleSection">
+			</br>
+			<div value="true" type="radio" name="${id}_scheduleGroup" data-dojo-attach-point="ddScheduleRadioButton" id="${id}_ddSchedule" 
+				 data-dojo-type="ecm.widget.RadioButton" data-dojo-attach-event="onChange:onInputChange"></div>
+			<label data-dojo-attach-point="_ddScheduleRadioButtonLabel" for="${id}_ddSchedule">${messages.entityItemDispositionPane_defensibleDisposableSchedule}</label>&nbsp;
+			
+			</br>
+			<div id="${id}_defensibleDisposalPane" data-dojo-attach-point="_defensibleDisposalPane" data-dojo-type="ier/widget/panes/DefensibleDisposalDispositionPane"></div>
+		</div>
+	
+		<div data-dojo-attach-point="_legacyScheduleSection">
+			</br>
+			<div value="true" type="radio" name="${id}_scheduleGroup" data-dojo-attach-point="legacyScheduleRadioButton" id="${id}_legacySchedule" 
+			 data-dojo-type="ecm.widget.RadioButton" data-dojo-attach-event="onChange:onInputChange"></div>
+			<label data-dojo-attach-point="_legacyScheduleRadioButtonLabel" for="${id}_legacySchedule">${messages.entityItemDispositionPane_legacySchedule}</label>&nbsp;
+	
+			<div id="${id}_legacyDispositionPane" data-dojo-attach-point="_legacyDispositionPane" data-dojo-type="ier/widget/panes/LegacyDispositionSchedulePane"></div>
+		</div>
+		
+	</fieldset>
+</div>

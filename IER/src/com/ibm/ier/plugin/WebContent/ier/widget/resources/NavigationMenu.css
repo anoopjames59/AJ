@@ -1,0 +1,41 @@
+.ierNavigationMenuContainer {
+	border-width: 0 1px 0 0;
+	border-style: solid;
+	border-color: #CCC;
+	float: left;
+	font-size: 13px;
+	display:block;
+	background-color: #F4F5F6;
+	height: 100%;
+}
+
+.ierNavigationMenuContainer ul {
+	clear: left;
+	padding: 0;
+	margin: 20px 0 0 0;
+	list-style: none;
+	height: 100%;
+	width: 100px;
+}
+
+.ierNavigationMenuContainer li.normal, .ierNavigationMenuContainer li.selected {
+	cursor: pointer;
+	cursor: hand;
+	color: #21759B;
+	padding-left: 15px;
+	padding-right: 0;
+	line-height: 250%;
+}
+
+.ierNavigationMenuContainer li:hover {
+	background-color: #E1E1E1;
+	color: #333;
+}
+
+.ierNavigationMenuContainer li.selected {
+	color: white;
+	border-top-color: gray;
+	border-bottom-color: #6D6D6D;
+	background-color: #777;
+	font-weight: bold;
+}

@@ -1,0 +1,38 @@
+<div data-dojo-type="dijit.layout.ContentPane" class="ierDialogContent">
+	<table class="generalTable">
+	<tbody>   
+		<!-- <tr data-dojo-attach-point="_linkSelectorRow">
+			<td class="propertyRowLabel">
+				<span class="ecmLabeledInputFieldRequired">*</span>
+				<label for="${id}_linkSelector">${_messages.baseDialog_class}</label>
+				<div data-dojo-type="ecm.widget.HoverHelp" data-dojo-attach-point="_folderSelectorHoverHelp" message="${_messages.linkRecordDialog_fileplanLocationHoverHelp}"></div>
+			</td>
+			<td class="propertyRowValue">
+				<div id="${id}_contentClassSelector"
+					data-dojo-type="ecm.widget.ContentClassSelector" 
+					data-dojo-attach-point="_contentClassSelector" 
+					data-dojo-props="selectorStyle:'dropdown', hasAll:false, onlySelectable:true">
+				</div>
+				<div class="commonPropertiesDiv">
+					<div data-dojo-type="ier.widget.panes.CommonPropertiesPane" data-dojo-attach-point="_commonProperties"></div>
+				</div>
+			</td>
+		</tr> -->
+			
+		<tr data-dojo-attach-point="_folderSelectorRow">
+			<td class="propertyRowLabel">
+ 				<span class="ecmLabeledInputFieldRequired">*</span>
+				<label for="${id}_folderSelector">${_messages.linkRecordDialog_fileplanLocation}</label>
+				<div data-dojo-type="ecm.widget.HoverHelp" data-dojo-attach-point="_folderSelectorHoverHelp" message="${_messages.linkRecordDialog_fileplanLocationHoverHelp}"></div>
+			</td>
+			<td class="propertyRowValue">
+				<div data-dojo-attach-point="_folderSelectorCell">
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+	<div data-dojo-type="dijit.layout.ContentPane" class="ierDialogContent">
+		<div data-dojo-type="ier.widget.panes.EntityItemPropertiesPane" data-dojo-attach-point="_propertiesPane"></div>
+	</div>
+</div>

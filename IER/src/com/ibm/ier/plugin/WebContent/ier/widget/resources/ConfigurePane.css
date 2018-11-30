@@ -1,0 +1,40 @@
+.ierConfigurePane .topPane {
+	padding: 0 0 3px 0;
+	margin-top: 0px;
+}
+
+.ierConfigurePane .filePlanBreadcrumbContainer {
+	float: left;
+	width: 45%;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.ierCenterPane .filePlanSearchBarContainer {
+	padding-top: 3px;
+}
+
+.ierConfigurePane .topPane .dijitSelect,
+.ierConfigurePane .navContainer .dijitSelect {
+	border: 1px solid #BFBFBF;
+	font-weight: normal;
+	color: #222;
+}
+
+.ierConfigurePane .topPane .ecmBreadcrumb .dijitButtonContents{
+	width: auto;
+	height: auto;
+	padding-left: 10px !important;
+	padding-bottom: 3px;
+}
+
+.dijitRtl .configureIconSelectOptions {
+	padding-right: 0px;
+	margin-left: 4px;
+}
+
+.configureIconSelectOptions {
+	display:inline-block;
+	padding-right:4px;
+	vertical-align:middle
+}

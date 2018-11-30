@@ -1,0 +1,58 @@
+<div class="recordDeclarePropertiesPane" data-dojo-attach-point="containerNode">
+	<table class="generalTable" role="presentation">
+		<tbody>
+			<tr data-dojo-attach-point="_repositorySelectorRow">
+				<td class="propertyRowLabel">
+					<span class="ecmLabeledInputFieldRequired" data-dojo-attach-point="_entryTemplateSelectorLabelRequired">*</span>
+					<div class="dijitInline" id="${id}_repositoryLabel" for="${id}_repositorySelector" data-dojo-attach-point="_repositoriesLabel">${_messages.declareRecordDialog_repositories}:</div>
+					<label for="${id}_repositoryDisabledTextBox" style="display: none;" id="${id}_repositoriesDisabledLabel" data-dojo-attach-point="_repositoriesDisabledLabel" >
+					${_messages.declareRecordDialog_repositories}:</label>
+					<div data-dojo-type="ecm.widget.HoverHelp" data-dojo-attach-point="_repositorySelectorHoverHelp"></div>
+				</td>
+				<td class="propertyRowValue">
+					<div id="${id}_repositoryDisabledTextBox"
+						data-dojo-type="dijit.form.TextBox"
+						value readonly aria-readonly="true"
+						style="display: none;">
+					</div>
+					<div data-dojo-attach-point="_repositorySelector"></div>
+				</td>
+			</tr>
+			<tr data-dojo-attach-point="_folderSelectorRow">
+				<td class="propertyRowLabel" data-dojo-attach-point="_folderSelectorLabelCell">
+					<span class="ecmLabeledInputFieldRequired">*</span>
+					<label for="${id}_folderSelectorDisabled" data-dojo-attach-point="_fileplanLocationDisabledLabel">${_messages.declareRecordDialog_fileplanLocation}:</label>					
+					<div class="dijitInline" id="${id}_fileplanLocationLabel" style="display:none" data-dojo-attach-point="_fileplanLocationLabel">
+					${_messages.declareRecordDialog_fileplanLocation}:</div>
+					<div data-dojo-type="ecm.widget.HoverHelp" data-dojo-attach-point="_folderSelectorHoverHelp"></div>
+				</td>
+				<td class="propertyRowValue" data-dojo-attach-point="_folderSelectorCell">
+					<div id="${id}_folderSelectorDisabled" data-dojo-type="dijit.form.TextBox" 
+						disabled="disabled"
+						class="ierDropDownInput"
+						data-dojo-attach-point="_folderSelectorDisabled">
+					</div>
+				</td>
+			</tr>
+			<tr data-dojo-attach-point="_contentClassSelectorRow">
+				<td class="propertyRowLabel" data-dojo-attach-point="_contentClassSelectorLabelCell">
+					<span class="ecmLabeledInputFieldRequired">*</span>
+					<label for="${id}_contentClassSelectorDisabled" data-dojo-attach-point="_contentClassSelectorDisabledLabel">${_messages.declareRecordDialog_recordClass}:</label>	
+					<div class="dijitInline" id="${id}_contentClassLabel" style="display:none" data-dojo-attach-point="_contentClassLabel" >
+					${_messages.declareRecordDialog_recordClass}:</div>
+					<div data-dojo-type="ecm.widget.HoverHelp" data-dojo-attach-point="_contentClassSelectorHoverHelp"></div>
+				</td>
+				<td class="propertyRowValue" data-dojo-attach-point="_contentClassSelectorCell">
+					<div id="${id}_contentClassSelectorDisabled" data-dojo-type="dijit.form.TextBox" 
+						disabled="disabled"
+						class="ierDropDownInput"
+						data-dojo-attach-point="_contentClassSelectorDisabled">
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="commonPropertiesDiv" data-dojo-attach-point="_commonPropertiesDiv">
+		<div data-dojo-type="ier.widget.panes.CommonPropertiesPane" data-dojo-attach-point="_commonProperties" style="padding-top:7px"></div>
+	</div>
+</div>

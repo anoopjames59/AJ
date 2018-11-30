@@ -1,0 +1,14 @@
+<div class="ecmAdminTab">
+    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'top'" class="ecmAdminTabHeading">
+		<div data-dojo-attach-point="_titleNode"></div>
+	</div>
+	<div data-dojo-type="dijit/layout/TabContainer" data-dojo-props="region: 'center'">
+		<div data-dojo-type="ier/widget/admin/RepositorySettingsPane" data-dojo-attach-point="_settingsPane" title="${_messages.admin_general}"></div>
+		<div data-dojo-type="ier/widget/admin/DisplayColumnPane" data-dojo-attach-point="_displayColumnPane" title="${_messages.admin_displayColumns}"></div>
+		<div data-dojo-type="ier/widget/admin/DisplayPropertyPane" data-dojo-attach-point="_displayPropertyPane" title="${_messages.admin_displayProperties}"></div>
+		<div data-dojo-type="ier/widget/admin/SystemPropertyPane" data-dojo-attach-point="_systemPropertyPane" title="${_messages.admin_systemProperties}"></div>
+		<div data-dojo-type="ier/widget/admin/RepositorySecurityPane" data-dojo-attach-point="_securityPane" title="${_messages.admin_systemConfig_securityScriptColumn}"></div>
+		<div data-dojo-type="ier/widget/admin/RepositoryReportPane" data-dojo-attach-point="_reportPane" title="${_messages.admin_reportSettings}"></div>
+		<div data-dojo-type="ier/widget/admin/RepositoryDDSweepPane" data-dojo-attach-point="_ddSweepPane" title="${_messages.admin_ddContainerSettings}"></div>
+	</div>
+</div>

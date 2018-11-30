@@ -1,0 +1,20 @@
+<div class="ierDispositionScheduleDialog" >
+	<div data-dojo-attach-point="introTextNode" class="message">
+		Disposition schedules can have multiple phases, where the affected entities go through disposition steps such as review, export, transfer, or destruction. 
+	  </div>
+	  	<br>
+	  	<div class="filterArea" data-dojo-attach-point="filterArea">
+			<div data-dojo-type="ecm.widget.FilterTextBox" data-dojo-attach-point="filter" class="filter"></div>
+		</div>
+	  	<div class="field" style="margin-top:5px;">
+	  		<label for="${id}_holdsSelector" data-dojo-attach-point="selectorLabelNode">
+	  			Available Disposition Schedules:
+	  		</label>
+	  		<select style="width: 100%" "size="15" class="ierDispositionSelect"
+				data-dojo-attach-point="_dispositionScheduleSelector"
+				data-dojo-props="multiple:true"
+	  			data-dojo-attach-event="onChange: _onSelectionChange"
+	  			data-dojo-type="dijit.form.MultiSelect">
+			</select>
+		</div>
+</div>

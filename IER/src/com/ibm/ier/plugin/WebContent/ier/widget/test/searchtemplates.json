@@ -1,0 +1,65 @@
+{
+    "identifier" : "id",
+    "items": [
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "FilePlan (CE50_BASE_FPOS)",
+        "title": "<a onclick=\"openFilePlanPane('cm-rm-win11', '{7F29139B-04E0-442F-9B85-C71EA4988375}')\" href=\"#\">SearchTemplate1</a>",
+        "type": "Base	",
+        "content": "Template Description",
+        "id": "700",
+        "iconClass" : "searchTemplateIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "PSIFilePlan (CE50_BASE_FPOS)",
+        "title": "<a onclick=\"openFilePlanPane('cm-rm-win11', '{B4B7DECF-48E6-42D7-BA39-D7DCA9C0A9C3}')\" href=\"#\">SearchTemplate2</a>",
+        "type": "Base",
+        "content": "Template Description",
+        "id": "701",
+        "iconClass" : "searchTemplateIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "atlasdemo (CE50_BASE_FPOS)",
+        "title": "<a onclick=\"openFilePlanPane('cm-rm-win11', '{5483DB8C-3C60-43D6-AF18-6D5D6F077E9B}')\" href=\"#\">SearchTemplate3</a>",
+        "type": "Base",
+        "content": "Template Description",
+        "id": "702",
+        "iconClass" : "searchTemplateIcon"
+    },	
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "The Magellan Travel Company (CE50_BASE_FPOS)",
+        "title": "<a onclick=\"openFilePlanPane('cm-rm-win11', '{4CB243F4-33BD-486D-ABE4-02D1F33E16BE}')\" href=\"#\">SearchTemplate4</a>",
+        "type": "Base",
+        "content": "Template Description",
+        "id": "703",
+        "iconClass" : "searchTemplateIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "atlasdemo (CE50_BASE_FPOS)",
+        "title": "<a onclick=\"openFilePlanPane('cm-rm-win11', '{5483DB8C-3C60-43D6-AF18-6D5D6F077E9B}')\" href=\"#\">SearchTemplate5</a>",
+        "type": "Base",
+        "content": "Template Description",
+        "id": "704",
+        "iconClass" : "searchTemplateIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "atlasdemo (CE50_BASE_FPOS)",
+        "title": "<a onclick=\"openFilePlanPane('cm-rm-win11', '{5483DB8C-3C60-43D6-AF18-6D5D6F077E9B}')\" href=\"#\">SearchTemplate5</a>",
+        "type": "Base",
+        "content": "Template Description",
+        "id": "705",
+        "iconClass" : "searchTemplateIcon"
+    }
+    ]
+}

@@ -1,0 +1,301 @@
+.ecmUserGroupSelector {
+    position: relative;    
+}
+
+.ecmUserGroupSelector .dojoxGrid {
+	border: 1px solid #DBDBDB;
+}
+
+.ecmUserGroupSelector .pseudoUserOptions {	
+	padding: 0 !important;
+}
+
+.ecmUserGroupSelector .pseudoUserOptions label {	
+	line-height: 20px;
+}
+
+.ecmUserGroupSelector .topPane {	
+	overflow: hidden;		
+}
+
+.ecmUserGroupSelector .topPane .addSection .nameType {
+	display: inline-block;
+	margin-bottom: .2em;
+}
+.ecmUserGroupSelector .topPane .addSection .nameType label {
+	position: relative;
+	margin-left: 0;
+	margin-right: 2em;
+	top: 0.2em;
+}
+
+.ecmUserGroupSelector .topPane .addSection .nameType .nameTypeLabel {
+	margin-right: 1em;
+}
+
+.ecmUserGroupSelector .infoClass {     
+    display: none;
+}
+
+.ecmUserGroupSelector .leadingPane {
+	margin: 5px 3px 0;	
+	overflow: hidden;		
+	position: absolute;	
+}
+	
+.ecmUserGroupSelector .centerPane {
+	margin: 5px 3px 0;	
+	overflow: hidden;	
+	position: absolute;
+	right: 0;
+	overflow: hidden;	
+}
+
+.ecmUserGroupSelector .buttonPane2 {
+	margin: 5px 3px 0;	
+	overflow: hidden;	
+	position: absolute;
+	right: 0;
+	overflow: hidden;	
+}
+
+.ecmUserGroupSelector .buttonPane {	
+	position: absolute;    
+    margin-top: -31px;
+    top: 50%;
+	width: 45px;	
+	overflow: hidden;	
+	min-width: 0 !important;		
+}
+
+.ecmUserGroupSelector .buttonPane .dijitButton .dijitButtonNode,
+.ecmUserGroupSelector .searchSection .dijitButton .dijitButtonNode,
+.ecmUserGroupSelector .moveUpDownButtons .dijitButton .dijitButtonNode  {
+	min-width: 0 !important;
+}
+	
+.ecmUserGroupSelector .addButton {
+	background: url(../images/fullArrowsSprite.png) no-repeat -100px 0;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.ecmUserGroupSelector .removeButton {
+	background: url(../images/fullArrowsSprite.png) no-repeat -150px 0;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;	
+}
+
+.ecmUserGroupSelector .searchButton {
+	background-image : url("../images/search16.png");		
+	background-repeat: no-repeat;
+	height: 16px;
+	width: 16px;	    
+}
+.ecmUserGroupSelector .dijitButtonDisabled .searchButton {
+	opacity: 0.2;
+}
+
+.ecmUserGroupSelector .directorySection,
+.ecmUserGroupSelector .scopeSection, 
+.ecmUserGroupSelector .searchSection {	
+	margin: 3px 0 2px 0;
+	padding: 0 3px 0 3px;
+}
+
+.ecmUserGroupSelector .criteria {
+	width: 250px;
+}
+
+.ecmUserGroupSelector .scopeSection, 
+.ecmUserGroupSelector .searchSection {
+	display: inline-block;
+}
+
+.ecmUserGroupSelector .selectedGridContainer {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.ecmUserGroupSelector .hasSorting {
+    right: 65px;
+}
+
+.ecmUserGroupSelector .resultGrid,
+.ecmUserGroupSelector .selectedGrid {	
+	height: 100%;
+	width: 100%;
+}		
+
+.ecmUserGroupSelector .dojoxGridHeader .dojoxGridSortNode {
+	color: black !important;
+	text-decoration: none; /* cannot sort the header so let's make the color black & no underline */
+}
+
+.ecmUserGroupSelector .dijitDisabled .dojoxGridHeader .dojoxGridSortNode {
+	color: #AAAAAA !important;
+}
+
+.ecmUserGroupSelector .dijitDisabled .dojoxGridHeader .dojoxGridCellFocus {
+	border: 1px solid transparent !important;
+	border-left-color: #CCCCCC !important;
+}
+
+.ecmUserGroupSelector .dijitDisabled .dojoxGridRow .dojoxGridCell,
+.ecmUserGroupSelector .dijitDisabled .dojoxGridRow .dojoxGridCellFocus {
+	background-color: #F3F3F3 !important;
+	border: 1px solid #CCCCCC !important;
+	border-top-color: transparent !important;
+	border-left-color: transparent !important;
+	color: #AAAAAA !important;
+	-moz-outline-style: none !important;
+	outline: none !important;
+}
+
+.ecmUserGroupSelector .userIcon,
+.ecmUserGroupSelector .groupIcon {
+	margin: 5px 5px 5px 1px;
+}
+
+.ecmUserGroupSelector .userIcon img {
+	background : url("../images/user16.png") no-repeat left center transparent;
+	height: 16px;
+	width: 16px;
+}
+
+.ecmUserGroupSelector .groupIcon img {
+	background : url("../images/group16.png") no-repeat right top ;
+	height: 16px;
+	width: 16px;
+}
+
+.ecmUserGroupSelector .nameText {
+	margin-left: 5px;
+}
+
+.ecmUserGroupSelector .moveUpDownButtons {
+     width: 30px; 
+     padding-left: 5px; 
+     position: absolute; 
+     top: 50%; 
+     bottom: 0; 
+     right: 25px; 
+     margin-top: -31px; 
+     min-width: 0 !important;
+}
+
+.ecmUserGroupSelectorPane {
+	/* User Group Selector Pane using in drop down input */
+	padding: 10px;
+	width: 600px;
+	height: 280px;
+	overflow: hidden;
+	position: relative;
+}
+
+.ecmUserGroupSelectorWithPseudoUsersPane {
+	padding: 10px;
+	width: 600px;
+	height: 340px;
+	overflow: hidden;
+	position: relative;
+}
+
+.ecmUserGroupSelectorVotingPane {
+	padding: 10px;
+	width: 600px;
+	height: 306px;
+	overflow: hidden;
+	position: relative;
+}
+
+.ecmUserGroupSelectorPane .userGroupSelector, 	
+.ecmUserGroupSelectorVotingPane .userGroupSelector {
+    height: 280px;	/* User Group Selector widget height */
+    overflow: hidden;
+}
+
+.ecmUserGroupSelectorWithPseudoUsersPane .userGroupSelector {
+    height: 340px;
+    overflow: hidden;
+}
+
+.ecmUserGroupSelectorVotingPane .ecmUserGroupSelectorVotingSection {
+    margin: 0 3px;
+}
+
+.ecmUserGroupSelectorVotingPane .ecmUserGroupSelectorVotingLabel {
+	display: inline-block;
+}
+
+.ecmUserGroupSelectorVotingPane .ecmUserGroupSelectorVotingInput {
+	display: inline-block;
+	width: 4em !important;
+}
+
+.ecmReassignUserDialog {	/*  Reassign To User dialog */
+	width: 600px;
+	height: 475px;
+	overflow: hidden;
+}
+
+.ecmReassignUserDialog .buttonArea {
+	margin: 10px 10px;
+}
+
+.ecmReassignUserDialog .dijitBorderContainer-child {
+	border: none !important;
+}
+	
+.ecmReassignUserDialog .dijitBorderContainer-dijitContentPane {
+	padding: 0 !important;
+}
+
+.dijitRtl .ecmUserGroupSelector .topPane .addSection .nameType label {
+	margin-left: 2em;
+	margin-right: 0;
+}
+
+.dijitRtl .ecmUserGroupSelector .topPane .addSection .nameType .nameTypeLabel {
+	margin-left: 1em;
+}
+
+.dijitRtl .ecmUserGroupSelector .centerPane {
+	left: 0;
+	right: inherit !important;	
+}
+
+.dijitRtl .ecmUserGroupSelector .selectedGridContainer {	
+	left: 0;
+	top: 0;
+	right: inherit !important;
+}
+
+.dijitRtl .ecmUserGroupSelector .hasSorting {    
+    left: 65px;
+}
+
+.dijitRtl .ecmUserGroupSelector .addButton {
+	background: url(../images/fullArrowsSprite.png) no-repeat -150px 0;
+	width: 16px;
+	height: 16px;
+}
+
+.dijitRtl .ecmUserGroupSelector .removeButton {
+	background: url(../images/fullArrowsSprite.png) no-repeat -100px 0;
+	width: 16px;
+	height: 16px;	
+}
+
+.dijitRtl .ecmUserGroupSelector .nameText {
+	margin-right: 5px;
+}
+
+.dijitRtl .ecmUserGroupSelector .moveUpDownButtons {
+	right: inherit !important;
+    padding-right: 5px;
+    left: 25px;
+}

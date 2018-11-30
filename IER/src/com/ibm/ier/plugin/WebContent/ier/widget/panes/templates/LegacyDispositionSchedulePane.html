@@ -1,0 +1,45 @@
+<div class="ierEntityItemDispositionPane ierCommonPropertiesPane ecmCommonPropertiesPane" style="margin-top:5px;" data-dojo-attach-point="containerNode">	
+	<div data-dojo-attach-point="_legacyScheduleSection">	
+		<table class="propertyTable smallerIdentedPropertyTable" style="margin-top:8px;" role="presentation">
+			<tbody>
+				<tr>
+					<td class="propertyRowLabel">
+						<span class="ecmLabeledInputFieldRequired">*</span>
+						<label data-dojo-attach-point="_dispositionInstructionsLabel" for="${id}_dispositionTextBox">${messages.entityItemDispositionPane_dispositionInstructions}:</label>
+					</td>
+					<td class="propertyRowValue" data-dojo-attach-point="_dispositionObjectValueRow">
+						<div id="${id}_inheritedScheduleCheckBox" data-dojo-type="dijit/form/CheckBox" class="dijitInline" data-dojo-attach-point="_inheritedScheduleCheckBox" style="display:none"></div>
+						<label data-dojo-attach-point="_inheritedScheduleCheckboxLabel" for="${id}_inheritedScheduleCheckBox" style="display:none; margin-right:5px;">${messages.inherited}</label>
+						
+						<div id="${id}_dispositionTextBox" class="folderTargetLocation" data-dojo-attach-point="_dispositionTextBox"
+							data-dojo-type="dijit.form.TextBox" data-dojo-props="disabled:true">
+						</div>
+						<button style="display:none" data-dojo-attach-point="_dispositionInstructionsCreateButton" data-dojo-attach-event="onClick: _onCreateSchedule" data-dojo-type="dijit.form.Button">
+							${messages.entityItemDispositionPane_createSchedule}</button>
+					</td>
+				</tr>
+				<tr data-dojo-attach-point="_propagationSection" style="display:none">
+					<td class="propertyRowLabel">
+						<label></label>
+					</td>
+					<td class="propertyRowValue">
+						<div data-dojo-attach-point="_dispositionPropagationSelect" data-dojo-type="ier/widget/DispositionPropagationSelector"
+							name="${id}_propagationSelect" data-dojo-attach-event="onChange:onInputChange"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="propertyRowLabel">
+						<label data-dojo-attach-point="_dispositionAuthorityLabel" for="${id}_dispositonSchedule">${messages.entityItemDispositionPane_dispositionAuthority}:</label>
+						<div data-dojo-attach-point="dispositionAuthorityHoverHelp" data-dojo-type="ecm.widget.HoverHelp" message="${messages.entityItemDispositionPane_dispositionAuthorityHoverHelp}"></div>
+					</td>
+					<td class="propertyRowValue">
+						<div id="${id}_dispositonSchedule"
+							class="folderTargetLocation" data-dojo-attach-point="_dispositionAuthorityTextBox"
+							data-dojo-type="dijit.form.TextBox" data-dojo-attach-event="onChange:onInputChange">
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" type="text/html; charset=UTF-8">
+<title>[Test] ier.widget.panes.EntityItemDetailPane</title>
+<style type="text/css">
+@IMPORT url("../../../../../../../../../../../navigator/WebContent/ecm/widget/resources/dojo.css");
+@IMPORT url("../../../../../../../../../../../navigator/WebContent/ecm/themes/oneui/dojo.css");
+@IMPORT url("../../../../../../../../../../../navigator/WebContent/ecm/widget/resources/ecm.css");
+@IMPORT url("../../../../../../../../../../../navigator/WebContent/ecm/themes/oneui/oneui.css");
+@IMPORT url("../../resources/ier.css");
+.filterContainer {
+	height: 25px;
+}
+.ierEntityItemHoldPane {
+	width: 100%;
+	height: 100%;
+}
+</style>
+<script type="text/javascript">
+var dojoConfig = {
+	idDebug: true,
+	parseOnLoad: true,
+	async: true,
+	packages: [
+		{name: "ecm", location: "../ecm"},
+		{name: "idx", location: "../idx"},
+		{name: "ier", location: "../../../IERApplicationPlugin/src/com/ibm/ier/plugin/WebContent/ier"}
+	]
+};
+</script>
+<script type="text/javascript" src="../../../../../../../../../../../navigator/WebContent/dojo/dojo.js"></script>
+<script type="text/javascript">
+require([
+	"dojo/ready",
+	"dijit/registry",
+	"idx/layout/TitlePane",
+	"ier/widget/panes/EntityItemDetailPane"
+], function(dojoReady, registry, TitlePane, EntityItemDetailPane) {
+	dojoReady(function(){
+		var pane = new EntityItemDetailPane().placeAt("pane");
+		pane.createRendering();
+	});
+});
+</script>
+</head>
+<body class="ecm oneui">
+	<div id="pane" style="width: 100%; height: 100%;"></div>
+</body>
+</html>

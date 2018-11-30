@@ -1,0 +1,11 @@
+.ierHoldConditionPane .dijitTabContainerTop-tabs {
+	margin-bottom: 10px;
+} 
+
+.ierHoldConditionPane .ecmContentList {
+	height: 300px;
+}
+.ierCommonConditionForm.ierConditionLabelDisabled{
+	color: #aaaaaa;
+	text-shadow: 1px 0 0 #ffffff;
+}

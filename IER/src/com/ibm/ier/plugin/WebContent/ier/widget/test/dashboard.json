@@ -1,0 +1,95 @@
+{
+    "identifier" : "id",
+    "items": [
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "Electronic Record 1",
+        "title": "Electronic Record 1",
+        "type": "DispositionSweep",
+        "content": "FilePlan: FilePlan( FPOS_BASE ) | View Info | Actions",
+        "id": "601",
+        "iconClass" : "electronicRecordIcon"
+    },
+   {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "Electronic Record 2",
+        "title": "Electronic Record 2",
+        "type": "DispositionSweep",
+        "content": "FilePlan: FilePlan( FPOS_BASE ) | View Info | Actions",
+        "id": "602",
+        "iconClass" : "electronicRecordIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "Electronic Record 3",
+        "title": "Electronic Record 3",
+        "type": "DispositionSweep",
+        "content": "FilePlan: FilePlan( FPOS_BASE ) | View Info | Actions",
+        "id": "603",
+        "iconClass" : "electronicRecordIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "Electronic Record 4",
+        "title": "Electronic Record 4",
+        "type": "DispositionSweep",
+        "content": "FilePlan: FilePlan( FPOS_BASE ) | View Info | Actions",
+        "id": "604",
+        "iconClass" : "electronicRecordIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "Electronic Record 5",
+        "title": "Electronic Record 5",
+        "type": "DispositionSweep",
+        "content": "FilePlan: FilePlan( FPOS_BASE ) | View Info | Actions",
+        "id": "605",
+        "iconClass" : "electronicRecordIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "Electronic Record 6",
+        "title": "Electronic Record 6",
+        "type": "DispositionSweep",
+        "content": "FilePlan: FilePlan( FPOS_BASE ) | View Info | Actions",
+        "id": "606",
+        "iconClass" : "electronicRecordIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "Electronic Record 7",
+        "title": "Electronic Record 7",
+        "type": "DispositionSweep",
+        "content": "FilePlan: FilePlan( FPOS_BASE ) | View Info | Actions",
+        "id": "607",
+        "iconClass" : "electronicRecordIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "Electronic Record 8",
+        "title": "Electronic Record 8",
+        "type": "DispositionSweep",
+        "content": "FilePlan: FilePlan( FPOS_BASE ) | View Info | Actions",
+        "id": "608",
+        "iconClass" : "electronicRecordIcon"
+    },
+    {
+        "repositoryId": "p8demo",
+        "repositoryName": "p8demo",
+        "name": "Electronic Record 9",
+        "title": "Electronic Record 9",
+        "type": "DispositionSweep",
+        "content": "FilePlan: FilePlan( FPOS_BASE ) | View Info | Actions",
+        "id": "609",
+        "iconClass" : "electronicRecordIcon"
+    }
+    ]
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" type="text/html; charset=UTF-8">
+<title>[Test] ier.widget.dialog.RecordFolderPropertiesDialog</title>
+<style type="text/css">
+@IMPORT url("../../../../../../navigator/WebContent/ecm/widget/resources/dojo.css");
+@IMPORT url("../../../../../../navigator/WebContent/ecm/themes/oneui/dojo.css");
+@IMPORT url("../../../../../../navigator/WebContent/ecm/widget/resources/ecm.css");
+@IMPORT url("../../../../../../navigator/WebContent/ecm/themes/oneui/oneui.css");
+@IMPORT url("../../resources/ier.css");
+</style>
+<script type="text/javascript">
+var dojoConfig = {
+	idDebug: true,
+	parseOnLoad: true,
+	async: true,
+	packages: [
+		{name: "ecm", location: "../ecm"},
+		{name: "idx", location: "../idx"},
+		{name: "ier", location: "../../../IERApplicationPlugin/WebContent/ier"}
+	]
+};
+</script>
+<script type="text/javascript" src="../../../../../../navigator/WebContent/dojo/dojo.js"></script>
+<script type="text/javascript">
+require([
+	"dojo/ready",
+	"dijit/registry",
+	"ecm/model/ResultSet",
+	"idx/layout/TitlePane",
+	"ier/widget/dialog/RecordFolderPropertiesDialog",
+	"dijit/form/Button"
+], function(dojoReady, registry, RS, TitlePane, RecordFolderPropDlg) {
+	dojoReady(function(){
+		function openDlg(editable) {
+			var repository = {
+				isLoaded: function() {return true;}
+			};
+			var item = {
+				getParent: function() {return {getAllowedRMTypes: function(){return null;}};}
+			};
+			if(editable) {
+				item.privModifyProperties = true;
+				item.privModifyPermissions = true;
+			}
+			new RecordFolderPropDlg().show(repository, {}, item);
+		};
+		
+		var viewBtn = registry.byId("openViewDlgButton");
+		viewBtn.connect(viewBtn, "onClick", function(){
+			openDlg(false);
+		});
+		var editBtn = registry.byId("openEditDlgButton");
+		editBtn.connect(editBtn, "onClick", function(){
+			openDlg(true);
+		});
+		
+		openDlg(true);
+	});
+});
+</script>
+</head>
+<body class="ecm oneui">
+	<input data-dojo-type="dijit/form/Button" type="button" label="Open View Dialog" id="openViewDlgButton"/>
+	<input data-dojo-type="dijit/form/Button" type="button" label="Open Edit Dialog" id="openEditDlgButton"/>
+</body>
+</html>

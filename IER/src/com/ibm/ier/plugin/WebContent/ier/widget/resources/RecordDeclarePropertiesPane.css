@@ -1,0 +1,13 @@
+.recordDeclarePropertiesPane {
+	width: 100%;
+	margin: 0px;
+}
+
+.recordDeclarePropertiesPane td {
+    padding-top: 7px;   /* Make sure there's some vertical room between the control rows */
+}
+
+.recordDeclarePropertiesPane .folderSelectorControl .ecmDropDownInput .dijitButtonText {
+	width: 375px; 
+}
+

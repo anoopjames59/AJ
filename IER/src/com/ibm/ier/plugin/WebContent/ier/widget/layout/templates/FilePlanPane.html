@@ -1,0 +1,31 @@
+<div class="ecmCenterPane ierCenterPane">
+	<div data-dojo-type="dijit.layout.BorderContainer" class="contentPane" data-dojo-attach-point="mainContainer" data-dojo-props="gutters:false">
+		<div data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'top'" class="topPane filePaneTopContainer">
+			<div class="ierFilePlanSelectorContainer" data-dojo-attach-point="_filePlanSelectorContainer"></div>
+			<div class="filePlanBreadcrumbContainer">
+				 <div data-dojo-type="ecm.widget.Ellipsis" data-dojo-attach-point="breadcrumbContainer" class="breadcrumbContainer" data-dojo-props="truncate:'left'">
+			    	<div data-dojo-type="ecm.widget.Breadcrumb" data-dojo-attach-point="breadcrumb" class="breadcrumb"></div>
+			    </div>
+		    </div>
+		   <div class="filePlanSearchBarContainer">
+		   		<div data-dojo-type="ier.widget.FilePlanSearchBar" data-dojo-attach-point="_filePlanSearchBar" class="filePlanSearchBar" style="display:none"></div>
+		   </div>
+		</div>
+		<div data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'center'" class="filepaneCenter">
+			<div data-dojo-attach-point="defaultTab" data-dojo-type="idx.layout.BorderContainer" class="contentPane" data-dojo-props="gutters:false, design:'sidebar'">
+				<div data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'leading', splitter:true" class="filePlanLeadingPaneOverflow" >
+					<div data-dojo-type="ier.widget.FolderTree" data-dojo-attach-point="folderTree" data-dojo-props="showFoldersOnly:true" aria-label="${_messages.filePlanPane_tree}"></div>
+				</div>
+				<div data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'center'">
+					<div data-dojo-attach-point="mainStackContainer" 
+						 data-dojo-type="dijit.layout.StackContainer" 
+						 region="center" 
+						 class="stackContainer">	 
+						<div class="ierContentList" data-dojo-attach-point="folderContents" data-dojo-type="ier.widget.listView.ContentList"
+						 emptyMessage="${_messages.contentList_recordContainerIsEmpty}"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
